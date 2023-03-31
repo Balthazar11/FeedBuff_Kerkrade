@@ -9,7 +9,7 @@ namespace FeedBuff_Kerkrade
         static void Main()
         {
 
-            int x = 5;
+            string x;
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
