@@ -28,7 +28,7 @@ namespace FeedBuff_Kerkrade
 
         private void Close_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
 }
