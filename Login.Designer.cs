@@ -124,7 +124,6 @@
             // 
             // Login_Pnl_Login
             // 
-            Login_Pnl_Login.BorderStyle = BorderStyle.FixedSingle;
             Login_Pnl_Login.Controls.Add(Login_User_Txt);
             Login_Pnl_Login.Controls.Add(Login_Lbl_Error);
             Login_Pnl_Login.Controls.Add(Login_Pass_Txt);
@@ -139,7 +138,6 @@
             // 
             // Login_Pnl_Register
             // 
-            Login_Pnl_Register.BorderStyle = BorderStyle.FixedSingle;
             Login_Pnl_Register.Controls.Add(Register_Lbl_Error);
             Login_Pnl_Register.Controls.Add(Register_Pass_Txt);
             Login_Pnl_Register.Controls.Add(Register_Lbl_Pass);
@@ -238,8 +236,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Close_btn);
-            Controls.Add(Login_Pnl_Register);
             Controls.Add(Login_Pnl_Login);
+            Controls.Add(Login_Pnl_Register);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Form1";
