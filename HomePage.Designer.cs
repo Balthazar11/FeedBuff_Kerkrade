@@ -109,7 +109,7 @@
             Pnl_Menu.Dock = DockStyle.Left;
             Pnl_Menu.Location = new Point(0, 0);
             Pnl_Menu.Name = "Pnl_Menu";
-            Pnl_Menu.Size = new Size(141, 571);
+            Pnl_Menu.Size = new Size(141, 569);
             Pnl_Menu.TabIndex = 1;
             // 
             // Btn_Menu
@@ -593,7 +593,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1070, 571);
+            ClientSize = new Size(1030, 569);
             Controls.Add(Pnl_Menu);
             Controls.Add(Pnl_Feedback);
             Controls.Add(Pnl_Goals);
