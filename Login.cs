@@ -25,5 +25,10 @@ namespace FeedBuff_Kerkrade
             Program.HomePage.Show();
             this.Hide();
         }
+
+        private void Close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
