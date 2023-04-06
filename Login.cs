@@ -9,6 +9,10 @@ namespace FeedBuff_Kerkrade
         public Login()
         {
             InitializeComponent();
+            if (Login_Pnl_Login.Visible == true)
+            {
+                this.AcceptButton = Login_btn;
+            }
         }
         //private void 
 

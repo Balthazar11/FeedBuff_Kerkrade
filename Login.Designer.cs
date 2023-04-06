@@ -95,6 +95,7 @@
             // 
             // Login_btn
             // 
+            Login_btn.DialogResult = DialogResult.OK;
             Login_btn.Location = new Point(84, 177);
             Login_btn.Name = "Login_btn";
             Login_btn.Size = new Size(185, 29);
