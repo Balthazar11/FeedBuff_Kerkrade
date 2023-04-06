@@ -14,7 +14,7 @@ namespace FeedBuff_Kerkrade
     {
         List<Panel> ExcludedChildPanels = new List<Panel>();
         List<Panel> ExcludedPanels = new List<Panel>();
-        DAL dal = new();
+        PanelControl panels = new();
         public HomePage()
         {
             InitializeComponent();
@@ -22,6 +22,7 @@ namespace FeedBuff_Kerkrade
             ExcludedPanels.Add(Pnl_Menu_Student);
             ExcludedChildPanels.Add(Pnl_Goals_Menu);
             ExcludedChildPanels.Add(Pnl_Feedback_Menu);
+            ExcludedChildPanels.Add(Pnl_Logbook_Menu);
 
         }
 
@@ -34,13 +35,13 @@ namespace FeedBuff_Kerkrade
 
         private void Btn_Menu_Click(object sender, EventArgs e)
         {
-            dal.TogglePanels(this, ExcludedPanels, Pnl_Menu);
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Menu);
         }
 
         private void Btn_Menu_Goals_Click(object sender, EventArgs e)
         {
-            dal.TogglePanels(this, ExcludedPanels, Pnl_Goals);
-            dal.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Goals);
+            panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
         }
 
         private void HomePage_Load(object sender, EventArgs e)
@@ -50,12 +51,12 @@ namespace FeedBuff_Kerkrade
 
         private void Goals_Menu_Btn_Current_Click(object sender, EventArgs e)
         {
-            dal.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
+            panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
         }
 
         private void Goals_Menu_Btn_Add_Click(object sender, EventArgs e)
         {
-            dal.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Add, ExcludedChildPanels);
+            panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Add, ExcludedChildPanels);
         }
 
         private void Goals_Text_Sub1_TextChanged(object sender, EventArgs e)
@@ -119,18 +120,33 @@ namespace FeedBuff_Kerkrade
 
         private void Btn_Menu_Feedback_Click(object sender, EventArgs e)
         {
-            dal.TogglePanels(this, ExcludedPanels, Pnl_Feedback);
-            dal.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Feedback);
+            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
         }
 
         private void Feedback_Menu_Btn_add_Click(object sender, EventArgs e)
         {
-            dal.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Add, ExcludedChildPanels);
+            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Add, ExcludedChildPanels);
         }
 
         private void Feedback_Menu_Btn_Current_Click(object sender, EventArgs e)
         {
-            dal.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
+            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
+        }
+
+        private void Btn_Menu_Logbook_Click(object sender, EventArgs e)
+        {
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Logbook);
+        }
+
+        private void Logbook_Menu_Btn_Current_Click(object sender, EventArgs e)
+        {
+            panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Current, ExcludedChildPanels);
+        }
+
+        private void Logbook_Menu_Btn_add_Click(object sender, EventArgs e)
+        {
+            panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Add, ExcludedChildPanels);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FeedBuff_Kerkrade
 {
-    internal class DAL
+    internal class PanelControl
     {
         public void TogglePanels(Control control, List<Panel> ExcludedPanels, params Panel[] activePanels)
         {

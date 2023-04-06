@@ -4,7 +4,7 @@ namespace FeedBuff_Kerkrade
 {
     public partial class Login : Form
     {
-        DAL dal = new();
+        PanelControl dal = new();
         List<Panel> ExcludedPanels = new List<Panel>();
         public Login()
         {
@@ -81,7 +81,7 @@ namespace FeedBuff_Kerkrade
             string email = Register_Mail_Txt.Text;
             string password = Register_Pass_Txt.Text;
 
-            if (!string.IsNullOrEmpty(username) || !string.IsNullOrEmpty(email) || !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
                 dal.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
                 Register_Lbl_Error.Text = "";
