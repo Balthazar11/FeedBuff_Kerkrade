@@ -74,11 +74,19 @@
             Pnl_Feedback = new Panel();
             Pnl_Feedback_Current = new Panel();
             Feedback_Lbl_Week = new Label();
-            comboBox1 = new ComboBox();
+            Feedback_Combo_Week = new ComboBox();
             Lbl_Feedback_Goals = new Label();
             Lbl_FeedBack_Requested = new Label();
             checkedListBox1 = new CheckedListBox();
             ListBoxFeedback = new CheckedListBox();
+            Pnl_Logbook = new Panel();
+            Pnl_Logbook_Menu = new Panel();
+            Logbook_Menu_Btn_add = new Button();
+            Logbook_Menu_Btn_Current = new Button();
+            Pnl_Logbook_Add = new Panel();
+            Pnl_Logbook_Current = new Panel();
+            Logbook_Combo_Week = new ComboBox();
+            label2 = new Label();
             Pnl_Menu.SuspendLayout();
             Pnl_Menu_Student.SuspendLayout();
             Pnl_Goals_Add.SuspendLayout();
@@ -89,6 +97,9 @@
             Pnl_Goals_Current.SuspendLayout();
             Pnl_Feedback.SuspendLayout();
             Pnl_Feedback_Current.SuspendLayout();
+            Pnl_Logbook.SuspendLayout();
+            Pnl_Logbook_Menu.SuspendLayout();
+            Pnl_Logbook_Current.SuspendLayout();
             SuspendLayout();
             // 
             // Btn_Menu_Logout
@@ -151,6 +162,7 @@
             Btn_Menu_Logbook.TabIndex = 3;
             Btn_Menu_Logbook.Text = "Logboek";
             Btn_Menu_Logbook.UseVisualStyleBackColor = true;
+            Btn_Menu_Logbook.Click += Btn_Menu_Logbook_Click;
             // 
             // Btn_Menu_Feedback
             // 
@@ -525,7 +537,7 @@
             // 
             Pnl_Feedback_Current.BorderStyle = BorderStyle.FixedSingle;
             Pnl_Feedback_Current.Controls.Add(Feedback_Lbl_Week);
-            Pnl_Feedback_Current.Controls.Add(comboBox1);
+            Pnl_Feedback_Current.Controls.Add(Feedback_Combo_Week);
             Pnl_Feedback_Current.Controls.Add(Lbl_Feedback_Goals);
             Pnl_Feedback_Current.Controls.Add(Lbl_FeedBack_Requested);
             Pnl_Feedback_Current.Controls.Add(checkedListBox1);
@@ -544,14 +556,14 @@
             Feedback_Lbl_Week.TabIndex = 10;
             Feedback_Lbl_Week.Text = "Week";
             // 
-            // comboBox1
+            // Feedback_Combo_Week
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10" });
-            comboBox1.Location = new Point(52, 3);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 9;
+            Feedback_Combo_Week.FormattingEnabled = true;
+            Feedback_Combo_Week.Items.AddRange(new object[] { "Week 1", "Week 2", "Week 3", "Week 4", "Week 5", "Week 6", "Week 7", "Week 8", "Week 9", "Week 10" });
+            Feedback_Combo_Week.Location = new Point(52, 3);
+            Feedback_Combo_Week.Name = "Feedback_Combo_Week";
+            Feedback_Combo_Week.Size = new Size(151, 28);
+            Feedback_Combo_Week.TabIndex = 9;
             // 
             // Lbl_Feedback_Goals
             // 
@@ -589,12 +601,90 @@
             ListBoxFeedback.Size = new Size(305, 312);
             ListBoxFeedback.TabIndex = 0;
             // 
+            // Pnl_Logbook
+            // 
+            Pnl_Logbook.Controls.Add(Pnl_Logbook_Menu);
+            Pnl_Logbook.Controls.Add(Pnl_Logbook_Current);
+            Pnl_Logbook.Controls.Add(Pnl_Logbook_Add);
+            Pnl_Logbook.Location = new Point(147, 0);
+            Pnl_Logbook.Name = "Pnl_Logbook";
+            Pnl_Logbook.Size = new Size(658, 444);
+            Pnl_Logbook.TabIndex = 8;
+            // 
+            // Pnl_Logbook_Menu
+            // 
+            Pnl_Logbook_Menu.Controls.Add(Logbook_Menu_Btn_add);
+            Pnl_Logbook_Menu.Controls.Add(Logbook_Menu_Btn_Current);
+            Pnl_Logbook_Menu.Location = new Point(3, 2);
+            Pnl_Logbook_Menu.Name = "Pnl_Logbook_Menu";
+            Pnl_Logbook_Menu.Size = new Size(628, 43);
+            Pnl_Logbook_Menu.TabIndex = 6;
+            Pnl_Logbook_Menu.Visible = false;
+            // 
+            // Logbook_Menu_Btn_add
+            // 
+            Logbook_Menu_Btn_add.Location = new Point(147, 3);
+            Logbook_Menu_Btn_add.Name = "Logbook_Menu_Btn_add";
+            Logbook_Menu_Btn_add.Size = new Size(162, 34);
+            Logbook_Menu_Btn_add.TabIndex = 6;
+            Logbook_Menu_Btn_add.Text = "Log Toevoegen";
+            Logbook_Menu_Btn_add.UseVisualStyleBackColor = true;
+            Logbook_Menu_Btn_add.Click += Logbook_Menu_Btn_add_Click;
+            // 
+            // Logbook_Menu_Btn_Current
+            // 
+            Logbook_Menu_Btn_Current.Location = new Point(4, 3);
+            Logbook_Menu_Btn_Current.Name = "Logbook_Menu_Btn_Current";
+            Logbook_Menu_Btn_Current.Size = new Size(137, 34);
+            Logbook_Menu_Btn_Current.TabIndex = 5;
+            Logbook_Menu_Btn_Current.Text = "Logboek";
+            Logbook_Menu_Btn_Current.UseVisualStyleBackColor = true;
+            Logbook_Menu_Btn_Current.Click += Logbook_Menu_Btn_Current_Click;
+            // 
+            // Pnl_Logbook_Add
+            // 
+            Pnl_Logbook_Add.BorderStyle = BorderStyle.FixedSingle;
+            Pnl_Logbook_Add.Location = new Point(3, 48);
+            Pnl_Logbook_Add.Name = "Pnl_Logbook_Add";
+            Pnl_Logbook_Add.Size = new Size(629, 389);
+            Pnl_Logbook_Add.TabIndex = 8;
+            Pnl_Logbook_Add.Visible = false;
+            // 
+            // Pnl_Logbook_Current
+            // 
+            Pnl_Logbook_Current.BorderStyle = BorderStyle.FixedSingle;
+            Pnl_Logbook_Current.Controls.Add(Logbook_Combo_Week);
+            Pnl_Logbook_Current.Controls.Add(label2);
+            Pnl_Logbook_Current.Location = new Point(3, 48);
+            Pnl_Logbook_Current.Name = "Pnl_Logbook_Current";
+            Pnl_Logbook_Current.Size = new Size(629, 389);
+            Pnl_Logbook_Current.TabIndex = 7;
+            Pnl_Logbook_Current.Visible = false;
+            // 
+            // Logbook_Combo_Week
+            // 
+            Logbook_Combo_Week.FormattingEnabled = true;
+            Logbook_Combo_Week.Location = new Point(52, 6);
+            Logbook_Combo_Week.Name = "Logbook_Combo_Week";
+            Logbook_Combo_Week.Size = new Size(151, 28);
+            Logbook_Combo_Week.TabIndex = 12;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(3, 6);
+            label2.Name = "label2";
+            label2.Size = new Size(45, 20);
+            label2.TabIndex = 11;
+            label2.Text = "Week";
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1030, 569);
             Controls.Add(Pnl_Menu);
+            Controls.Add(Pnl_Logbook);
             Controls.Add(Pnl_Feedback);
             Controls.Add(Pnl_Goals);
             FormBorderStyle = FormBorderStyle.None;
@@ -616,6 +706,10 @@
             Pnl_Feedback.ResumeLayout(false);
             Pnl_Feedback_Current.ResumeLayout(false);
             Pnl_Feedback_Current.PerformLayout();
+            Pnl_Logbook.ResumeLayout(false);
+            Pnl_Logbook_Menu.ResumeLayout(false);
+            Pnl_Logbook_Current.ResumeLayout(false);
+            Pnl_Logbook_Current.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -669,8 +763,16 @@
         private Label Lbl_Goals_Set;
         private CheckedListBox ListBox_Goals;
         private ComboBox Goals_Combo_Week;
-        private ComboBox comboBox1;
+        private ComboBox Feedback_Combo_Week;
         private Label Goals_Lbl_Week;
         private Label Feedback_Lbl_Week;
+        private Panel Pnl_Logbook;
+        private Panel Pnl_Logbook_Current;
+        private Panel Pnl_Logbook_Menu;
+        private Button Logbook_Menu_Btn_add;
+        private Button Logbook_Menu_Btn_Current;
+        private Panel Pnl_Logbook_Add;
+        private Label label2;
+        private ComboBox Logbook_Combo_Week;
     }
 }
