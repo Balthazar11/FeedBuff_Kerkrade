@@ -59,23 +59,5 @@ namespace FeedBuff_Kerkrade
                 }
             }
         }
-
-
-        //public void TogglePanels(Form form, params Panel[] panels)
-        //{
-        //    // Disable all panels except for the active ones
-        //    foreach (Control c in form.Controls)
-        //    {
-        //        if (c is Panel panel && !panels.Contains(panel))
-        //        {
-        //            panel.Visible = false;
-        //        }
-        //    }
-        //    // Enable the active panels
-        //    foreach (Panel panel in panels)
-        //    {
-        //        panel.Visible = true;
-        //    }
-        //}
     }
 }
