@@ -12,9 +12,13 @@ namespace FeedBuff_Kerkrade
 {
     public partial class HomePage : Form
     {
-        List<Panel> ExcludedChildPanels = new List<Panel>();
-        List<Panel> ExcludedPanels = new List<Panel>();
+        List<Panel> ExcludedChildPanels = new();
+        List<Panel> ExcludedPanels = new();
         PanelControl panels = new();
+        private int userid = 12;
+        string username = "Harrie";
+        string userrole = "Student";
+
         public HomePage()
         {
             InitializeComponent();
@@ -31,11 +35,19 @@ namespace FeedBuff_Kerkrade
             Program.Login = new Login();
             Program.Login.Show();
             this.Close();
+            Lbl_Menu_Userid.Text = "";
+            Lbl_Menu_Userrole.Text = "";
+            Lbl_Menu_Username.Text = "";
         }
 
         private void Btn_Menu_Click(object sender, EventArgs e)
         {
             panels.TogglePanels(this, ExcludedPanels, Pnl_Menu);
+            Lbl_Menu_Userrole.Text = userrole.ToString();
+            Lbl_Menu_Userid.Text = userid.ToString();
+            Lbl_Menu_Username.Text = username.ToString();
+
+
         }
 
         private void Btn_Menu_Goals_Click(object sender, EventArgs e)
@@ -77,7 +89,7 @@ namespace FeedBuff_Kerkrade
             }
 
             Console.WriteLine(Subtasknumber);
-            Label clickedLabel = sender as Label;
+            Label? clickedLabel = sender as Label;
             if (clickedLabel != null)
             {
                 // Calculate the position of the new controls
@@ -148,5 +160,6 @@ namespace FeedBuff_Kerkrade
         {
             panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Add, ExcludedChildPanels);
         }
+
     }
 }

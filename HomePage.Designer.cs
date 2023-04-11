@@ -32,7 +32,11 @@
             Pnl_Menu = new Panel();
             Btn_Menu = new Button();
             Pnl_Menu_Student = new Panel();
-            label1 = new Label();
+            Pnl_Menu_Userdetails = new Panel();
+            Lbl_Menu_Userid = new Label();
+            Lbl_Menu_Userrole = new Label();
+            Lbl_Menu_Username = new Label();
+            Temp_Lbl_Size = new Label();
             Btn_Menu_Logbook = new Button();
             Btn_Menu_Feedback = new Button();
             Btn_Menu_Goals = new Button();
@@ -83,12 +87,13 @@
             Pnl_Logbook_Menu = new Panel();
             Logbook_Menu_Btn_add = new Button();
             Logbook_Menu_Btn_Current = new Button();
-            Pnl_Logbook_Add = new Panel();
             Pnl_Logbook_Current = new Panel();
             Logbook_Combo_Week = new ComboBox();
             label2 = new Label();
+            Pnl_Logbook_Add = new Panel();
             Pnl_Menu.SuspendLayout();
             Pnl_Menu_Student.SuspendLayout();
+            Pnl_Menu_Userdetails.SuspendLayout();
             Pnl_Goals_Add.SuspendLayout();
             Pnl_Goals_Menu.SuspendLayout();
             Pnl_Feedback_Menu.SuspendLayout();
@@ -120,7 +125,7 @@
             Pnl_Menu.Dock = DockStyle.Left;
             Pnl_Menu.Location = new Point(0, 0);
             Pnl_Menu.Name = "Pnl_Menu";
-            Pnl_Menu.Size = new Size(141, 569);
+            Pnl_Menu.Size = new Size(141, 522);
             Pnl_Menu.TabIndex = 1;
             // 
             // Btn_Menu
@@ -135,7 +140,8 @@
             // 
             // Pnl_Menu_Student
             // 
-            Pnl_Menu_Student.Controls.Add(label1);
+            Pnl_Menu_Student.Controls.Add(Pnl_Menu_Userdetails);
+            Pnl_Menu_Student.Controls.Add(Temp_Lbl_Size);
             Pnl_Menu_Student.Controls.Add(Btn_Menu_Logbook);
             Pnl_Menu_Student.Controls.Add(Btn_Menu_Feedback);
             Pnl_Menu_Student.Controls.Add(Btn_Menu_Goals);
@@ -145,14 +151,57 @@
             Pnl_Menu_Student.Size = new Size(131, 396);
             Pnl_Menu_Student.TabIndex = 0;
             // 
-            // label1
+            // Pnl_Menu_Userdetails
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(33, 334);
-            label1.Name = "label1";
-            label1.Size = new Size(64, 20);
-            label1.TabIndex = 4;
-            label1.Text = "800, 450";
+            Pnl_Menu_Userdetails.Controls.Add(Lbl_Menu_Userid);
+            Pnl_Menu_Userdetails.Controls.Add(Lbl_Menu_Userrole);
+            Pnl_Menu_Userdetails.Controls.Add(Lbl_Menu_Username);
+            Pnl_Menu_Userdetails.Location = new Point(3, 269);
+            Pnl_Menu_Userdetails.Name = "Pnl_Menu_Userdetails";
+            Pnl_Menu_Userdetails.Size = new Size(125, 79);
+            Pnl_Menu_Userdetails.TabIndex = 8;
+            // 
+            // Lbl_Menu_Userid
+            // 
+            Lbl_Menu_Userid.AutoSize = true;
+            Lbl_Menu_Userid.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            Lbl_Menu_Userid.ForeColor = Color.Gray;
+            Lbl_Menu_Userid.Location = new Point(6, 30);
+            Lbl_Menu_Userid.Name = "Lbl_Menu_Userid";
+            Lbl_Menu_Userid.Size = new Size(85, 19);
+            Lbl_Menu_Userid.TabIndex = 6;
+            Lbl_Menu_Userid.Text = "gebruikersId";
+            // 
+            // Lbl_Menu_Userrole
+            // 
+            Lbl_Menu_Userrole.AutoSize = true;
+            Lbl_Menu_Userrole.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            Lbl_Menu_Userrole.ForeColor = Color.Gray;
+            Lbl_Menu_Userrole.Location = new Point(6, 6);
+            Lbl_Menu_Userrole.Name = "Lbl_Menu_Userrole";
+            Lbl_Menu_Userrole.Size = new Size(92, 19);
+            Lbl_Menu_Userrole.TabIndex = 7;
+            Lbl_Menu_Userrole.Text = "gebruikersRol";
+            // 
+            // Lbl_Menu_Username
+            // 
+            Lbl_Menu_Username.AutoSize = true;
+            Lbl_Menu_Username.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
+            Lbl_Menu_Username.ForeColor = Color.Gray;
+            Lbl_Menu_Username.Location = new Point(6, 54);
+            Lbl_Menu_Username.Name = "Lbl_Menu_Username";
+            Lbl_Menu_Username.Size = new Size(111, 19);
+            Lbl_Menu_Username.TabIndex = 5;
+            Lbl_Menu_Username.Text = "GebruikersNaam";
+            // 
+            // Temp_Lbl_Size
+            // 
+            Temp_Lbl_Size.AutoSize = true;
+            Temp_Lbl_Size.Location = new Point(3, 246);
+            Temp_Lbl_Size.Name = "Temp_Lbl_Size";
+            Temp_Lbl_Size.Size = new Size(64, 20);
+            Temp_Lbl_Size.TabIndex = 4;
+            Temp_Lbl_Size.Text = "800, 450";
             // 
             // Btn_Menu_Logbook
             // 
@@ -641,15 +690,6 @@
             Logbook_Menu_Btn_Current.UseVisualStyleBackColor = true;
             Logbook_Menu_Btn_Current.Click += Logbook_Menu_Btn_Current_Click;
             // 
-            // Pnl_Logbook_Add
-            // 
-            Pnl_Logbook_Add.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Logbook_Add.Location = new Point(3, 48);
-            Pnl_Logbook_Add.Name = "Pnl_Logbook_Add";
-            Pnl_Logbook_Add.Size = new Size(629, 389);
-            Pnl_Logbook_Add.TabIndex = 8;
-            Pnl_Logbook_Add.Visible = false;
-            // 
             // Pnl_Logbook_Current
             // 
             Pnl_Logbook_Current.BorderStyle = BorderStyle.FixedSingle;
@@ -678,11 +718,20 @@
             label2.TabIndex = 11;
             label2.Text = "Week";
             // 
+            // Pnl_Logbook_Add
+            // 
+            Pnl_Logbook_Add.BorderStyle = BorderStyle.FixedSingle;
+            Pnl_Logbook_Add.Location = new Point(3, 48);
+            Pnl_Logbook_Add.Name = "Pnl_Logbook_Add";
+            Pnl_Logbook_Add.Size = new Size(629, 389);
+            Pnl_Logbook_Add.TabIndex = 8;
+            Pnl_Logbook_Add.Visible = false;
+            // 
             // HomePage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1030, 569);
+            ClientSize = new Size(946, 522);
             Controls.Add(Pnl_Menu);
             Controls.Add(Pnl_Logbook);
             Controls.Add(Pnl_Feedback);
@@ -694,6 +743,8 @@
             Pnl_Menu.ResumeLayout(false);
             Pnl_Menu_Student.ResumeLayout(false);
             Pnl_Menu_Student.PerformLayout();
+            Pnl_Menu_Userdetails.ResumeLayout(false);
+            Pnl_Menu_Userdetails.PerformLayout();
             Pnl_Goals_Add.ResumeLayout(false);
             Pnl_Goals_Add.PerformLayout();
             Pnl_Goals_Menu.ResumeLayout(false);
@@ -749,7 +800,7 @@
         private Panel Pnl_Feedback_Add;
         private Button Feedback_Btn_Add;
         private Button Goals_Btn_Add;
-        private Label label1;
+        private Label Temp_Lbl_Size;
         private Panel Pnl_Goals;
         private Panel Pnl_Feedback;
         private Panel Pnl_Feedback_Current;
@@ -774,5 +825,9 @@
         private Panel Pnl_Logbook_Add;
         private Label label2;
         private ComboBox Logbook_Combo_Week;
+        private Label Lbl_Menu_Userrole;
+        private Label Lbl_Menu_Userid;
+        private Label Lbl_Menu_Username;
+        private Panel Pnl_Menu_Userdetails;
     }
 }
