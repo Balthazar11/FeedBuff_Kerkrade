@@ -18,7 +18,6 @@ namespace FeedBuff_Kerkrade
         private int userid = 12;
         string username = "Harrie";
         string userrole = "Student";
-
         public HomePage()
         {
             InitializeComponent();
@@ -27,7 +26,6 @@ namespace FeedBuff_Kerkrade
             ExcludedChildPanels.Add(Pnl_Goals_Menu);
             ExcludedChildPanels.Add(Pnl_Feedback_Menu);
             ExcludedChildPanels.Add(Pnl_Logbook_Menu);
-
         }
 
         private void Btn_Menu_Logout_Click(object sender, EventArgs e)
