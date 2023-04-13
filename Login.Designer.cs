@@ -62,6 +62,7 @@
             // 
             Login_Pass_Txt.Location = new Point(84, 144);
             Login_Pass_Txt.Name = "Login_Pass_Txt";
+            Login_Pass_Txt.PasswordChar = '*';
             Login_Pass_Txt.Size = new Size(185, 27);
             Login_Pass_Txt.TabIndex = 1;
             // 

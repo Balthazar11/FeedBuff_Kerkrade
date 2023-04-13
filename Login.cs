@@ -4,8 +4,10 @@ namespace FeedBuff_Kerkrade
 {
     public partial class Login : Form
     {
-        PanelControl dal = new();
-        List<Panel> ExcludedPanels = new List<Panel>();
+        PanelControl panels = new();
+        List<Panel> ExcludedPanels = new();
+        HomePage home = new();
+
         public Login()
         {
             InitializeComponent();
@@ -25,7 +27,7 @@ namespace FeedBuff_Kerkrade
         {
             string username = Login_User_Txt.Text;
             string password = Login_Pass_Txt.Text;
-            dal.TogglePanels(this, ExcludedPanels, Login_Pnl_Register);
+            panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Register);
             Register_User_Txt.Text = "";
             Register_Mail_Txt.Text = "";
             Register_Pass_Txt.Text = "";
@@ -42,6 +44,7 @@ namespace FeedBuff_Kerkrade
                 Program.HomePage = new();
                 Program.HomePage.Show();
                 this.Hide();
+
                 Login_Lbl_Error.Text = "";
                 Login_Lbl_Error.ForeColor = Color.Red;
             }
@@ -67,7 +70,7 @@ namespace FeedBuff_Kerkrade
 
         private void Register_Btn_Cancel_Click(object sender, EventArgs e)
         {
-            dal.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
+            panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
             Login_User_Txt.Text = "";
             Login_Pass_Txt.Text = "";
             Login_Lbl_Error.Text = "";
@@ -83,7 +86,7 @@ namespace FeedBuff_Kerkrade
 
             if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
             {
-                dal.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
+                panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
                 Register_Lbl_Error.Text = "";
                 Login_Lbl_Error.Text = "Succesfully Signed up!";
                 Login_Lbl_Error.ForeColor = Color.Green;
