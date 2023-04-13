@@ -44,7 +44,6 @@
             comboBox1 = new ComboBox();
             Goals_Lbl_week_add = new Label();
             Goals_Btn_Add = new Button();
-            Goals_Lbl_Deadline = new Label();
             Goals_Lbl_Add_Sub = new Label();
             Goals_Text_Sub2 = new TextBox();
             Goals_Lbl_Sub2 = new Label();
@@ -250,7 +249,6 @@
             Pnl_Goals_Add.Controls.Add(comboBox1);
             Pnl_Goals_Add.Controls.Add(Goals_Lbl_week_add);
             Pnl_Goals_Add.Controls.Add(Goals_Btn_Add);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_Deadline);
             Pnl_Goals_Add.Controls.Add(Goals_Lbl_Add_Sub);
             Pnl_Goals_Add.Controls.Add(Goals_Text_Sub2);
             Pnl_Goals_Add.Controls.Add(Goals_Lbl_Sub2);
@@ -294,15 +292,6 @@
             Goals_Btn_Add.TabIndex = 12;
             Goals_Btn_Add.Text = "Add";
             Goals_Btn_Add.UseVisualStyleBackColor = true;
-            // 
-            // Goals_Lbl_Deadline
-            // 
-            Goals_Lbl_Deadline.AutoSize = true;
-            Goals_Lbl_Deadline.Location = new Point(219, 3);
-            Goals_Lbl_Deadline.Name = "Goals_Lbl_Deadline";
-            Goals_Lbl_Deadline.Size = new Size(56, 15);
-            Goals_Lbl_Deadline.TabIndex = 9;
-            Goals_Lbl_Deadline.Text = "Deadline:";
             // 
             // Goals_Lbl_Add_Sub
             // 
@@ -853,7 +842,6 @@
         private Button Btn_Menu_Logbook;
         private Button Btn_Menu_Feedback;
         private Panel Pnl_Goals_Add;
-        private Label Goals_Lbl_Deadline;
         private Label Goals_Lbl_Add_Sub;
         private TextBox Goals_Text_Sub2;
         private Label Goals_Lbl_Sub2;
