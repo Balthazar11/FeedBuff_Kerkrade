@@ -8,5 +8,9 @@ namespace FeedBuff_Kerkrade
 {
     internal class Task
     {
+        public int Task_ID { get; set; }
+        public string Task_Desc { get; set; }
+        public Goal Goal { get; set; }
+
     }
 }
