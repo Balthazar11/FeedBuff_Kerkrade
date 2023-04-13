@@ -11,6 +11,10 @@ namespace FeedBuff_Kerkrade
         public int Goal_ID { get; set; }
         public int Weeknr {  get; set; }
         public string Goals_Desc {  get; set; }
-        public int Feedback_ID { get; set; }
+        public List<Task> Tasks { get; set; }
+
+        public Goal(int id, int weeknr, string goalsdesc)
+        {
+        }
     }
 }

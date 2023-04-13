@@ -800,9 +800,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(828, 392);
             Controls.Add(Pnl_Menu);
-            Controls.Add(Pnl_Goals);
             Controls.Add(Pnl_Logbook);
             Controls.Add(Pnl_Feedback);
+            Controls.Add(Pnl_Goals);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
             Name = "HomePage";
