@@ -11,7 +11,7 @@ namespace FeedBuff_Kerkrade
         public int Feedback_ID { get; set; }
         public string Vak { get; set; }
         public string feedback { get; set; }
-        public int Weeknr { get; set; } 
+        public int Weeknr { get; set; }
         public bool Validated { get; set; }
 
     }

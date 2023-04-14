@@ -243,8 +243,8 @@
             Controls.Add(Login_Pnl_Register);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
-            Text = "Form1";
-            Load += Form1_Load;
+            Text = "Login";
+            Load += Login_Load;
             Login_Pnl_Login.ResumeLayout(false);
             Login_Pnl_Login.PerformLayout();
             Login_Pnl_Register.ResumeLayout(false);
