@@ -197,16 +197,24 @@ namespace FeedBuff_Kerkrade
 
         private void Goals_Btn_Add_Click(object sender, EventArgs e)
         {
-            string selectedvalue = Goals_Combo_Week_add.Text.ToString();
-            int Weeknr = int.Parse(selectedvalue.Split(' ')[1]);
-            if (selectedvalue == "")
+            // extract Weeknr From string in combobox
+            string weekText = Goals_Combo_Week_add.Text.ToString();
+            string[] weekTextSplit = weekText.Split(' ');
+            if (weekTextSplit.Length > 1)
             {
-                MessageBox.Show("please fill in the form!");
+                // assign int Weeknr with the selected value from combobox
+                int Weeknr = int.Parse(weekTextSplit[1]);
             }
-            else
-            {
-                MessageBox.Show("" + Weeknr);
-            }
+        }
+
+        private void Feedback_Combo_Teachers_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadTeachersIntoCombobox(Feedback_Combo_Teachers);
+        }
+
+        private void Logbook_Combo_Week_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadWeekIntoComboBox(Logbook_Combo_Week);
         }
     }
 }

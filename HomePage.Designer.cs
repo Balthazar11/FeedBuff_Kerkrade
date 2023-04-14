@@ -258,6 +258,7 @@
             // 
             // Goals_Combo_Week_add
             // 
+            Goals_Combo_Week_add.DropDownStyle = ComboBoxStyle.DropDownList;
             Goals_Combo_Week_add.FormattingEnabled = true;
             Goals_Combo_Week_add.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
             Goals_Combo_Week_add.Location = new Point(94, 43);
@@ -348,6 +349,7 @@
             // 
             // Goals_Combo_Subject
             // 
+            Goals_Combo_Subject.DropDownStyle = ComboBoxStyle.DropDownList;
             Goals_Combo_Subject.FormattingEnabled = true;
             Goals_Combo_Subject.Items.AddRange(new object[] { "B1A3 - Project Management", "B1C2 - Intro to Development", "B1F3 - Data Structure Basics" });
             Goals_Combo_Subject.Location = new Point(94, 3);
@@ -437,6 +439,7 @@
             // 
             // Feedback_Combo_Subject
             // 
+            Feedback_Combo_Subject.DropDownStyle = ComboBoxStyle.DropDownList;
             Feedback_Combo_Subject.FormattingEnabled = true;
             Feedback_Combo_Subject.Location = new Point(95, 5);
             Feedback_Combo_Subject.Name = "Feedback_Combo_Subject";
@@ -499,6 +502,7 @@
             // 
             // Feedback_Combo_Week_add
             // 
+            Feedback_Combo_Week_add.DropDownStyle = ComboBoxStyle.DropDownList;
             Feedback_Combo_Week_add.FormattingEnabled = true;
             Feedback_Combo_Week_add.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
             Feedback_Combo_Week_add.Location = new Point(95, 41);
@@ -509,12 +513,14 @@
             // 
             // Feedback_Combo_Teachers
             // 
+            Feedback_Combo_Teachers.DropDownStyle = ComboBoxStyle.DropDownList;
             Feedback_Combo_Teachers.FormattingEnabled = true;
             Feedback_Combo_Teachers.Location = new Point(95, 256);
             Feedback_Combo_Teachers.Margin = new Padding(3, 4, 3, 4);
             Feedback_Combo_Teachers.Name = "Feedback_Combo_Teachers";
             Feedback_Combo_Teachers.Size = new Size(151, 28);
             Feedback_Combo_Teachers.TabIndex = 11;
+            Feedback_Combo_Teachers.MouseEnter += Feedback_Combo_Teachers_MouseEnter;
             // 
             // Feedback_Btn_Add
             // 
@@ -561,6 +567,7 @@
             // 
             // Goals_Combo_Week
             // 
+            Goals_Combo_Week.DropDownStyle = ComboBoxStyle.DropDownList;
             Goals_Combo_Week.FormattingEnabled = true;
             Goals_Combo_Week.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
             Goals_Combo_Week.Location = new Point(53, 3);
@@ -641,6 +648,7 @@
             // 
             // Feedback_Combo_Week
             // 
+            Feedback_Combo_Week.DropDownStyle = ComboBoxStyle.DropDownList;
             Feedback_Combo_Week.FormattingEnabled = true;
             Feedback_Combo_Week.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
             Feedback_Combo_Week.Location = new Point(53, 3);
@@ -738,11 +746,13 @@
             // 
             // Logbook_Combo_Week
             // 
+            Logbook_Combo_Week.DropDownStyle = ComboBoxStyle.DropDownList;
             Logbook_Combo_Week.FormattingEnabled = true;
             Logbook_Combo_Week.Location = new Point(53, 5);
             Logbook_Combo_Week.Name = "Logbook_Combo_Week";
             Logbook_Combo_Week.Size = new Size(151, 28);
             Logbook_Combo_Week.TabIndex = 12;
+            Logbook_Combo_Week.MouseEnter += Logbook_Combo_Week_MouseEnter;
             // 
             // label2
             // 
@@ -768,9 +778,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(946, 523);
             Controls.Add(Pnl_Menu);
-            Controls.Add(Pnl_Goals);
             Controls.Add(Pnl_Logbook);
             Controls.Add(Pnl_Feedback);
+            Controls.Add(Pnl_Goals);
             FormBorderStyle = FormBorderStyle.None;
             Name = "HomePage";
             Text = "HomePage";
