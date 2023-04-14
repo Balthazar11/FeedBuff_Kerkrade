@@ -8,6 +8,5 @@ namespace FeedBuff_Kerkrade
 {
     internal class DAL
     {
-
     }
 }
