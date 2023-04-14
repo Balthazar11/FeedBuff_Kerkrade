@@ -27,6 +27,7 @@ namespace FeedBuff_Kerkrade
         {
             string username = Login_User_Txt.Text;
             string password = Login_Pass_Txt.Text;
+            
             panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Register);
             Register_User_Txt.Text = "";
             Register_Mail_Txt.Text = "";

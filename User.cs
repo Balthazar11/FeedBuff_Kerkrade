@@ -15,5 +15,6 @@ namespace FeedBuff_Kerkrade
         public string User_Password { get; set;}
         public string User_Role { get; set;}
 
+
     }
 }
