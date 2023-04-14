@@ -15,6 +15,7 @@ namespace FeedBuff_Kerkrade
         List<Panel> ExcludedChildPanels = new();
         List<Panel> ExcludedPanels = new();
         PanelControl panels = new();
+        DAL dal = new();
         private int userid = 12;
         string username = "Harrie";
         string userrole = "Student";
@@ -159,5 +160,53 @@ namespace FeedBuff_Kerkrade
             panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Add, ExcludedChildPanels);
         }
 
+        private void Goals_Combo_Subject_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Goals_Combo_Subject_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadSubjectsIntoComboBox(Goals_Combo_Subject);
+        }
+
+        private void Feedback_Combo_Subject_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadSubjectsIntoComboBox(Feedback_Combo_Subject);
+        }
+
+        private void Feedback_Combo_Week_add_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadWeekIntoComboBox(Feedback_Combo_Week_add);
+        }
+
+        private void Feedback_Combo_Week_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadWeekIntoComboBox(Feedback_Combo_Week);
+        }
+
+        private void Goals_Combo_Week_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadWeekIntoComboBox(Goals_Combo_Week);
+        }
+
+        private void Goals_Combo_Week_add_MouseEnter(object sender, EventArgs e)
+        {
+            dal.LoadWeekIntoComboBox(Goals_Combo_Week_add);
+        }
+
+        private void Goals_Btn_Add_Click(object sender, EventArgs e)
+        {
+            string selectedvalue = Goals_Combo_Week_add.Text.ToString();
+            int Weeknr = int.Parse(selectedvalue.Split(' ')[1]);
+            if (selectedvalue == "")
+            {
+                MessageBox.Show("please fill in the form!");
+            }
+            else
+            {
+                MessageBox.Show("" + Weeknr);
+            }
+        }
     }
 }
