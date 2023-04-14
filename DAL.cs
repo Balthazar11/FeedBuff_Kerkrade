@@ -45,7 +45,6 @@ namespace FeedBuff_Kerkrade
                 connection.Close();
             }
         }
-
         public void LoadTeachersIntoCombobox(ComboBox comboBox)
         {
             // Establish a connection to your database
@@ -80,8 +79,6 @@ namespace FeedBuff_Kerkrade
                 connection.Close();
             }
         }
-
-
         public void LoadWeekIntoComboBox(ComboBox comboBox)
         {
             // Clear the existing items in the ComboBox
