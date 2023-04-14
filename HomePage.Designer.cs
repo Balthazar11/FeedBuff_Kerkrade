@@ -266,7 +266,6 @@
             Goals_Combo_Week_add.Name = "Goals_Combo_Week_add";
             Goals_Combo_Week_add.Size = new Size(151, 28);
             Goals_Combo_Week_add.TabIndex = 14;
-            Goals_Combo_Week_add.MouseEnter += Goals_Combo_Week_add_MouseEnter;
             // 
             // Goals_Lbl_week_add
             // 
@@ -320,7 +319,6 @@
             Goals_Text_Sub1.Name = "Goals_Text_Sub1";
             Goals_Text_Sub1.Size = new Size(154, 27);
             Goals_Text_Sub1.TabIndex = 5;
-            Goals_Text_Sub1.TextChanged += Goals_Text_Sub1_TextChanged;
             // 
             // Goals_Lbl_Sub1
             // 
@@ -356,8 +354,6 @@
             Goals_Combo_Subject.Name = "Goals_Combo_Subject";
             Goals_Combo_Subject.Size = new Size(151, 28);
             Goals_Combo_Subject.TabIndex = 1;
-            Goals_Combo_Subject.SelectedIndexChanged += Goals_Combo_Subject_SelectedIndexChanged;
-            Goals_Combo_Subject.MouseEnter += Goals_Combo_Subject_MouseEnter;
             // 
             // Goals_Lbl_Subject
             // 
@@ -445,7 +441,6 @@
             Feedback_Combo_Subject.Name = "Feedback_Combo_Subject";
             Feedback_Combo_Subject.Size = new Size(151, 28);
             Feedback_Combo_Subject.TabIndex = 5;
-            Feedback_Combo_Subject.MouseEnter += Feedback_Combo_Subject_MouseEnter;
             // 
             // Feedback_Lbl_Feedback
             // 
@@ -509,7 +504,6 @@
             Feedback_Combo_Week_add.Name = "Feedback_Combo_Week_add";
             Feedback_Combo_Week_add.Size = new Size(151, 28);
             Feedback_Combo_Week_add.TabIndex = 12;
-            Feedback_Combo_Week_add.MouseEnter += Feedback_Combo_Week_add_MouseEnter;
             // 
             // Feedback_Combo_Teachers
             // 
@@ -520,7 +514,6 @@
             Feedback_Combo_Teachers.Name = "Feedback_Combo_Teachers";
             Feedback_Combo_Teachers.Size = new Size(151, 28);
             Feedback_Combo_Teachers.TabIndex = 11;
-            Feedback_Combo_Teachers.MouseEnter += Feedback_Combo_Teachers_MouseEnter;
             // 
             // Feedback_Btn_Add
             // 
@@ -574,7 +567,6 @@
             Goals_Combo_Week.Name = "Goals_Combo_Week";
             Goals_Combo_Week.Size = new Size(153, 28);
             Goals_Combo_Week.TabIndex = 8;
-            Goals_Combo_Week.MouseEnter += Goals_Combo_Week_MouseEnter;
             // 
             // Lbl_Goals_Finished
             // 
@@ -655,7 +647,6 @@
             Feedback_Combo_Week.Name = "Feedback_Combo_Week";
             Feedback_Combo_Week.Size = new Size(151, 28);
             Feedback_Combo_Week.TabIndex = 9;
-            Feedback_Combo_Week.MouseEnter += Feedback_Combo_Week_MouseEnter;
             // 
             // Lbl_Feedback_Goals
             // 
@@ -752,7 +743,6 @@
             Logbook_Combo_Week.Name = "Logbook_Combo_Week";
             Logbook_Combo_Week.Size = new Size(151, 28);
             Logbook_Combo_Week.TabIndex = 12;
-            Logbook_Combo_Week.MouseEnter += Logbook_Combo_Week_MouseEnter;
             // 
             // label2
             // 
@@ -778,9 +768,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(946, 523);
             Controls.Add(Pnl_Menu);
+            Controls.Add(Pnl_Goals);
             Controls.Add(Pnl_Logbook);
             Controls.Add(Pnl_Feedback);
-            Controls.Add(Pnl_Goals);
             FormBorderStyle = FormBorderStyle.None;
             Name = "HomePage";
             Text = "HomePage";

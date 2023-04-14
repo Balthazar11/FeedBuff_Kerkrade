@@ -12,16 +12,23 @@ namespace FeedBuff_Kerkrade
 {
     public partial class HomePage : Form
     {
+        // Create panellists
         List<Panel> ExcludedChildPanels = new();
         List<Panel> ExcludedPanels = new();
+
+        // Assign classes
         PanelControl panels = new();
         DAL dal = new();
+
+        // Example user data
         private int userid = 12;
         string username = "Harrie";
         string userrole = "Student";
+
         public HomePage()
         {
             InitializeComponent();
+            // Assign which panels shouldn't be affected by toggles
             ExcludedPanels.Add(Pnl_Menu);
             ExcludedPanels.Add(Pnl_Menu_Student);
             ExcludedChildPanels.Add(Pnl_Goals_Menu);
@@ -31,6 +38,7 @@ namespace FeedBuff_Kerkrade
 
         private void Btn_Menu_Logout_Click(object sender, EventArgs e)
         {
+            // Close HomePage form clear userdata and open Login form
             Program.Login = new Login();
             Program.Login.Show();
             this.Close();
@@ -41,42 +49,83 @@ namespace FeedBuff_Kerkrade
 
         private void Btn_Menu_Click(object sender, EventArgs e)
         {
+            // Disable all panels except for the menu and set userdata fields to example data
             panels.TogglePanels(this, ExcludedPanels, Pnl_Menu);
             Lbl_Menu_Userrole.Text = userrole.ToString();
             Lbl_Menu_Userid.Text = userid.ToString();
             Lbl_Menu_Username.Text = username.ToString();
-
-
-        }
-
-        private void Btn_Menu_Goals_Click(object sender, EventArgs e)
-        {
-            panels.TogglePanels(this, ExcludedPanels, Pnl_Goals);
-            panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
         }
 
         private void HomePage_Load(object sender, EventArgs e)
         {
+            // Fill all comboboxes with designated data
+            dal.LoadSubjectsIntoComboBox(Goals_Combo_Subject);
+            dal.LoadSubjectsIntoComboBox(Feedback_Combo_Subject);
+            dal.LoadWeekIntoComboBox(Feedback_Combo_Week_add);
+            dal.LoadWeekIntoComboBox(Feedback_Combo_Week);
+            dal.LoadWeekIntoComboBox(Goals_Combo_Week);
+            dal.LoadWeekIntoComboBox(Goals_Combo_Week_add);
+            dal.LoadTeachersIntoCombobox(Feedback_Combo_Teachers);
+            dal.LoadWeekIntoComboBox(Logbook_Combo_Week);
+        }
 
+        private void Btn_Menu_Goals_Click(object sender, EventArgs e)
+        {
+            // Toggle goals panel
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Goals);
+            panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
         }
 
         private void Goals_Menu_Btn_Current_Click(object sender, EventArgs e)
         {
+            // Toggle the Goal Display panel
             panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Current, ExcludedChildPanels);
         }
 
         private void Goals_Menu_Btn_Add_Click(object sender, EventArgs e)
         {
+            // toggle the Goal Add panel
             panels.ToggleChildPanel(Pnl_Goals, Pnl_Goals_Add, ExcludedChildPanels);
         }
 
-        private void Goals_Text_Sub1_TextChanged(object sender, EventArgs e)
+        private void Btn_Menu_Feedback_Click(object sender, EventArgs e)
         {
-
+            // Toggle Feedback panel
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Feedback);
+            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
         }
 
-        // Declare this field in your form class
-        private int Subtasknumber = 3;
+        private void Feedback_Menu_Btn_add_Click(object sender, EventArgs e)
+        {
+            // Toggle Feedback Add panel
+            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Add, ExcludedChildPanels);
+        }
+
+        private void Feedback_Menu_Btn_Current_Click(object sender, EventArgs e)
+        {
+            // Toggle Feedback Display panel
+            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
+        }
+
+        private void Btn_Menu_Logbook_Click(object sender, EventArgs e)
+        {
+            // Toggle Logbook panel
+            panels.TogglePanels(this, ExcludedPanels, Pnl_Logbook);
+        }
+
+        private void Logbook_Menu_Btn_Current_Click(object sender, EventArgs e)
+        {
+            // Toggle Logbook Display panel
+            panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Current, ExcludedChildPanels);
+        }
+
+        private void Logbook_Menu_Btn_add_Click(object sender, EventArgs e)
+        {
+            // Toggle Logbook Add panel
+            panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Add, ExcludedChildPanels);
+        }
+
+        private int Subtasknumber = 3;   // Starting number for the new subtasks
         private int MaxSubtasks = 3 + 2; // Maximum number of subtasks
 
         private void Goals_Lbl_Add_Sub_Click(object sender, EventArgs e)
@@ -95,23 +144,24 @@ namespace FeedBuff_Kerkrade
                 Point newLabelLocation = new Point(3, clickedLabel.Location.Y + clickedLabel.Height - 15);
                 Point newTextBoxLocation = new Point(94, newLabelLocation.Y);
 
-                // Create the new label and textbox
+                // Create new Label
                 Label newLabel = new Label();
                 newLabel.Location = newLabelLocation;
                 newLabel.Size = new Size(75, 20);
                 newLabel.Text = "Subdoel" + Subtasknumber + ":";
                 newLabel.Name = "Goals_Lbl_Sub" + Subtasknumber;
 
+                // Create new Textbox
                 TextBox newTextBox = new TextBox();
                 newTextBox.Location = newTextBoxLocation;
                 newTextBox.Size = new Size(151, 27);
                 newTextBox.Name = "Goals_Text_Sub" + Subtasknumber;
 
-                // Add the new controls to the panel
+                // Add new controls to the panel
                 Pnl_Goals_Add.Controls.Add(newLabel);
                 Pnl_Goals_Add.Controls.Add(newTextBox);
 
-                // Move the clicked label and another button down
+                // Move the add subtask label and add button down
                 clickedLabel.Location = new Point(clickedLabel.Location.X, newTextBoxLocation.Y + newTextBox.Height + 5);
 
                 if (Subtasknumber == MaxSubtasks - 1)
@@ -129,72 +179,6 @@ namespace FeedBuff_Kerkrade
             }
         }
 
-        private void Btn_Menu_Feedback_Click(object sender, EventArgs e)
-        {
-            panels.TogglePanels(this, ExcludedPanels, Pnl_Feedback);
-            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
-        }
-
-        private void Feedback_Menu_Btn_add_Click(object sender, EventArgs e)
-        {
-            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Add, ExcludedChildPanels);
-        }
-
-        private void Feedback_Menu_Btn_Current_Click(object sender, EventArgs e)
-        {
-            panels.ToggleChildPanel(Pnl_Feedback, Pnl_Feedback_Current, ExcludedChildPanels);
-        }
-
-        private void Btn_Menu_Logbook_Click(object sender, EventArgs e)
-        {
-            panels.TogglePanels(this, ExcludedPanels, Pnl_Logbook);
-        }
-
-        private void Logbook_Menu_Btn_Current_Click(object sender, EventArgs e)
-        {
-            panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Current, ExcludedChildPanels);
-        }
-
-        private void Logbook_Menu_Btn_add_Click(object sender, EventArgs e)
-        {
-            panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Add, ExcludedChildPanels);
-        }
-
-        private void Goals_Combo_Subject_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Goals_Combo_Subject_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadSubjectsIntoComboBox(Goals_Combo_Subject);
-        }
-
-        private void Feedback_Combo_Subject_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadSubjectsIntoComboBox(Feedback_Combo_Subject);
-        }
-
-        private void Feedback_Combo_Week_add_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadWeekIntoComboBox(Feedback_Combo_Week_add);
-        }
-
-        private void Feedback_Combo_Week_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadWeekIntoComboBox(Feedback_Combo_Week);
-        }
-
-        private void Goals_Combo_Week_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadWeekIntoComboBox(Goals_Combo_Week);
-        }
-
-        private void Goals_Combo_Week_add_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadWeekIntoComboBox(Goals_Combo_Week_add);
-        }
-
         private void Goals_Btn_Add_Click(object sender, EventArgs e)
         {
             // extract Weeknr From string in combobox
@@ -205,16 +189,6 @@ namespace FeedBuff_Kerkrade
                 // assign int Weeknr with the selected value from combobox
                 int Weeknr = int.Parse(weekTextSplit[1]);
             }
-        }
-
-        private void Feedback_Combo_Teachers_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadTeachersIntoCombobox(Feedback_Combo_Teachers);
-        }
-
-        private void Logbook_Combo_Week_MouseEnter(object sender, EventArgs e)
-        {
-            dal.LoadWeekIntoComboBox(Logbook_Combo_Week);
         }
     }
 }
