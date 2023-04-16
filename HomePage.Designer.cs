@@ -527,8 +527,8 @@
             // Pnl_Goals
             // 
             Pnl_Goals.Controls.Add(Pnl_Goals_Menu);
-            Pnl_Goals.Controls.Add(Pnl_Goals_Add);
             Pnl_Goals.Controls.Add(Pnl_Goals_Current);
+            Pnl_Goals.Controls.Add(Pnl_Goals_Add);
             Pnl_Goals.Location = new Point(147, 0);
             Pnl_Goals.Name = "Pnl_Goals";
             Pnl_Goals.Size = new Size(658, 444);
@@ -607,8 +607,8 @@
             // Pnl_Feedback
             // 
             Pnl_Feedback.Controls.Add(Pnl_Feedback_Menu);
-            Pnl_Feedback.Controls.Add(Pnl_Feedback_Add);
             Pnl_Feedback.Controls.Add(Pnl_Feedback_Current);
+            Pnl_Feedback.Controls.Add(Pnl_Feedback_Add);
             Pnl_Feedback.Location = new Point(147, 0);
             Pnl_Feedback.Name = "Pnl_Feedback";
             Pnl_Feedback.Size = new Size(658, 444);
@@ -768,9 +768,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(946, 523);
             Controls.Add(Pnl_Menu);
+            Controls.Add(Pnl_Feedback);
             Controls.Add(Pnl_Goals);
             Controls.Add(Pnl_Logbook);
-            Controls.Add(Pnl_Feedback);
             FormBorderStyle = FormBorderStyle.None;
             Name = "HomePage";
             Text = "HomePage";
