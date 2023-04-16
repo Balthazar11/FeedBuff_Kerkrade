@@ -523,12 +523,13 @@ namespace FeedBuff_Kerkrade
             Feedback_Btn_Add.TabIndex = 10;
             Feedback_Btn_Add.Text = "Add";
             Feedback_Btn_Add.UseVisualStyleBackColor = true;
+            Feedback_Btn_Add.Click += Feedback_Btn_Add_Click;
             // 
             // Pnl_Goals
             // 
             Pnl_Goals.Controls.Add(Pnl_Goals_Menu);
-            Pnl_Goals.Controls.Add(Pnl_Goals_Current);
             Pnl_Goals.Controls.Add(Pnl_Goals_Add);
+            Pnl_Goals.Controls.Add(Pnl_Goals_Current);
             Pnl_Goals.Location = new Point(147, 0);
             Pnl_Goals.Name = "Pnl_Goals";
             Pnl_Goals.Size = new Size(658, 444);
@@ -580,7 +581,6 @@ namespace FeedBuff_Kerkrade
             // ListBox_Goals_Done
             // 
             ListBox_Goals_Done.FormattingEnabled = true;
-            ListBox_Goals_Done.Items.AddRange(new object[] { "subtask1", "subtask2", "subtask3" });
             ListBox_Goals_Done.Location = new Point(319, 72);
             ListBox_Goals_Done.Name = "ListBox_Goals_Done";
             ListBox_Goals_Done.Size = new Size(305, 290);
@@ -598,7 +598,6 @@ namespace FeedBuff_Kerkrade
             // ListBox_Goals
             // 
             ListBox_Goals.FormattingEnabled = true;
-            ListBox_Goals.Items.AddRange(new object[] { "goal1", "goal3", "goal5", "goal8" });
             ListBox_Goals.Location = new Point(3, 72);
             ListBox_Goals.Name = "ListBox_Goals";
             ListBox_Goals.Size = new Size(305, 290);
@@ -669,7 +668,6 @@ namespace FeedBuff_Kerkrade
             // checkedListBox1
             // 
             checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "a", "b", "c", "d", "e", "f", "g" });
             checkedListBox1.Location = new Point(319, 72);
             checkedListBox1.Name = "checkedListBox1";
             checkedListBox1.Size = new Size(305, 290);
@@ -678,7 +676,6 @@ namespace FeedBuff_Kerkrade
             // ListBoxFeedback
             // 
             ListBoxFeedback.FormattingEnabled = true;
-            ListBoxFeedback.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
             ListBoxFeedback.Location = new Point(3, 72);
             ListBoxFeedback.Name = "ListBoxFeedback";
             ListBoxFeedback.Size = new Size(305, 290);
@@ -768,9 +765,9 @@ namespace FeedBuff_Kerkrade
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Pnl_Menu);
+            Controls.Add(Pnl_Feedback);
             Controls.Add(Pnl_Goals);
             Controls.Add(Pnl_Logbook);
-            Controls.Add(Pnl_Feedback);
             FormBorderStyle = FormBorderStyle.None;
             Name = "HomePage";
             Text = "HomePage";
