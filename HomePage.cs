@@ -193,9 +193,10 @@ namespace FeedBuff_Kerkrade
 
         private void Feedback_Btn_Add_Click(object sender, EventArgs e)
         {
-            //vak ophalen
-            //feedback zelf ophalen
-            //week nummer ophalen
+            // docent wordt niet gebruikt in database wel opvragen in ui?
+            //vak ophalen (listbox normale text box maken?
+            string New_feedback = Feedback_Text_Feedback.Text;
+            int weeknummer;
             //check validatie
             //user id ophalen
             Feedback feedback= new Feedback();
@@ -206,6 +207,7 @@ namespace FeedBuff_Kerkrade
         private void Confirm_alter_btn_Click(object sender, EventArgs e)
         {
             //manier nodig om hiernaar toe te komen
+            //kunnen kiezen welke je aanpast dus feedback id achterhalen
             string altered_feedback = Alter_feedback_lsbox.Text;
             dal.Alter_feedback_database(altered_feedback);
         }

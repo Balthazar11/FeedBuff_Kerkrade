@@ -78,6 +78,10 @@ namespace FeedBuff_Kerkrade
             this.Lbl_Goals_Set = new System.Windows.Forms.Label();
             this.ListBox_Goals = new System.Windows.Forms.CheckedListBox();
             this.Pnl_Feedback = new System.Windows.Forms.Panel();
+            this.Feedback_alter_pnl = new System.Windows.Forms.Panel();
+            this.Cancel_alter_btn = new System.Windows.Forms.Button();
+            this.Confirm_alter_btn = new System.Windows.Forms.Button();
+            this.Alter_feedback_lsbox = new System.Windows.Forms.ListBox();
             this.Pnl_Feedback_Current = new System.Windows.Forms.Panel();
             this.Feedback_Lbl_Week = new System.Windows.Forms.Label();
             this.Feedback_Combo_Week = new System.Windows.Forms.ComboBox();
@@ -93,10 +97,6 @@ namespace FeedBuff_Kerkrade
             this.Logbook_Combo_Week = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Pnl_Logbook_Add = new System.Windows.Forms.Panel();
-            this.Feedback_alter_pnl = new System.Windows.Forms.Panel();
-            this.Alter_feedback_lsbox = new System.Windows.Forms.ListBox();
-            this.Confirm_alter_btn = new System.Windows.Forms.Button();
-            this.Cancel_alter_btn = new System.Windows.Forms.Button();
             this.Pnl_Menu.SuspendLayout();
             this.Pnl_Menu_Student.SuspendLayout();
             this.Pnl_Menu_Userdetails.SuspendLayout();
@@ -107,11 +107,11 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Goals.SuspendLayout();
             this.Pnl_Goals_Current.SuspendLayout();
             this.Pnl_Feedback.SuspendLayout();
+            this.Feedback_alter_pnl.SuspendLayout();
             this.Pnl_Feedback_Current.SuspendLayout();
             this.Pnl_Logbook.SuspendLayout();
             this.Pnl_Logbook_Menu.SuspendLayout();
             this.Pnl_Logbook_Current.SuspendLayout();
-            this.Feedback_alter_pnl.SuspendLayout();
             this.SuspendLayout();
             // 
             // Btn_Menu_Logout
@@ -641,6 +641,44 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Feedback.TabIndex = 7;
             this.Pnl_Feedback.Visible = false;
             // 
+            // Feedback_alter_pnl
+            // 
+            this.Feedback_alter_pnl.Controls.Add(this.Cancel_alter_btn);
+            this.Feedback_alter_pnl.Controls.Add(this.Confirm_alter_btn);
+            this.Feedback_alter_pnl.Controls.Add(this.Alter_feedback_lsbox);
+            this.Feedback_alter_pnl.Location = new System.Drawing.Point(5, 48);
+            this.Feedback_alter_pnl.Name = "Feedback_alter_pnl";
+            this.Feedback_alter_pnl.Size = new System.Drawing.Size(627, 389);
+            this.Feedback_alter_pnl.TabIndex = 7;
+            // 
+            // Cancel_alter_btn
+            // 
+            this.Cancel_alter_btn.Location = new System.Drawing.Point(156, 331);
+            this.Cancel_alter_btn.Name = "Cancel_alter_btn";
+            this.Cancel_alter_btn.Size = new System.Drawing.Size(94, 29);
+            this.Cancel_alter_btn.TabIndex = 2;
+            this.Cancel_alter_btn.Text = "Cancel";
+            this.Cancel_alter_btn.UseVisualStyleBackColor = true;
+            // 
+            // Confirm_alter_btn
+            // 
+            this.Confirm_alter_btn.Location = new System.Drawing.Point(56, 331);
+            this.Confirm_alter_btn.Name = "Confirm_alter_btn";
+            this.Confirm_alter_btn.Size = new System.Drawing.Size(94, 29);
+            this.Confirm_alter_btn.TabIndex = 1;
+            this.Confirm_alter_btn.Text = "Confirm";
+            this.Confirm_alter_btn.UseVisualStyleBackColor = true;
+            this.Confirm_alter_btn.Click += new System.EventHandler(this.Confirm_alter_btn_Click);
+            // 
+            // Alter_feedback_lsbox
+            // 
+            this.Alter_feedback_lsbox.FormattingEnabled = true;
+            this.Alter_feedback_lsbox.ItemHeight = 20;
+            this.Alter_feedback_lsbox.Location = new System.Drawing.Point(54, 98);
+            this.Alter_feedback_lsbox.Name = "Alter_feedback_lsbox";
+            this.Alter_feedback_lsbox.Size = new System.Drawing.Size(388, 224);
+            this.Alter_feedback_lsbox.TabIndex = 0;
+            // 
             // Pnl_Feedback_Current
             // 
             this.Pnl_Feedback_Current.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -794,44 +832,6 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Logbook_Add.TabIndex = 8;
             this.Pnl_Logbook_Add.Visible = false;
             // 
-            // Feedback_alter_pnl
-            // 
-            this.Feedback_alter_pnl.Controls.Add(this.Cancel_alter_btn);
-            this.Feedback_alter_pnl.Controls.Add(this.Confirm_alter_btn);
-            this.Feedback_alter_pnl.Controls.Add(this.Alter_feedback_lsbox);
-            this.Feedback_alter_pnl.Location = new System.Drawing.Point(5, 48);
-            this.Feedback_alter_pnl.Name = "Feedback_alter_pnl";
-            this.Feedback_alter_pnl.Size = new System.Drawing.Size(627, 389);
-            this.Feedback_alter_pnl.TabIndex = 7;
-            // 
-            // Alter_feedback_lsbox
-            // 
-            this.Alter_feedback_lsbox.FormattingEnabled = true;
-            this.Alter_feedback_lsbox.ItemHeight = 20;
-            this.Alter_feedback_lsbox.Location = new System.Drawing.Point(54, 98);
-            this.Alter_feedback_lsbox.Name = "Alter_feedback_lsbox";
-            this.Alter_feedback_lsbox.Size = new System.Drawing.Size(388, 224);
-            this.Alter_feedback_lsbox.TabIndex = 0;
-            // 
-            // Confirm_alter_btn
-            // 
-            this.Confirm_alter_btn.Location = new System.Drawing.Point(56, 331);
-            this.Confirm_alter_btn.Name = "Confirm_alter_btn";
-            this.Confirm_alter_btn.Size = new System.Drawing.Size(94, 29);
-            this.Confirm_alter_btn.TabIndex = 1;
-            this.Confirm_alter_btn.Text = "Confirm";
-            this.Confirm_alter_btn.UseVisualStyleBackColor = true;
-            this.Confirm_alter_btn.Click += new System.EventHandler(this.Confirm_alter_btn_Click);
-            // 
-            // Cancel_alter_btn
-            // 
-            this.Cancel_alter_btn.Location = new System.Drawing.Point(156, 331);
-            this.Cancel_alter_btn.Name = "Cancel_alter_btn";
-            this.Cancel_alter_btn.Size = new System.Drawing.Size(94, 29);
-            this.Cancel_alter_btn.TabIndex = 2;
-            this.Cancel_alter_btn.Text = "Cancel";
-            this.Cancel_alter_btn.UseVisualStyleBackColor = true;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -859,13 +859,13 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Goals_Current.ResumeLayout(false);
             this.Pnl_Goals_Current.PerformLayout();
             this.Pnl_Feedback.ResumeLayout(false);
+            this.Feedback_alter_pnl.ResumeLayout(false);
             this.Pnl_Feedback_Current.ResumeLayout(false);
             this.Pnl_Feedback_Current.PerformLayout();
             this.Pnl_Logbook.ResumeLayout(false);
             this.Pnl_Logbook_Menu.ResumeLayout(false);
             this.Pnl_Logbook_Current.ResumeLayout(false);
             this.Pnl_Logbook_Current.PerformLayout();
-            this.Feedback_alter_pnl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
