@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.Btn_Menu_Logout = new System.Windows.Forms.Button();
             this.Pnl_Menu = new System.Windows.Forms.Panel();
             this.Btn_Menu = new System.Windows.Forms.Button();
@@ -252,7 +253,7 @@
             this.Pnl_Goals_Add.TabIndex = 2;
             this.Pnl_Goals_Add.Visible = false;
             // 
-            // comboBox1
+            // Goals_Combo_Week_add
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -839,7 +840,6 @@
             this.Pnl_Logbook_Current.ResumeLayout(false);
             this.Pnl_Logbook_Current.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion
@@ -906,7 +906,7 @@
         private Label Lbl_Menu_Username;
         private Panel Pnl_Menu_Userdetails;
         private Label Goals_Lbl_week_add;
-        private ComboBox comboBox1;
+        private ComboBox Goals_Combo_Week_add;
         private ComboBox Feedback_Combo_Teachers;
         private Label Feedback_Lbl_Week_add;
         private ComboBox Feedback_Combo_Week_add;

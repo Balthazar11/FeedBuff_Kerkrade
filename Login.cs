@@ -14,27 +14,29 @@ namespace FeedBuff_Kerkrade
         public Login()
         {
             InitializeComponent();
+
             if (Login_Pnl_Login.Visible == true)
             {
+                // Assign Login_btn to be able to be pressed with "ENTER" key
                 this.AcceptButton = Login_btn;
             }
         }
-
+        
         private void Register_btn_Click(object sender, EventArgs e)
         {
             Login_Pnl_Register.Show();
             Login_Pnl_Login.Hide();
-            
         }
 
         private void Login_btn_Click(object sender, EventArgs e)
         {
             string username = Login_User_Txt.Text;
             string password = Login_Pass_Txt.Text;
+
             User user = new User(username, password);
             if (dal.User_Check_database(user))
             {
-                // login succes
+                // Login succes
                 Program.HomePage = new();
                 Program.HomePage.Show();
                 this.Hide();
@@ -42,7 +44,7 @@ namespace FeedBuff_Kerkrade
                 Login_Lbl_Error.Text = "";
                 Login_Lbl_Error.ForeColor = Color.Red;
             }
-            //check if boxes not empty
+            // Check if fields are empty
             else if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 Login_Lbl_Error.Text = "Please fill in the boxes!";
@@ -50,6 +52,7 @@ namespace FeedBuff_Kerkrade
             }
             else
             {
+                // Display error if credentials are incorrect
                 Login_Lbl_Error.Text = "Wrong Credentials!";
                 Login_Lbl_Error.ForeColor = Color.Red;
             }
@@ -59,11 +62,13 @@ namespace FeedBuff_Kerkrade
 
         private void Close_btn_Click(object sender, EventArgs e)
         {
+            // Close application
             Application.Exit();
         }
 
         private void Register_Btn_Cancel_Click(object sender, EventArgs e)
         {
+            // Toggle Login panel and clear fields
             panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
             Login_User_Txt.Text = "";
             Login_Pass_Txt.Text = "";
@@ -91,14 +96,11 @@ namespace FeedBuff_Kerkrade
             }
             else if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
+                // Display error if fields are empty
                 Register_Lbl_Error.Text = "Please fill in the boxes!";
                 Register_Lbl_Error.ForeColor = Color.Red;
             }
-            else
-            {
-                Register_Lbl_Error.Text = "Wrong Credentials!";
-                Register_Lbl_Error.ForeColor = Color.Red;
-            }
+            // Clear fields
             Login_User_Txt.Text = "";
             Login_Pass_Txt.Text = "";
         }

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
+
 namespace FeedBuff_Kerkrade
 {
     public class DAL
@@ -89,5 +90,6 @@ namespace FeedBuff_Kerkrade
                 return false;
             }
         }
+
     }
 }

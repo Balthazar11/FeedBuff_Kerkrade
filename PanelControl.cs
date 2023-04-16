@@ -8,6 +8,7 @@ namespace FeedBuff_Kerkrade
 {
     internal class PanelControl
     {
+        // Toggle Specified panel with it's children and disable all others excluding the list Excludedpanels
         public void TogglePanels(Control control, List<Panel> ExcludedPanels, params Panel[] activePanels)
         {
             // Traverse the control tree and toggle visibility of all panels except the active and permanently enabled ones
@@ -28,6 +29,7 @@ namespace FeedBuff_Kerkrade
             }
         }
 
+        // Secondary function required for "TogglePanels" to properly toggle the child panels
         private void TogglePanelsChildControl(Control control, bool visible)
         {
             // Recursively toggle visibility of child panels
@@ -41,6 +43,7 @@ namespace FeedBuff_Kerkrade
             }
         }
 
+        // Toggle Specified child panel within a parent panel
         public void ToggleChildPanel(Panel parentPanel, Panel selectedPanel, List<Panel> excludedPanels = null)
         {
             // Toggle the visibility of the selected panel and disable all other child panels except for the excluded panels

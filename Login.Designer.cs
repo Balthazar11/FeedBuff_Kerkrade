@@ -228,7 +228,6 @@
             this.Login_Pnl_Register.ResumeLayout(false);
             this.Login_Pnl_Register.PerformLayout();
             this.ResumeLayout(false);
-
         }
 
         #endregion

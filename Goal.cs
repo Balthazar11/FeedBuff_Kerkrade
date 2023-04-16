@@ -9,9 +9,11 @@ namespace FeedBuff_Kerkrade
     public class Goal
     {
         public int Goal_ID { get; set; }
-        public int Weeknr {  get; set; }
-        public string Goals_Desc {  get; set; }
+        public int Weeknr { get; set; }
+        public string Goals_Desc { get; set; }
         public List<Task> Tasks { get; set; }
+        public Subject Subject { get; set; }
+
 
         public Goal(int Goal_ID, int weeknr, string Goals_Desc, List<Task> Tasks)
         {
