@@ -14,13 +14,18 @@ namespace FeedBuff_Kerkrade
         public List<Task> Tasks { get; set; }
         public Subject Subject { get; set; }
 
-
         public Goal(int Goal_ID, int weeknr, string Goals_Desc, List<Task> Tasks)
         {
             this.Goal_ID = Goal_ID;
             this.Weeknr = weeknr;
             this.Goals_Desc= Goals_Desc;
             this.Tasks = Tasks;
+        }
+
+        public Goal(int weeknr, string Goals_Desc) 
+        { 
+            this.Weeknr= weeknr;
+            this.Goals_Desc = Goals_Desc;
         }
     }
 }

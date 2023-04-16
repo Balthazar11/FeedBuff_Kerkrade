@@ -62,7 +62,8 @@ namespace FeedBuff_Kerkrade
             Lbl_Menu_Username.Text = "Name: " + Program.CurrentUser;
             Lbl_Menu_Userid.Text = "ID: " + Program.CurrentUser_ID.ToString();
             Lbl_Menu_Userrole.Text = "Role: " + Program.CurrentUser_Role;
-            dal.FillCheckedListBox(ListBox_Goals);
+            dal.FillListboxGoals(ListBox_Goals);
+            dal.FillListBoxFeedback(ListBoxFeedback);
         }
 
         private void Btn_Menu_Goals_Click(object sender, EventArgs e)
@@ -177,18 +178,48 @@ namespace FeedBuff_Kerkrade
 
         private void Goals_Btn_Add_Click(object sender, EventArgs e)
         {
+            string Goals_Desc = Goals_Text_Add.Text;
+            string vakid = Goals_Combo_Subject.Text;
             // extract Weeknr From string in combobox
             string weekText = Goals_Combo_Week_add.Text.ToString();
             string[] weekTextSplit = weekText.Split(' ');
-            if (weekTextSplit.Length > 1)
-            {
-                // assign int Weeknr with the selected value from combobox
-                int Weeknr = int.Parse(weekTextSplit[1]);
-            }
+
+            // assign int Weeknr with the selected value from combobox
+            int weeknr = int.Parse(weekTextSplit[1]);
+
+            Goal goal = new Goal(weeknr, Goals_Desc);
+            dal.FillListboxGoals(ListBox_Goals);
         }
 
-        private void Btn_Menu_Click_1(object sender, EventArgs e)
+        private void Feedback_Btn_Add_Click(object sender, EventArgs e)
         {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

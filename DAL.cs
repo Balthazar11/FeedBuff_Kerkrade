@@ -1,4 +1,5 @@
 
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -167,8 +168,7 @@ namespace FeedBuff_Kerkrade
                 return false;
             }
         }
-
-        public List<string> FillCheckedListBox(CheckedListBox checkedListBox)
+        public List<string> FillListboxGoals(CheckedListBox checkedListBox)
         {
             List<string> selectedItems = new List<string>();
             string query = "SELECT Goal_ID, Weeknr, Goals_Desc, Feedback_ID, Subject_ID FROM Goal";
@@ -192,6 +192,29 @@ namespace FeedBuff_Kerkrade
             return selectedItems;
         }
 
+        public List<string> FillListBoxFeedback(CheckedListBox checkedListBox)
+        {
+            List<string> selectedItems = new List<string>();
+            string query = "SELECT Feedback_ID, Feedback_Desc, Weeknr, Validated, User_ID FROM FeedBack";
+
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        checkedListBox.Items.Clear();
+                        while (reader.Read())
+                        {
+                            string text = $"{reader["Feedback_Desc"]}";
+                            checkedListBox.Items.Add(text);
+                        }
+                    }
+                }
+            }
+            return selectedItems;
+        }
         public void Delete_feedback_database()
         {
             try
