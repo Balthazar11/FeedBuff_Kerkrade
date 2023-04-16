@@ -1,3 +1,5 @@
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Windows.Forms;
 
 namespace FeedBuff_Kerkrade
@@ -7,6 +9,7 @@ namespace FeedBuff_Kerkrade
         PanelControl panels = new();
         List<Panel> ExcludedPanels = new();
         HomePage home = new();
+        DAL dal = new DAL();
 
         public Login()
         {
@@ -19,21 +22,10 @@ namespace FeedBuff_Kerkrade
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Register_btn_Click(object sender, EventArgs e)
         {
-            string username = Login_User_Txt.Text;
-            string password = Login_Pass_Txt.Text;
-
-            // Toggle Register panel and clear fields
-            panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Register);
-            Register_User_Txt.Text = "";
-            Register_Mail_Txt.Text = "";
-            Register_Pass_Txt.Text = "";
+            Login_Pnl_Register.Show();
+            Login_Pnl_Login.Hide();
         }
 
         private void Login_btn_Click(object sender, EventArgs e)
@@ -41,8 +33,8 @@ namespace FeedBuff_Kerkrade
             string username = Login_User_Txt.Text;
             string password = Login_Pass_Txt.Text;
 
-            // Check username and password
-            if (username == "admin" && password == "admin")
+            User user = new User(username, password);
+            if (dal.User_Check_database(user))
             {
                 // Login succes
                 Program.HomePage = new();
@@ -88,20 +80,21 @@ namespace FeedBuff_Kerkrade
         private void Register_Btn_Signup_Click(object sender, EventArgs e)
         {
             string username = Register_User_Txt.Text;
-            string email = Register_Mail_Txt.Text;
             string password = Register_Pass_Txt.Text;
 
-            // Check if fields are not empty
-            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password))
+            if (!string.IsNullOrEmpty(username) && !string.IsNullOrEmpty(password))
             {
-                // Toggle Login panel and change fields correctly
+                User user = new User(username, password);
+                dal.User_Insert_database(user);
+                panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Register);
+                Register_User_Txt.Text = "";
+                Register_Pass_Txt.Text = "";
                 panels.TogglePanels(this, ExcludedPanels, Login_Pnl_Login);
                 Register_Lbl_Error.Text = "";
                 Login_Lbl_Error.Text = "Succesfully Signed up!";
                 Login_Lbl_Error.ForeColor = Color.Green;
             }
-            // Check if fields are empty
-            else if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            else if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 // Display error if fields are empty
                 Register_Lbl_Error.Text = "Please fill in the boxes!";
