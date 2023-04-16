@@ -62,6 +62,7 @@ namespace FeedBuff_Kerkrade
             Lbl_Menu_Username.Text = "Name: " + Program.CurrentUser;
             Lbl_Menu_Userid.Text = "ID: " + Program.CurrentUser_ID.ToString();
             Lbl_Menu_Userrole.Text = "Role: " + Program.CurrentUser_Role;
+            dal.FillCheckedListBox(ListBox_Goals);
         }
 
         private void Btn_Menu_Goals_Click(object sender, EventArgs e)

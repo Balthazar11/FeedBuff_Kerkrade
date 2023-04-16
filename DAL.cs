@@ -44,7 +44,7 @@ namespace FeedBuff_Kerkrade
                 // Close the connection
                 connection.Close();
             }
-        }   
+        }
         public void LoadTeachersIntoCombobox(ComboBox comboBox)
         {
             // Establish a connection to your database
@@ -167,5 +167,30 @@ namespace FeedBuff_Kerkrade
                 return false;
             }
         }
+
+        public List<string> FillCheckedListBox(CheckedListBox checkedListBox)
+        {
+            List<string> selectedItems = new List<string>();
+            string query = "SELECT Goal_ID, Weeknr, Goals_Desc, Feedback_ID, Subject_ID FROM Goal";
+
+            using (SqlConnection connection = new SqlConnection(connectionstring))
+            {
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        checkedListBox.Items.Clear();
+                        while (reader.Read())
+                        {
+                            string text = $"{reader["Goals_Desc"]}";
+                            checkedListBox.Items.Add(text);
+                        }
+                    }
+                }
+            }
+            return selectedItems;
+        }
+
     }
 }

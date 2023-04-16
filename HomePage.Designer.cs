@@ -168,7 +168,7 @@ namespace FeedBuff_Kerkrade
             Lbl_Menu_Userid.AutoSize = true;
             Lbl_Menu_Userid.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             Lbl_Menu_Userid.ForeColor = Color.Gray;
-            Lbl_Menu_Userid.Location = new Point(6, 29);
+            Lbl_Menu_Userid.Location = new Point(3, 30);
             Lbl_Menu_Userid.Name = "Lbl_Menu_Userid";
             Lbl_Menu_Userid.Size = new Size(85, 19);
             Lbl_Menu_Userid.TabIndex = 6;
@@ -179,7 +179,7 @@ namespace FeedBuff_Kerkrade
             Lbl_Menu_Userrole.AutoSize = true;
             Lbl_Menu_Userrole.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             Lbl_Menu_Userrole.ForeColor = Color.Gray;
-            Lbl_Menu_Userrole.Location = new Point(6, 5);
+            Lbl_Menu_Userrole.Location = new Point(3, 6);
             Lbl_Menu_Userrole.Name = "Lbl_Menu_Userrole";
             Lbl_Menu_Userrole.Size = new Size(92, 19);
             Lbl_Menu_Userrole.TabIndex = 7;
@@ -190,7 +190,7 @@ namespace FeedBuff_Kerkrade
             Lbl_Menu_Username.AutoSize = true;
             Lbl_Menu_Username.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
             Lbl_Menu_Username.ForeColor = Color.Gray;
-            Lbl_Menu_Username.Location = new Point(6, 53);
+            Lbl_Menu_Username.Location = new Point(3, 54);
             Lbl_Menu_Username.Name = "Lbl_Menu_Username";
             Lbl_Menu_Username.Size = new Size(111, 19);
             Lbl_Menu_Username.TabIndex = 5;
@@ -768,9 +768,9 @@ namespace FeedBuff_Kerkrade
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Pnl_Menu);
-            Controls.Add(Pnl_Feedback);
             Controls.Add(Pnl_Goals);
             Controls.Add(Pnl_Logbook);
+            Controls.Add(Pnl_Feedback);
             FormBorderStyle = FormBorderStyle.None;
             Name = "HomePage";
             Text = "HomePage";
