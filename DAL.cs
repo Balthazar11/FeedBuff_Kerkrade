@@ -192,10 +192,48 @@ namespace FeedBuff_Kerkrade
             return selectedItems;
         }
 
-        public void Update_feedback_database(object sender, EventArgs e)
+        public void Delete_feedback_database()
         {
-
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    string query = "USE Feedbuf ALTER TABLE Feedback " +
+                                   "DROP COLUMN FeedBack_ID, " +
+                                   "DROP COLUMN FeedBack_desc, " +
+                                   "DROP COLUMN Weeknr, " +
+                                   "DROP COLUMN Validated, " +
+                                   "DROP COLUMN User_ID;";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error connecting to database: " + ex.Message);
+            }
         }
+
+        public void Alter_feedback_database(string new_data)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    string query = $"USE YourDatabaseName; " +
+                                   $"ALTER TABLE FeedbackTable " +
+                                   $"ALTER COLUMN Feedback_desc {new_data};";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Error connecting to database: " + ex.Message);
+            }
+            
 
     }
 }
