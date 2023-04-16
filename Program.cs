@@ -7,7 +7,6 @@ namespace FeedBuff_Kerkrade
         public static string CurrentUser { get; set; }
         public static int CurrentUser_ID { get; set; }
         public static string CurrentUser_Role { get; set; }
-
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

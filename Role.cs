@@ -11,7 +11,6 @@ namespace FeedBuff_Kerkrade
         public int Role_ID { get; set; }
         public string Role_Name { get; set; }
 
-
         public Role(int Role_id, string Role_Name)
         {
             this.Role_ID = Role_id;
