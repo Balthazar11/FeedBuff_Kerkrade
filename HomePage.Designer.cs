@@ -1,4 +1,4 @@
-﻿namespace FeedBuff_Kerkrade
+namespace FeedBuff_Kerkrade
 {
     partial class HomePage
     {

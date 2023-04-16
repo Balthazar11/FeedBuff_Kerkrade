@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FeedBuff_Kerkrade
 {
-    internal class Goal
+    public class Goal
     {
         public int Goal_ID { get; set; }
         public int Weeknr { get; set; }
@@ -14,13 +14,13 @@ namespace FeedBuff_Kerkrade
         public List<Task> Tasks { get; set; }
         public Subject Subject { get; set; }
 
-        public Goal(int goalID, int weeknr, string goalsdesc, Subject subject)
+
+        public Goal(int Goal_ID, int weeknr, string Goals_Desc, List<Task> Tasks)
         {
-            Goal_ID = goalID;
-            Weeknr = weeknr;
-            Goals_Desc = goalsdesc;
-            Tasks = new List<Task>();
-            Subject = subject;
+            this.Goal_ID = Goal_ID;
+            this.Weeknr = weeknr;
+            this.Goals_Desc= Goals_Desc;
+            this.Tasks = Tasks;
         }
     }
 }
