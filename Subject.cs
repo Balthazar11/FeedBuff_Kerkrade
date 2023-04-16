@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FeedBuff_Kerkrade
 {
-    internal class Subject
+    public class Subject
     {
         public int Subject_ID { get; set; }
         public string Subject_Name { get; set;}

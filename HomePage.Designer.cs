@@ -28,808 +28,818 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Btn_Menu_Logout = new Button();
-            Pnl_Menu = new Panel();
-            Btn_Menu = new Button();
-            Pnl_Menu_Student = new Panel();
-            Pnl_Menu_Userdetails = new Panel();
-            Lbl_Menu_Userid = new Label();
-            Lbl_Menu_Userrole = new Label();
-            Lbl_Menu_Username = new Label();
-            Temp_Lbl_Size = new Label();
-            Btn_Menu_Logbook = new Button();
-            Btn_Menu_Feedback = new Button();
-            Btn_Menu_Goals = new Button();
-            Pnl_Goals_Add = new Panel();
-            comboBox1 = new ComboBox();
-            Goals_Lbl_week_add = new Label();
-            Goals_Btn_Add = new Button();
-            Goals_Lbl_Add_Sub = new Label();
-            Goals_Text_Sub2 = new TextBox();
-            Goals_Lbl_Sub2 = new Label();
-            Goals_Text_Sub1 = new TextBox();
-            Goals_Lbl_Sub1 = new Label();
-            Goals_Text_Add = new TextBox();
-            Goals_Lbl_Add = new Label();
-            Goals_Combo_Subject = new ComboBox();
-            Goals_Lbl_Subject = new Label();
-            Pnl_Goals_Menu = new Panel();
-            Goals_Menu_Btn_Current = new Button();
-            Goals_Menu_Btn_Add = new Button();
-            Pnl_Feedback_Menu = new Panel();
-            Feedback_Menu_Btn_add = new Button();
-            Feedback_Menu_Btn_Current = new Button();
-            Feedback_Lbl_Subject = new Label();
-            Feedback_Combo_Subject = new ComboBox();
-            Feedback_Lbl_Feedback = new Label();
-            Feedback_Text_Feedback = new TextBox();
-            Feedback_Lbl_Teacher = new Label();
-            Pnl_Feedback_Add = new Panel();
-            Feedback_Lbl_Week_add = new Label();
-            Feedback_Combo_Week_add = new ComboBox();
-            Feedback_Combo_Teachers = new ComboBox();
-            Feedback_Btn_Add = new Button();
-            Pnl_Goals = new Panel();
-            Pnl_Goals_Current = new Panel();
-            Goals_Lbl_Week = new Label();
-            Goals_Combo_Week = new ComboBox();
-            Lbl_Goals_Finished = new Label();
-            ListBox_Goals_Done = new CheckedListBox();
-            Lbl_Goals_Set = new Label();
-            ListBox_Goals = new CheckedListBox();
-            Pnl_Feedback = new Panel();
-            Pnl_Feedback_Current = new Panel();
-            Feedback_Lbl_Week = new Label();
-            Feedback_Combo_Week = new ComboBox();
-            Lbl_Feedback_Goals = new Label();
-            Lbl_FeedBack_Requested = new Label();
-            checkedListBox1 = new CheckedListBox();
-            ListBoxFeedback = new CheckedListBox();
-            Pnl_Logbook = new Panel();
-            Pnl_Logbook_Menu = new Panel();
-            Logbook_Menu_Btn_add = new Button();
-            Logbook_Menu_Btn_Current = new Button();
-            Pnl_Logbook_Current = new Panel();
-            Logbook_Combo_Week = new ComboBox();
-            label2 = new Label();
-            Pnl_Logbook_Add = new Panel();
-            Pnl_Menu.SuspendLayout();
-            Pnl_Menu_Student.SuspendLayout();
-            Pnl_Menu_Userdetails.SuspendLayout();
-            Pnl_Goals_Add.SuspendLayout();
-            Pnl_Goals_Menu.SuspendLayout();
-            Pnl_Feedback_Menu.SuspendLayout();
-            Pnl_Feedback_Add.SuspendLayout();
-            Pnl_Goals.SuspendLayout();
-            Pnl_Goals_Current.SuspendLayout();
-            Pnl_Feedback.SuspendLayout();
-            Pnl_Feedback_Current.SuspendLayout();
-            Pnl_Logbook.SuspendLayout();
-            Pnl_Logbook_Menu.SuspendLayout();
-            Pnl_Logbook_Current.SuspendLayout();
-            SuspendLayout();
+            this.Btn_Menu_Logout = new System.Windows.Forms.Button();
+            this.Pnl_Menu = new System.Windows.Forms.Panel();
+            this.Btn_Menu = new System.Windows.Forms.Button();
+            this.Pnl_Menu_Student = new System.Windows.Forms.Panel();
+            this.Pnl_Menu_Userdetails = new System.Windows.Forms.Panel();
+            this.Lbl_Menu_Userid = new System.Windows.Forms.Label();
+            this.Lbl_Menu_Userrole = new System.Windows.Forms.Label();
+            this.Lbl_Menu_Username = new System.Windows.Forms.Label();
+            this.Temp_Lbl_Size = new System.Windows.Forms.Label();
+            this.Btn_Menu_Logbook = new System.Windows.Forms.Button();
+            this.Btn_Menu_Feedback = new System.Windows.Forms.Button();
+            this.Btn_Menu_Goals = new System.Windows.Forms.Button();
+            this.Pnl_Goals_Add = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Goals_Lbl_week_add = new System.Windows.Forms.Label();
+            this.Goals_Btn_Add = new System.Windows.Forms.Button();
+            this.Goals_Lbl_Add_Sub = new System.Windows.Forms.Label();
+            this.Goals_Text_Sub2 = new System.Windows.Forms.TextBox();
+            this.Goals_Lbl_Sub2 = new System.Windows.Forms.Label();
+            this.Goals_Text_Sub1 = new System.Windows.Forms.TextBox();
+            this.Goals_Lbl_Sub1 = new System.Windows.Forms.Label();
+            this.Goals_Text_Add = new System.Windows.Forms.TextBox();
+            this.Goals_Lbl_Add = new System.Windows.Forms.Label();
+            this.Goals_Combo_Subject = new System.Windows.Forms.ComboBox();
+            this.Goals_Lbl_Subject = new System.Windows.Forms.Label();
+            this.Pnl_Goals_Menu = new System.Windows.Forms.Panel();
+            this.Goals_Menu_Btn_Current = new System.Windows.Forms.Button();
+            this.Goals_Menu_Btn_Add = new System.Windows.Forms.Button();
+            this.Pnl_Feedback_Menu = new System.Windows.Forms.Panel();
+            this.Feedback_Menu_Btn_add = new System.Windows.Forms.Button();
+            this.Feedback_Menu_Btn_Current = new System.Windows.Forms.Button();
+            this.Feedback_Lbl_Subject = new System.Windows.Forms.Label();
+            this.Feedback_Combo_Subject = new System.Windows.Forms.ComboBox();
+            this.Feedback_Lbl_Feedback = new System.Windows.Forms.Label();
+            this.Feedback_Text_Feedback = new System.Windows.Forms.TextBox();
+            this.Feedback_Lbl_Teacher = new System.Windows.Forms.Label();
+            this.Pnl_Feedback_Add = new System.Windows.Forms.Panel();
+            this.Feedback_Lbl_Week_add = new System.Windows.Forms.Label();
+            this.Feedback_Combo_Week_add = new System.Windows.Forms.ComboBox();
+            this.Feedback_Combo_Teachers = new System.Windows.Forms.ComboBox();
+            this.Feedback_Btn_Add = new System.Windows.Forms.Button();
+            this.Pnl_Goals = new System.Windows.Forms.Panel();
+            this.Pnl_Goals_Current = new System.Windows.Forms.Panel();
+            this.Goals_Lbl_Week = new System.Windows.Forms.Label();
+            this.Goals_Combo_Week = new System.Windows.Forms.ComboBox();
+            this.Lbl_Goals_Finished = new System.Windows.Forms.Label();
+            this.ListBox_Goals_Done = new System.Windows.Forms.CheckedListBox();
+            this.Lbl_Goals_Set = new System.Windows.Forms.Label();
+            this.ListBox_Goals = new System.Windows.Forms.CheckedListBox();
+            this.Pnl_Feedback = new System.Windows.Forms.Panel();
+            this.Pnl_Feedback_Current = new System.Windows.Forms.Panel();
+            this.Feedback_Lbl_Week = new System.Windows.Forms.Label();
+            this.Feedback_Combo_Week = new System.Windows.Forms.ComboBox();
+            this.Lbl_Feedback_Goals = new System.Windows.Forms.Label();
+            this.Lbl_FeedBack_Requested = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.ListBoxFeedback = new System.Windows.Forms.CheckedListBox();
+            this.Pnl_Logbook = new System.Windows.Forms.Panel();
+            this.Pnl_Logbook_Menu = new System.Windows.Forms.Panel();
+            this.Logbook_Menu_Btn_add = new System.Windows.Forms.Button();
+            this.Logbook_Menu_Btn_Current = new System.Windows.Forms.Button();
+            this.Pnl_Logbook_Current = new System.Windows.Forms.Panel();
+            this.Logbook_Combo_Week = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Pnl_Logbook_Add = new System.Windows.Forms.Panel();
+            this.Pnl_Menu.SuspendLayout();
+            this.Pnl_Menu_Student.SuspendLayout();
+            this.Pnl_Menu_Userdetails.SuspendLayout();
+            this.Pnl_Goals_Add.SuspendLayout();
+            this.Pnl_Goals_Menu.SuspendLayout();
+            this.Pnl_Feedback_Menu.SuspendLayout();
+            this.Pnl_Feedback_Add.SuspendLayout();
+            this.Pnl_Goals.SuspendLayout();
+            this.Pnl_Goals_Current.SuspendLayout();
+            this.Pnl_Feedback.SuspendLayout();
+            this.Pnl_Feedback_Current.SuspendLayout();
+            this.Pnl_Logbook.SuspendLayout();
+            this.Pnl_Logbook_Menu.SuspendLayout();
+            this.Pnl_Logbook_Current.SuspendLayout();
+            this.SuspendLayout();
             // 
             // Btn_Menu_Logout
             // 
-            Btn_Menu_Logout.Location = new Point(3, 266);
-            Btn_Menu_Logout.Margin = new Padding(3, 2, 3, 2);
-            Btn_Menu_Logout.Name = "Btn_Menu_Logout";
-            Btn_Menu_Logout.Size = new Size(109, 29);
-            Btn_Menu_Logout.TabIndex = 0;
-            Btn_Menu_Logout.Text = "Uitloggen";
-            Btn_Menu_Logout.UseVisualStyleBackColor = true;
-            Btn_Menu_Logout.Click += Btn_Menu_Logout_Click;
+            this.Btn_Menu_Logout.Location = new System.Drawing.Point(3, 355);
+            this.Btn_Menu_Logout.Name = "Btn_Menu_Logout";
+            this.Btn_Menu_Logout.Size = new System.Drawing.Size(125, 39);
+            this.Btn_Menu_Logout.TabIndex = 0;
+            this.Btn_Menu_Logout.Text = "Uitloggen";
+            this.Btn_Menu_Logout.UseVisualStyleBackColor = true;
             // 
             // Pnl_Menu
             // 
-            Pnl_Menu.BorderStyle = BorderStyle.Fixed3D;
-            Pnl_Menu.Controls.Add(Btn_Menu);
-            Pnl_Menu.Controls.Add(Pnl_Menu_Student);
-            Pnl_Menu.Dock = DockStyle.Left;
-            Pnl_Menu.Location = new Point(0, 0);
-            Pnl_Menu.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Menu.Name = "Pnl_Menu";
-            Pnl_Menu.Size = new Size(124, 392);
-            Pnl_Menu.TabIndex = 1;
+            this.Pnl_Menu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Pnl_Menu.Controls.Add(this.Btn_Menu);
+            this.Pnl_Menu.Controls.Add(this.Pnl_Menu_Student);
+            this.Pnl_Menu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.Pnl_Menu.Location = new System.Drawing.Point(0, 0);
+            this.Pnl_Menu.Name = "Pnl_Menu";
+            this.Pnl_Menu.Size = new System.Drawing.Size(141, 523);
+            this.Pnl_Menu.TabIndex = 1;
             // 
             // Btn_Menu
             // 
-            Btn_Menu.Location = new Point(3, 2);
-            Btn_Menu.Margin = new Padding(3, 2, 3, 2);
-            Btn_Menu.Name = "Btn_Menu";
-            Btn_Menu.Size = new Size(115, 29);
-            Btn_Menu.TabIndex = 1;
-            Btn_Menu.Text = "Menu";
-            Btn_Menu.UseVisualStyleBackColor = true;
-            Btn_Menu.Click += Btn_Menu_Click;
+            this.Btn_Menu.Location = new System.Drawing.Point(3, 3);
+            this.Btn_Menu.Name = "Btn_Menu";
+            this.Btn_Menu.Size = new System.Drawing.Size(131, 39);
+            this.Btn_Menu.TabIndex = 1;
+            this.Btn_Menu.Text = "Menu";
+            this.Btn_Menu.UseVisualStyleBackColor = true;
+            this.Btn_Menu.Click += new System.EventHandler(this.Btn_Menu_Click_1);
             // 
             // Pnl_Menu_Student
             // 
-            Pnl_Menu_Student.Controls.Add(Pnl_Menu_Userdetails);
-            Pnl_Menu_Student.Controls.Add(Temp_Lbl_Size);
-            Pnl_Menu_Student.Controls.Add(Btn_Menu_Logbook);
-            Pnl_Menu_Student.Controls.Add(Btn_Menu_Feedback);
-            Pnl_Menu_Student.Controls.Add(Btn_Menu_Goals);
-            Pnl_Menu_Student.Controls.Add(Btn_Menu_Logout);
-            Pnl_Menu_Student.Location = new Point(3, 36);
-            Pnl_Menu_Student.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Menu_Student.Name = "Pnl_Menu_Student";
-            Pnl_Menu_Student.Size = new Size(115, 297);
-            Pnl_Menu_Student.TabIndex = 0;
+            this.Pnl_Menu_Student.Controls.Add(this.Pnl_Menu_Userdetails);
+            this.Pnl_Menu_Student.Controls.Add(this.Temp_Lbl_Size);
+            this.Pnl_Menu_Student.Controls.Add(this.Btn_Menu_Logbook);
+            this.Pnl_Menu_Student.Controls.Add(this.Btn_Menu_Feedback);
+            this.Pnl_Menu_Student.Controls.Add(this.Btn_Menu_Goals);
+            this.Pnl_Menu_Student.Controls.Add(this.Btn_Menu_Logout);
+            this.Pnl_Menu_Student.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Menu_Student.Name = "Pnl_Menu_Student";
+            this.Pnl_Menu_Student.Size = new System.Drawing.Size(131, 396);
+            this.Pnl_Menu_Student.TabIndex = 0;
             // 
             // Pnl_Menu_Userdetails
             // 
-            Pnl_Menu_Userdetails.Controls.Add(Lbl_Menu_Userid);
-            Pnl_Menu_Userdetails.Controls.Add(Lbl_Menu_Userrole);
-            Pnl_Menu_Userdetails.Controls.Add(Lbl_Menu_Username);
-            Pnl_Menu_Userdetails.Location = new Point(3, 202);
-            Pnl_Menu_Userdetails.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Menu_Userdetails.Name = "Pnl_Menu_Userdetails";
-            Pnl_Menu_Userdetails.Size = new Size(109, 59);
-            Pnl_Menu_Userdetails.TabIndex = 8;
+            this.Pnl_Menu_Userdetails.Controls.Add(this.Lbl_Menu_Userid);
+            this.Pnl_Menu_Userdetails.Controls.Add(this.Lbl_Menu_Userrole);
+            this.Pnl_Menu_Userdetails.Controls.Add(this.Lbl_Menu_Username);
+            this.Pnl_Menu_Userdetails.Location = new System.Drawing.Point(3, 269);
+            this.Pnl_Menu_Userdetails.Name = "Pnl_Menu_Userdetails";
+            this.Pnl_Menu_Userdetails.Size = new System.Drawing.Size(125, 79);
+            this.Pnl_Menu_Userdetails.TabIndex = 8;
             // 
             // Lbl_Menu_Userid
             // 
-            Lbl_Menu_Userid.AutoSize = true;
-            Lbl_Menu_Userid.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            Lbl_Menu_Userid.ForeColor = Color.Gray;
-            Lbl_Menu_Userid.Location = new Point(5, 22);
-            Lbl_Menu_Userid.Name = "Lbl_Menu_Userid";
-            Lbl_Menu_Userid.Size = new Size(72, 13);
-            Lbl_Menu_Userid.TabIndex = 6;
-            Lbl_Menu_Userid.Text = "gebruikersId";
+            this.Lbl_Menu_Userid.AutoSize = true;
+            this.Lbl_Menu_Userid.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Menu_Userid.ForeColor = System.Drawing.Color.Gray;
+            this.Lbl_Menu_Userid.Location = new System.Drawing.Point(6, 29);
+            this.Lbl_Menu_Userid.Name = "Lbl_Menu_Userid";
+            this.Lbl_Menu_Userid.Size = new System.Drawing.Size(85, 19);
+            this.Lbl_Menu_Userid.TabIndex = 6;
+            this.Lbl_Menu_Userid.Text = "gebruikersId";
             // 
             // Lbl_Menu_Userrole
             // 
-            Lbl_Menu_Userrole.AutoSize = true;
-            Lbl_Menu_Userrole.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            Lbl_Menu_Userrole.ForeColor = Color.Gray;
-            Lbl_Menu_Userrole.Location = new Point(5, 4);
-            Lbl_Menu_Userrole.Name = "Lbl_Menu_Userrole";
-            Lbl_Menu_Userrole.Size = new Size(79, 13);
-            Lbl_Menu_Userrole.TabIndex = 7;
-            Lbl_Menu_Userrole.Text = "gebruikersRol";
+            this.Lbl_Menu_Userrole.AutoSize = true;
+            this.Lbl_Menu_Userrole.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Menu_Userrole.ForeColor = System.Drawing.Color.Gray;
+            this.Lbl_Menu_Userrole.Location = new System.Drawing.Point(6, 5);
+            this.Lbl_Menu_Userrole.Name = "Lbl_Menu_Userrole";
+            this.Lbl_Menu_Userrole.Size = new System.Drawing.Size(92, 19);
+            this.Lbl_Menu_Userrole.TabIndex = 7;
+            this.Lbl_Menu_Userrole.Text = "gebruikersRol";
             // 
             // Lbl_Menu_Username
             // 
-            Lbl_Menu_Username.AutoSize = true;
-            Lbl_Menu_Username.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point);
-            Lbl_Menu_Username.ForeColor = Color.Gray;
-            Lbl_Menu_Username.Location = new Point(5, 40);
-            Lbl_Menu_Username.Name = "Lbl_Menu_Username";
-            Lbl_Menu_Username.Size = new Size(92, 13);
-            Lbl_Menu_Username.TabIndex = 5;
-            Lbl_Menu_Username.Text = "GebruikersNaam";
+            this.Lbl_Menu_Username.AutoSize = true;
+            this.Lbl_Menu_Username.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Lbl_Menu_Username.ForeColor = System.Drawing.Color.Gray;
+            this.Lbl_Menu_Username.Location = new System.Drawing.Point(6, 53);
+            this.Lbl_Menu_Username.Name = "Lbl_Menu_Username";
+            this.Lbl_Menu_Username.Size = new System.Drawing.Size(111, 19);
+            this.Lbl_Menu_Username.TabIndex = 5;
+            this.Lbl_Menu_Username.Text = "GebruikersNaam";
             // 
             // Temp_Lbl_Size
             // 
-            Temp_Lbl_Size.AutoSize = true;
-            Temp_Lbl_Size.Location = new Point(3, 184);
-            Temp_Lbl_Size.Name = "Temp_Lbl_Size";
-            Temp_Lbl_Size.Size = new Size(49, 15);
-            Temp_Lbl_Size.TabIndex = 4;
-            Temp_Lbl_Size.Text = "800, 450";
+            this.Temp_Lbl_Size.AutoSize = true;
+            this.Temp_Lbl_Size.Location = new System.Drawing.Point(3, 245);
+            this.Temp_Lbl_Size.Name = "Temp_Lbl_Size";
+            this.Temp_Lbl_Size.Size = new System.Drawing.Size(64, 20);
+            this.Temp_Lbl_Size.TabIndex = 4;
+            this.Temp_Lbl_Size.Text = "800, 450";
             // 
             // Btn_Menu_Logbook
             // 
-            Btn_Menu_Logbook.Location = new Point(3, 70);
-            Btn_Menu_Logbook.Margin = new Padding(3, 2, 3, 2);
-            Btn_Menu_Logbook.Name = "Btn_Menu_Logbook";
-            Btn_Menu_Logbook.Size = new Size(109, 29);
-            Btn_Menu_Logbook.TabIndex = 3;
-            Btn_Menu_Logbook.Text = "Logboek";
-            Btn_Menu_Logbook.UseVisualStyleBackColor = true;
-            Btn_Menu_Logbook.Click += Btn_Menu_Logbook_Click;
+            this.Btn_Menu_Logbook.Location = new System.Drawing.Point(3, 93);
+            this.Btn_Menu_Logbook.Name = "Btn_Menu_Logbook";
+            this.Btn_Menu_Logbook.Size = new System.Drawing.Size(125, 39);
+            this.Btn_Menu_Logbook.TabIndex = 3;
+            this.Btn_Menu_Logbook.Text = "Logboek";
+            this.Btn_Menu_Logbook.UseVisualStyleBackColor = true;
             // 
             // Btn_Menu_Feedback
             // 
-            Btn_Menu_Feedback.Location = new Point(3, 36);
-            Btn_Menu_Feedback.Margin = new Padding(3, 2, 3, 2);
-            Btn_Menu_Feedback.Name = "Btn_Menu_Feedback";
-            Btn_Menu_Feedback.Size = new Size(109, 29);
-            Btn_Menu_Feedback.TabIndex = 2;
-            Btn_Menu_Feedback.Text = "Feedback";
-            Btn_Menu_Feedback.UseVisualStyleBackColor = true;
-            Btn_Menu_Feedback.Click += Btn_Menu_Feedback_Click;
+            this.Btn_Menu_Feedback.Location = new System.Drawing.Point(3, 48);
+            this.Btn_Menu_Feedback.Name = "Btn_Menu_Feedback";
+            this.Btn_Menu_Feedback.Size = new System.Drawing.Size(125, 39);
+            this.Btn_Menu_Feedback.TabIndex = 2;
+            this.Btn_Menu_Feedback.Text = "Feedback";
+            this.Btn_Menu_Feedback.UseVisualStyleBackColor = true;
             // 
             // Btn_Menu_Goals
             // 
-            Btn_Menu_Goals.Location = new Point(3, 2);
-            Btn_Menu_Goals.Margin = new Padding(3, 2, 3, 2);
-            Btn_Menu_Goals.Name = "Btn_Menu_Goals";
-            Btn_Menu_Goals.Size = new Size(109, 29);
-            Btn_Menu_Goals.TabIndex = 1;
-            Btn_Menu_Goals.Text = "Doelen";
-            Btn_Menu_Goals.UseVisualStyleBackColor = true;
-            Btn_Menu_Goals.Click += Btn_Menu_Goals_Click;
+            this.Btn_Menu_Goals.Location = new System.Drawing.Point(3, 3);
+            this.Btn_Menu_Goals.Name = "Btn_Menu_Goals";
+            this.Btn_Menu_Goals.Size = new System.Drawing.Size(125, 39);
+            this.Btn_Menu_Goals.TabIndex = 1;
+            this.Btn_Menu_Goals.Text = "Doelen";
+            this.Btn_Menu_Goals.UseVisualStyleBackColor = true;
             // 
             // Pnl_Goals_Add
             // 
-            Pnl_Goals_Add.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Goals_Add.Controls.Add(comboBox1);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_week_add);
-            Pnl_Goals_Add.Controls.Add(Goals_Btn_Add);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_Add_Sub);
-            Pnl_Goals_Add.Controls.Add(Goals_Text_Sub2);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_Sub2);
-            Pnl_Goals_Add.Controls.Add(Goals_Text_Sub1);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_Sub1);
-            Pnl_Goals_Add.Controls.Add(Goals_Text_Add);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_Add);
-            Pnl_Goals_Add.Controls.Add(Goals_Combo_Subject);
-            Pnl_Goals_Add.Controls.Add(Goals_Lbl_Subject);
-            Pnl_Goals_Add.Location = new Point(3, 36);
-            Pnl_Goals_Add.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Goals_Add.Name = "Pnl_Goals_Add";
-            Pnl_Goals_Add.Size = new Size(551, 292);
-            Pnl_Goals_Add.TabIndex = 2;
-            Pnl_Goals_Add.Visible = false;
+            this.Pnl_Goals_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Goals_Add.Controls.Add(this.comboBox1);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Lbl_week_add);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Btn_Add);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Lbl_Add_Sub);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Text_Sub2);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Lbl_Sub2);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Text_Sub1);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Lbl_Sub1);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Text_Add);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Lbl_Add);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Combo_Subject);
+            this.Pnl_Goals_Add.Controls.Add(this.Goals_Lbl_Subject);
+            this.Pnl_Goals_Add.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Goals_Add.Name = "Pnl_Goals_Add";
+            this.Pnl_Goals_Add.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Goals_Add.TabIndex = 2;
+            this.Pnl_Goals_Add.Visible = false;
             // 
             // comboBox1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            comboBox1.Location = new Point(82, 32);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(133, 23);
-            comboBox1.TabIndex = 14;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.comboBox1.Location = new System.Drawing.Point(94, 43);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(151, 28);
+            this.comboBox1.TabIndex = 14;
             // 
             // Goals_Lbl_week_add
             // 
-            Goals_Lbl_week_add.AutoSize = true;
-            Goals_Lbl_week_add.Location = new Point(3, 32);
-            Goals_Lbl_week_add.Name = "Goals_Lbl_week_add";
-            Goals_Lbl_week_add.Size = new Size(39, 15);
-            Goals_Lbl_week_add.TabIndex = 13;
-            Goals_Lbl_week_add.Text = "Week:";
+            this.Goals_Lbl_week_add.AutoSize = true;
+            this.Goals_Lbl_week_add.Location = new System.Drawing.Point(3, 43);
+            this.Goals_Lbl_week_add.Name = "Goals_Lbl_week_add";
+            this.Goals_Lbl_week_add.Size = new System.Drawing.Size(48, 20);
+            this.Goals_Lbl_week_add.TabIndex = 13;
+            this.Goals_Lbl_week_add.Text = "Week:";
             // 
             // Goals_Btn_Add
             // 
-            Goals_Btn_Add.Location = new Point(81, 154);
-            Goals_Btn_Add.Margin = new Padding(3, 2, 3, 2);
-            Goals_Btn_Add.Name = "Goals_Btn_Add";
-            Goals_Btn_Add.Size = new Size(135, 29);
-            Goals_Btn_Add.TabIndex = 12;
-            Goals_Btn_Add.Text = "Add";
-            Goals_Btn_Add.UseVisualStyleBackColor = true;
+            this.Goals_Btn_Add.Location = new System.Drawing.Point(93, 205);
+            this.Goals_Btn_Add.Name = "Goals_Btn_Add";
+            this.Goals_Btn_Add.Size = new System.Drawing.Size(154, 39);
+            this.Goals_Btn_Add.TabIndex = 12;
+            this.Goals_Btn_Add.Text = "Add";
+            this.Goals_Btn_Add.UseVisualStyleBackColor = true;
             // 
             // Goals_Lbl_Add_Sub
             // 
-            Goals_Lbl_Add_Sub.AutoSize = true;
-            Goals_Lbl_Add_Sub.ForeColor = Color.FromArgb(0, 0, 192);
-            Goals_Lbl_Add_Sub.Location = new Point(81, 138);
-            Goals_Lbl_Add_Sub.Name = "Goals_Lbl_Add_Sub";
-            Goals_Lbl_Add_Sub.Size = new Size(101, 15);
-            Goals_Lbl_Add_Sub.TabIndex = 8;
-            Goals_Lbl_Add_Sub.Text = "Nieuw Subdoel + ";
-            Goals_Lbl_Add_Sub.Click += Goals_Lbl_Add_Sub_Click;
+            this.Goals_Lbl_Add_Sub.AutoSize = true;
+            this.Goals_Lbl_Add_Sub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Goals_Lbl_Add_Sub.Location = new System.Drawing.Point(93, 184);
+            this.Goals_Lbl_Add_Sub.Name = "Goals_Lbl_Add_Sub";
+            this.Goals_Lbl_Add_Sub.Size = new System.Drawing.Size(128, 20);
+            this.Goals_Lbl_Add_Sub.TabIndex = 8;
+            this.Goals_Lbl_Add_Sub.Text = "Nieuw Subdoel + ";
             // 
             // Goals_Text_Sub2
             // 
-            Goals_Text_Sub2.Location = new Point(81, 113);
-            Goals_Text_Sub2.Margin = new Padding(3, 2, 3, 2);
-            Goals_Text_Sub2.Name = "Goals_Text_Sub2";
-            Goals_Text_Sub2.Size = new Size(135, 23);
-            Goals_Text_Sub2.TabIndex = 7;
+            this.Goals_Text_Sub2.Location = new System.Drawing.Point(93, 151);
+            this.Goals_Text_Sub2.Name = "Goals_Text_Sub2";
+            this.Goals_Text_Sub2.Size = new System.Drawing.Size(154, 27);
+            this.Goals_Text_Sub2.TabIndex = 7;
             // 
             // Goals_Lbl_Sub2
             // 
-            Goals_Lbl_Sub2.AutoSize = true;
-            Goals_Lbl_Sub2.Location = new Point(2, 113);
-            Goals_Lbl_Sub2.Name = "Goals_Lbl_Sub2";
-            Goals_Lbl_Sub2.Size = new Size(59, 15);
-            Goals_Lbl_Sub2.TabIndex = 6;
-            Goals_Lbl_Sub2.Text = "Subdoel2:";
+            this.Goals_Lbl_Sub2.AutoSize = true;
+            this.Goals_Lbl_Sub2.Location = new System.Drawing.Point(2, 151);
+            this.Goals_Lbl_Sub2.Name = "Goals_Lbl_Sub2";
+            this.Goals_Lbl_Sub2.Size = new System.Drawing.Size(75, 20);
+            this.Goals_Lbl_Sub2.TabIndex = 6;
+            this.Goals_Lbl_Sub2.Text = "Subdoel2:";
             // 
             // Goals_Text_Sub1
             // 
-            Goals_Text_Sub1.Location = new Point(81, 86);
-            Goals_Text_Sub1.Margin = new Padding(3, 2, 3, 2);
-            Goals_Text_Sub1.Name = "Goals_Text_Sub1";
-            Goals_Text_Sub1.Size = new Size(135, 23);
-            Goals_Text_Sub1.TabIndex = 5;
-            Goals_Text_Sub1.TextChanged += Goals_Text_Sub1_TextChanged;
+            this.Goals_Text_Sub1.Location = new System.Drawing.Point(93, 115);
+            this.Goals_Text_Sub1.Name = "Goals_Text_Sub1";
+            this.Goals_Text_Sub1.Size = new System.Drawing.Size(154, 27);
+            this.Goals_Text_Sub1.TabIndex = 5;
             // 
             // Goals_Lbl_Sub1
             // 
-            Goals_Lbl_Sub1.AutoSize = true;
-            Goals_Lbl_Sub1.Location = new Point(2, 86);
-            Goals_Lbl_Sub1.Name = "Goals_Lbl_Sub1";
-            Goals_Lbl_Sub1.Size = new Size(59, 15);
-            Goals_Lbl_Sub1.TabIndex = 4;
-            Goals_Lbl_Sub1.Text = "Subdoel1:";
+            this.Goals_Lbl_Sub1.AutoSize = true;
+            this.Goals_Lbl_Sub1.Location = new System.Drawing.Point(2, 115);
+            this.Goals_Lbl_Sub1.Name = "Goals_Lbl_Sub1";
+            this.Goals_Lbl_Sub1.Size = new System.Drawing.Size(75, 20);
+            this.Goals_Lbl_Sub1.TabIndex = 4;
+            this.Goals_Lbl_Sub1.Text = "Subdoel1:";
             // 
             // Goals_Text_Add
             // 
-            Goals_Text_Add.Location = new Point(81, 59);
-            Goals_Text_Add.Margin = new Padding(3, 2, 3, 2);
-            Goals_Text_Add.Name = "Goals_Text_Add";
-            Goals_Text_Add.Size = new Size(135, 23);
-            Goals_Text_Add.TabIndex = 3;
+            this.Goals_Text_Add.Location = new System.Drawing.Point(93, 79);
+            this.Goals_Text_Add.Name = "Goals_Text_Add";
+            this.Goals_Text_Add.Size = new System.Drawing.Size(154, 27);
+            this.Goals_Text_Add.TabIndex = 3;
             // 
             // Goals_Lbl_Add
             // 
-            Goals_Lbl_Add.AutoSize = true;
-            Goals_Lbl_Add.Location = new Point(3, 59);
-            Goals_Lbl_Add.Name = "Goals_Lbl_Add";
-            Goals_Lbl_Add.Size = new Size(71, 15);
-            Goals_Lbl_Add.TabIndex = 2;
-            Goals_Lbl_Add.Text = "Nieuw Doel:";
+            this.Goals_Lbl_Add.AutoSize = true;
+            this.Goals_Lbl_Add.Location = new System.Drawing.Point(3, 79);
+            this.Goals_Lbl_Add.Name = "Goals_Lbl_Add";
+            this.Goals_Lbl_Add.Size = new System.Drawing.Size(90, 20);
+            this.Goals_Lbl_Add.TabIndex = 2;
+            this.Goals_Lbl_Add.Text = "Nieuw Doel:";
             // 
             // Goals_Combo_Subject
             // 
-            Goals_Combo_Subject.FormattingEnabled = true;
-            Goals_Combo_Subject.Items.AddRange(new object[] { "B1A3 - Project Management", "B1C2 - Intro to Development", "B1F3 - Data Structure Basics" });
-            Goals_Combo_Subject.Location = new Point(82, 2);
-            Goals_Combo_Subject.Margin = new Padding(3, 2, 3, 2);
-            Goals_Combo_Subject.Name = "Goals_Combo_Subject";
-            Goals_Combo_Subject.Size = new Size(133, 23);
-            Goals_Combo_Subject.TabIndex = 1;
+            this.Goals_Combo_Subject.FormattingEnabled = true;
+            this.Goals_Combo_Subject.Items.AddRange(new object[] {
+            "B1A3 - Project Management",
+            "B1C2 - Intro to Development",
+            "B1F3 - Data Structure Basics"});
+            this.Goals_Combo_Subject.Location = new System.Drawing.Point(94, 3);
+            this.Goals_Combo_Subject.Name = "Goals_Combo_Subject";
+            this.Goals_Combo_Subject.Size = new System.Drawing.Size(151, 28);
+            this.Goals_Combo_Subject.TabIndex = 1;
             // 
             // Goals_Lbl_Subject
             // 
-            Goals_Lbl_Subject.AutoSize = true;
-            Goals_Lbl_Subject.Location = new Point(3, 2);
-            Goals_Lbl_Subject.Name = "Goals_Lbl_Subject";
-            Goals_Lbl_Subject.Size = new Size(28, 15);
-            Goals_Lbl_Subject.TabIndex = 0;
-            Goals_Lbl_Subject.Text = "Vak:";
+            this.Goals_Lbl_Subject.AutoSize = true;
+            this.Goals_Lbl_Subject.Location = new System.Drawing.Point(3, 3);
+            this.Goals_Lbl_Subject.Name = "Goals_Lbl_Subject";
+            this.Goals_Lbl_Subject.Size = new System.Drawing.Size(35, 20);
+            this.Goals_Lbl_Subject.TabIndex = 0;
+            this.Goals_Lbl_Subject.Text = "Vak:";
             // 
             // Pnl_Goals_Menu
             // 
-            Pnl_Goals_Menu.Controls.Add(Goals_Menu_Btn_Current);
-            Pnl_Goals_Menu.Controls.Add(Goals_Menu_Btn_Add);
-            Pnl_Goals_Menu.Location = new Point(3, 2);
-            Pnl_Goals_Menu.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Goals_Menu.Name = "Pnl_Goals_Menu";
-            Pnl_Goals_Menu.Size = new Size(550, 32);
-            Pnl_Goals_Menu.TabIndex = 3;
-            Pnl_Goals_Menu.Visible = false;
+            this.Pnl_Goals_Menu.Controls.Add(this.Goals_Menu_Btn_Current);
+            this.Pnl_Goals_Menu.Controls.Add(this.Goals_Menu_Btn_Add);
+            this.Pnl_Goals_Menu.Location = new System.Drawing.Point(3, 3);
+            this.Pnl_Goals_Menu.Name = "Pnl_Goals_Menu";
+            this.Pnl_Goals_Menu.Size = new System.Drawing.Size(629, 43);
+            this.Pnl_Goals_Menu.TabIndex = 3;
+            this.Pnl_Goals_Menu.Visible = false;
             // 
             // Goals_Menu_Btn_Current
             // 
-            Goals_Menu_Btn_Current.Location = new Point(4, 2);
-            Goals_Menu_Btn_Current.Margin = new Padding(3, 2, 3, 2);
-            Goals_Menu_Btn_Current.Name = "Goals_Menu_Btn_Current";
-            Goals_Menu_Btn_Current.Size = new Size(120, 26);
-            Goals_Menu_Btn_Current.TabIndex = 5;
-            Goals_Menu_Btn_Current.Text = "Doelen";
-            Goals_Menu_Btn_Current.UseVisualStyleBackColor = true;
-            Goals_Menu_Btn_Current.Click += Goals_Menu_Btn_Current_Click;
+            this.Goals_Menu_Btn_Current.Location = new System.Drawing.Point(5, 3);
+            this.Goals_Menu_Btn_Current.Name = "Goals_Menu_Btn_Current";
+            this.Goals_Menu_Btn_Current.Size = new System.Drawing.Size(137, 35);
+            this.Goals_Menu_Btn_Current.TabIndex = 5;
+            this.Goals_Menu_Btn_Current.Text = "Doelen";
+            this.Goals_Menu_Btn_Current.UseVisualStyleBackColor = true;
             // 
             // Goals_Menu_Btn_Add
             // 
-            Goals_Menu_Btn_Add.Location = new Point(129, 2);
-            Goals_Menu_Btn_Add.Margin = new Padding(3, 2, 3, 2);
-            Goals_Menu_Btn_Add.Name = "Goals_Menu_Btn_Add";
-            Goals_Menu_Btn_Add.Size = new Size(142, 26);
-            Goals_Menu_Btn_Add.TabIndex = 4;
-            Goals_Menu_Btn_Add.Text = "Doelen Toevoegen";
-            Goals_Menu_Btn_Add.UseVisualStyleBackColor = true;
-            Goals_Menu_Btn_Add.Click += Goals_Menu_Btn_Add_Click;
+            this.Goals_Menu_Btn_Add.Location = new System.Drawing.Point(147, 3);
+            this.Goals_Menu_Btn_Add.Name = "Goals_Menu_Btn_Add";
+            this.Goals_Menu_Btn_Add.Size = new System.Drawing.Size(162, 35);
+            this.Goals_Menu_Btn_Add.TabIndex = 4;
+            this.Goals_Menu_Btn_Add.Text = "Doelen Toevoegen";
+            this.Goals_Menu_Btn_Add.UseVisualStyleBackColor = true;
             // 
             // Pnl_Feedback_Menu
             // 
-            Pnl_Feedback_Menu.Controls.Add(Feedback_Menu_Btn_add);
-            Pnl_Feedback_Menu.Controls.Add(Feedback_Menu_Btn_Current);
-            Pnl_Feedback_Menu.Location = new Point(3, 2);
-            Pnl_Feedback_Menu.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Feedback_Menu.Name = "Pnl_Feedback_Menu";
-            Pnl_Feedback_Menu.Size = new Size(550, 32);
-            Pnl_Feedback_Menu.TabIndex = 5;
-            Pnl_Feedback_Menu.Visible = false;
+            this.Pnl_Feedback_Menu.Controls.Add(this.Feedback_Menu_Btn_add);
+            this.Pnl_Feedback_Menu.Controls.Add(this.Feedback_Menu_Btn_Current);
+            this.Pnl_Feedback_Menu.Location = new System.Drawing.Point(3, 3);
+            this.Pnl_Feedback_Menu.Name = "Pnl_Feedback_Menu";
+            this.Pnl_Feedback_Menu.Size = new System.Drawing.Size(629, 43);
+            this.Pnl_Feedback_Menu.TabIndex = 5;
+            this.Pnl_Feedback_Menu.Visible = false;
             // 
             // Feedback_Menu_Btn_add
             // 
-            Feedback_Menu_Btn_add.Location = new Point(129, 2);
-            Feedback_Menu_Btn_add.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Menu_Btn_add.Name = "Feedback_Menu_Btn_add";
-            Feedback_Menu_Btn_add.Size = new Size(142, 26);
-            Feedback_Menu_Btn_add.TabIndex = 6;
-            Feedback_Menu_Btn_add.Text = "Feedback Toevoegen";
-            Feedback_Menu_Btn_add.UseVisualStyleBackColor = true;
-            Feedback_Menu_Btn_add.Click += Feedback_Menu_Btn_add_Click;
+            this.Feedback_Menu_Btn_add.Location = new System.Drawing.Point(147, 3);
+            this.Feedback_Menu_Btn_add.Name = "Feedback_Menu_Btn_add";
+            this.Feedback_Menu_Btn_add.Size = new System.Drawing.Size(162, 35);
+            this.Feedback_Menu_Btn_add.TabIndex = 6;
+            this.Feedback_Menu_Btn_add.Text = "Feedback Toevoegen";
+            this.Feedback_Menu_Btn_add.UseVisualStyleBackColor = true;
             // 
             // Feedback_Menu_Btn_Current
             // 
-            Feedback_Menu_Btn_Current.Location = new Point(4, 2);
-            Feedback_Menu_Btn_Current.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Menu_Btn_Current.Name = "Feedback_Menu_Btn_Current";
-            Feedback_Menu_Btn_Current.Size = new Size(120, 26);
-            Feedback_Menu_Btn_Current.TabIndex = 5;
-            Feedback_Menu_Btn_Current.Text = "Feedback";
-            Feedback_Menu_Btn_Current.UseVisualStyleBackColor = true;
-            Feedback_Menu_Btn_Current.Click += Feedback_Menu_Btn_Current_Click;
+            this.Feedback_Menu_Btn_Current.Location = new System.Drawing.Point(5, 3);
+            this.Feedback_Menu_Btn_Current.Name = "Feedback_Menu_Btn_Current";
+            this.Feedback_Menu_Btn_Current.Size = new System.Drawing.Size(137, 35);
+            this.Feedback_Menu_Btn_Current.TabIndex = 5;
+            this.Feedback_Menu_Btn_Current.Text = "Feedback";
+            this.Feedback_Menu_Btn_Current.UseVisualStyleBackColor = true;
             // 
             // Feedback_Lbl_Subject
             // 
-            Feedback_Lbl_Subject.AutoSize = true;
-            Feedback_Lbl_Subject.Location = new Point(4, 4);
-            Feedback_Lbl_Subject.Name = "Feedback_Lbl_Subject";
-            Feedback_Lbl_Subject.Size = new Size(28, 15);
-            Feedback_Lbl_Subject.TabIndex = 4;
-            Feedback_Lbl_Subject.Text = "Vak:";
+            this.Feedback_Lbl_Subject.AutoSize = true;
+            this.Feedback_Lbl_Subject.Location = new System.Drawing.Point(5, 5);
+            this.Feedback_Lbl_Subject.Name = "Feedback_Lbl_Subject";
+            this.Feedback_Lbl_Subject.Size = new System.Drawing.Size(35, 20);
+            this.Feedback_Lbl_Subject.TabIndex = 4;
+            this.Feedback_Lbl_Subject.Text = "Vak:";
             // 
             // Feedback_Combo_Subject
             // 
-            Feedback_Combo_Subject.FormattingEnabled = true;
-            Feedback_Combo_Subject.Location = new Point(83, 4);
-            Feedback_Combo_Subject.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Combo_Subject.Name = "Feedback_Combo_Subject";
-            Feedback_Combo_Subject.Size = new Size(133, 23);
-            Feedback_Combo_Subject.TabIndex = 5;
+            this.Feedback_Combo_Subject.FormattingEnabled = true;
+            this.Feedback_Combo_Subject.Location = new System.Drawing.Point(95, 5);
+            this.Feedback_Combo_Subject.Name = "Feedback_Combo_Subject";
+            this.Feedback_Combo_Subject.Size = new System.Drawing.Size(151, 28);
+            this.Feedback_Combo_Subject.TabIndex = 5;
             // 
             // Feedback_Lbl_Feedback
             // 
-            Feedback_Lbl_Feedback.AutoSize = true;
-            Feedback_Lbl_Feedback.Location = new Point(4, 67);
-            Feedback_Lbl_Feedback.Name = "Feedback_Lbl_Feedback";
-            Feedback_Lbl_Feedback.Size = new Size(60, 15);
-            Feedback_Lbl_Feedback.TabIndex = 6;
-            Feedback_Lbl_Feedback.Text = "Feedback:";
+            this.Feedback_Lbl_Feedback.AutoSize = true;
+            this.Feedback_Lbl_Feedback.Location = new System.Drawing.Point(5, 89);
+            this.Feedback_Lbl_Feedback.Name = "Feedback_Lbl_Feedback";
+            this.Feedback_Lbl_Feedback.Size = new System.Drawing.Size(75, 20);
+            this.Feedback_Lbl_Feedback.TabIndex = 6;
+            this.Feedback_Lbl_Feedback.Text = "Feedback:";
             // 
             // Feedback_Text_Feedback
             // 
-            Feedback_Text_Feedback.Location = new Point(83, 67);
-            Feedback_Text_Feedback.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Text_Feedback.Multiline = true;
-            Feedback_Text_Feedback.Name = "Feedback_Text_Feedback";
-            Feedback_Text_Feedback.Size = new Size(133, 121);
-            Feedback_Text_Feedback.TabIndex = 7;
+            this.Feedback_Text_Feedback.Location = new System.Drawing.Point(95, 89);
+            this.Feedback_Text_Feedback.Multiline = true;
+            this.Feedback_Text_Feedback.Name = "Feedback_Text_Feedback";
+            this.Feedback_Text_Feedback.Size = new System.Drawing.Size(151, 160);
+            this.Feedback_Text_Feedback.TabIndex = 7;
             // 
             // Feedback_Lbl_Teacher
             // 
-            Feedback_Lbl_Teacher.AutoSize = true;
-            Feedback_Lbl_Teacher.Location = new Point(4, 192);
-            Feedback_Lbl_Teacher.Name = "Feedback_Lbl_Teacher";
-            Feedback_Lbl_Teacher.Size = new Size(48, 15);
-            Feedback_Lbl_Teacher.TabIndex = 9;
-            Feedback_Lbl_Teacher.Text = "Docent:";
+            this.Feedback_Lbl_Teacher.AutoSize = true;
+            this.Feedback_Lbl_Teacher.Location = new System.Drawing.Point(5, 256);
+            this.Feedback_Lbl_Teacher.Name = "Feedback_Lbl_Teacher";
+            this.Feedback_Lbl_Teacher.Size = new System.Drawing.Size(60, 20);
+            this.Feedback_Lbl_Teacher.TabIndex = 9;
+            this.Feedback_Lbl_Teacher.Text = "Docent:";
             // 
             // Pnl_Feedback_Add
             // 
-            Pnl_Feedback_Add.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Week_add);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Combo_Week_add);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Combo_Teachers);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Btn_Add);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Teacher);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Text_Feedback);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Feedback);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Combo_Subject);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Subject);
-            Pnl_Feedback_Add.Location = new Point(3, 36);
-            Pnl_Feedback_Add.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Feedback_Add.Name = "Pnl_Feedback_Add";
-            Pnl_Feedback_Add.Size = new Size(551, 292);
-            Pnl_Feedback_Add.TabIndex = 4;
-            Pnl_Feedback_Add.Visible = false;
+            this.Pnl_Feedback_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Week_add);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Combo_Week_add);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Combo_Teachers);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Btn_Add);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Teacher);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Text_Feedback);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Feedback);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Combo_Subject);
+            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Subject);
+            this.Pnl_Feedback_Add.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Feedback_Add.Name = "Pnl_Feedback_Add";
+            this.Pnl_Feedback_Add.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Feedback_Add.TabIndex = 4;
+            this.Pnl_Feedback_Add.Visible = false;
             // 
             // Feedback_Lbl_Week_add
             // 
-            Feedback_Lbl_Week_add.AutoSize = true;
-            Feedback_Lbl_Week_add.Location = new Point(4, 31);
-            Feedback_Lbl_Week_add.Name = "Feedback_Lbl_Week_add";
-            Feedback_Lbl_Week_add.Size = new Size(39, 15);
-            Feedback_Lbl_Week_add.TabIndex = 13;
-            Feedback_Lbl_Week_add.Text = "Week:";
+            this.Feedback_Lbl_Week_add.AutoSize = true;
+            this.Feedback_Lbl_Week_add.Location = new System.Drawing.Point(5, 41);
+            this.Feedback_Lbl_Week_add.Name = "Feedback_Lbl_Week_add";
+            this.Feedback_Lbl_Week_add.Size = new System.Drawing.Size(48, 20);
+            this.Feedback_Lbl_Week_add.TabIndex = 13;
+            this.Feedback_Lbl_Week_add.Text = "Week:";
             // 
             // Feedback_Combo_Week_add
             // 
-            Feedback_Combo_Week_add.FormattingEnabled = true;
-            Feedback_Combo_Week_add.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            Feedback_Combo_Week_add.Location = new Point(83, 31);
-            Feedback_Combo_Week_add.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Combo_Week_add.Name = "Feedback_Combo_Week_add";
-            Feedback_Combo_Week_add.Size = new Size(133, 23);
-            Feedback_Combo_Week_add.TabIndex = 12;
+            this.Feedback_Combo_Week_add.FormattingEnabled = true;
+            this.Feedback_Combo_Week_add.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.Feedback_Combo_Week_add.Location = new System.Drawing.Point(95, 41);
+            this.Feedback_Combo_Week_add.Name = "Feedback_Combo_Week_add";
+            this.Feedback_Combo_Week_add.Size = new System.Drawing.Size(151, 28);
+            this.Feedback_Combo_Week_add.TabIndex = 12;
             // 
             // Feedback_Combo_Teachers
             // 
-            Feedback_Combo_Teachers.FormattingEnabled = true;
-            Feedback_Combo_Teachers.Location = new Point(83, 192);
-            Feedback_Combo_Teachers.Name = "Feedback_Combo_Teachers";
-            Feedback_Combo_Teachers.Size = new Size(133, 23);
-            Feedback_Combo_Teachers.TabIndex = 11;
+            this.Feedback_Combo_Teachers.FormattingEnabled = true;
+            this.Feedback_Combo_Teachers.Location = new System.Drawing.Point(95, 256);
+            this.Feedback_Combo_Teachers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Feedback_Combo_Teachers.Name = "Feedback_Combo_Teachers";
+            this.Feedback_Combo_Teachers.Size = new System.Drawing.Size(151, 28);
+            this.Feedback_Combo_Teachers.TabIndex = 11;
             // 
             // Feedback_Btn_Add
             // 
-            Feedback_Btn_Add.Location = new Point(83, 220);
-            Feedback_Btn_Add.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Btn_Add.Name = "Feedback_Btn_Add";
-            Feedback_Btn_Add.Size = new Size(134, 22);
-            Feedback_Btn_Add.TabIndex = 10;
-            Feedback_Btn_Add.Text = "Add";
-            Feedback_Btn_Add.UseVisualStyleBackColor = true;
+            this.Feedback_Btn_Add.Location = new System.Drawing.Point(95, 293);
+            this.Feedback_Btn_Add.Name = "Feedback_Btn_Add";
+            this.Feedback_Btn_Add.Size = new System.Drawing.Size(153, 29);
+            this.Feedback_Btn_Add.TabIndex = 10;
+            this.Feedback_Btn_Add.Text = "Add";
+            this.Feedback_Btn_Add.UseVisualStyleBackColor = true;
             // 
             // Pnl_Goals
             // 
-            Pnl_Goals.Controls.Add(Pnl_Goals_Menu);
-            Pnl_Goals.Controls.Add(Pnl_Goals_Add);
-            Pnl_Goals.Controls.Add(Pnl_Goals_Current);
-            Pnl_Goals.Location = new Point(129, 0);
-            Pnl_Goals.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Goals.Name = "Pnl_Goals";
-            Pnl_Goals.Size = new Size(576, 333);
-            Pnl_Goals.TabIndex = 6;
-            Pnl_Goals.Visible = false;
+            this.Pnl_Goals.Controls.Add(this.Pnl_Goals_Menu);
+            this.Pnl_Goals.Controls.Add(this.Pnl_Goals_Add);
+            this.Pnl_Goals.Controls.Add(this.Pnl_Goals_Current);
+            this.Pnl_Goals.Location = new System.Drawing.Point(147, 0);
+            this.Pnl_Goals.Name = "Pnl_Goals";
+            this.Pnl_Goals.Size = new System.Drawing.Size(658, 444);
+            this.Pnl_Goals.TabIndex = 6;
+            this.Pnl_Goals.Visible = false;
             // 
             // Pnl_Goals_Current
             // 
-            Pnl_Goals_Current.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Goals_Current.Controls.Add(Goals_Lbl_Week);
-            Pnl_Goals_Current.Controls.Add(Goals_Combo_Week);
-            Pnl_Goals_Current.Controls.Add(Lbl_Goals_Finished);
-            Pnl_Goals_Current.Controls.Add(ListBox_Goals_Done);
-            Pnl_Goals_Current.Controls.Add(Lbl_Goals_Set);
-            Pnl_Goals_Current.Controls.Add(ListBox_Goals);
-            Pnl_Goals_Current.Location = new Point(3, 36);
-            Pnl_Goals_Current.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Goals_Current.Name = "Pnl_Goals_Current";
-            Pnl_Goals_Current.Size = new Size(551, 292);
-            Pnl_Goals_Current.TabIndex = 4;
+            this.Pnl_Goals_Current.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Goals_Current.Controls.Add(this.Goals_Lbl_Week);
+            this.Pnl_Goals_Current.Controls.Add(this.Goals_Combo_Week);
+            this.Pnl_Goals_Current.Controls.Add(this.Lbl_Goals_Finished);
+            this.Pnl_Goals_Current.Controls.Add(this.ListBox_Goals_Done);
+            this.Pnl_Goals_Current.Controls.Add(this.Lbl_Goals_Set);
+            this.Pnl_Goals_Current.Controls.Add(this.ListBox_Goals);
+            this.Pnl_Goals_Current.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Goals_Current.Name = "Pnl_Goals_Current";
+            this.Pnl_Goals_Current.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Goals_Current.TabIndex = 4;
             // 
             // Goals_Lbl_Week
             // 
-            Goals_Lbl_Week.AutoSize = true;
-            Goals_Lbl_Week.Location = new Point(3, 4);
-            Goals_Lbl_Week.Name = "Goals_Lbl_Week";
-            Goals_Lbl_Week.Size = new Size(36, 15);
-            Goals_Lbl_Week.TabIndex = 9;
-            Goals_Lbl_Week.Text = "Week";
+            this.Goals_Lbl_Week.AutoSize = true;
+            this.Goals_Lbl_Week.Location = new System.Drawing.Point(3, 5);
+            this.Goals_Lbl_Week.Name = "Goals_Lbl_Week";
+            this.Goals_Lbl_Week.Size = new System.Drawing.Size(45, 20);
+            this.Goals_Lbl_Week.TabIndex = 9;
+            this.Goals_Lbl_Week.Text = "Week";
             // 
             // Goals_Combo_Week
             // 
-            Goals_Combo_Week.FormattingEnabled = true;
-            Goals_Combo_Week.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            Goals_Combo_Week.Location = new Point(46, 2);
-            Goals_Combo_Week.Margin = new Padding(3, 2, 3, 2);
-            Goals_Combo_Week.Name = "Goals_Combo_Week";
-            Goals_Combo_Week.Size = new Size(134, 23);
-            Goals_Combo_Week.TabIndex = 8;
+            this.Goals_Combo_Week.FormattingEnabled = true;
+            this.Goals_Combo_Week.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.Goals_Combo_Week.Location = new System.Drawing.Point(53, 3);
+            this.Goals_Combo_Week.Name = "Goals_Combo_Week";
+            this.Goals_Combo_Week.Size = new System.Drawing.Size(153, 28);
+            this.Goals_Combo_Week.TabIndex = 8;
             // 
             // Lbl_Goals_Finished
             // 
-            Lbl_Goals_Finished.AutoSize = true;
-            Lbl_Goals_Finished.Location = new Point(279, 35);
-            Lbl_Goals_Finished.Name = "Lbl_Goals_Finished";
-            Lbl_Goals_Finished.Size = new Size(37, 15);
-            Lbl_Goals_Finished.TabIndex = 7;
-            Lbl_Goals_Finished.Text = "Taken";
+            this.Lbl_Goals_Finished.AutoSize = true;
+            this.Lbl_Goals_Finished.Location = new System.Drawing.Point(319, 47);
+            this.Lbl_Goals_Finished.Name = "Lbl_Goals_Finished";
+            this.Lbl_Goals_Finished.Size = new System.Drawing.Size(46, 20);
+            this.Lbl_Goals_Finished.TabIndex = 7;
+            this.Lbl_Goals_Finished.Text = "Taken";
             // 
             // ListBox_Goals_Done
             // 
-            ListBox_Goals_Done.FormattingEnabled = true;
-            ListBox_Goals_Done.Items.AddRange(new object[] { "subtask1", "subtask2", "subtask3" });
-            ListBox_Goals_Done.Location = new Point(279, 54);
-            ListBox_Goals_Done.Margin = new Padding(3, 2, 3, 2);
-            ListBox_Goals_Done.Name = "ListBox_Goals_Done";
-            ListBox_Goals_Done.Size = new Size(267, 220);
-            ListBox_Goals_Done.TabIndex = 5;
+            this.ListBox_Goals_Done.FormattingEnabled = true;
+            this.ListBox_Goals_Done.Items.AddRange(new object[] {
+            "subtask1",
+            "subtask2",
+            "subtask3"});
+            this.ListBox_Goals_Done.Location = new System.Drawing.Point(319, 72);
+            this.ListBox_Goals_Done.Name = "ListBox_Goals_Done";
+            this.ListBox_Goals_Done.Size = new System.Drawing.Size(305, 290);
+            this.ListBox_Goals_Done.TabIndex = 5;
             // 
             // Lbl_Goals_Set
             // 
-            Lbl_Goals_Set.AutoSize = true;
-            Lbl_Goals_Set.Location = new Point(3, 35);
-            Lbl_Goals_Set.Name = "Lbl_Goals_Set";
-            Lbl_Goals_Set.Size = new Size(44, 15);
-            Lbl_Goals_Set.TabIndex = 6;
-            Lbl_Goals_Set.Text = "Doelen";
+            this.Lbl_Goals_Set.AutoSize = true;
+            this.Lbl_Goals_Set.Location = new System.Drawing.Point(3, 47);
+            this.Lbl_Goals_Set.Name = "Lbl_Goals_Set";
+            this.Lbl_Goals_Set.Size = new System.Drawing.Size(57, 20);
+            this.Lbl_Goals_Set.TabIndex = 6;
+            this.Lbl_Goals_Set.Text = "Doelen";
             // 
             // ListBox_Goals
             // 
-            ListBox_Goals.FormattingEnabled = true;
-            ListBox_Goals.Items.AddRange(new object[] { "goal1", "goal3", "goal5", "goal8" });
-            ListBox_Goals.Location = new Point(3, 54);
-            ListBox_Goals.Margin = new Padding(3, 2, 3, 2);
-            ListBox_Goals.Name = "ListBox_Goals";
-            ListBox_Goals.Size = new Size(267, 220);
-            ListBox_Goals.TabIndex = 4;
+            this.ListBox_Goals.FormattingEnabled = true;
+            this.ListBox_Goals.Items.AddRange(new object[] {
+            "goal1",
+            "goal3",
+            "goal5",
+            "goal8"});
+            this.ListBox_Goals.Location = new System.Drawing.Point(3, 72);
+            this.ListBox_Goals.Name = "ListBox_Goals";
+            this.ListBox_Goals.Size = new System.Drawing.Size(305, 290);
+            this.ListBox_Goals.TabIndex = 4;
             // 
             // Pnl_Feedback
             // 
-            Pnl_Feedback.Controls.Add(Pnl_Feedback_Menu);
-            Pnl_Feedback.Controls.Add(Pnl_Feedback_Add);
-            Pnl_Feedback.Controls.Add(Pnl_Feedback_Current);
-            Pnl_Feedback.Location = new Point(129, 0);
-            Pnl_Feedback.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Feedback.Name = "Pnl_Feedback";
-            Pnl_Feedback.Size = new Size(576, 333);
-            Pnl_Feedback.TabIndex = 7;
-            Pnl_Feedback.Visible = false;
+            this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Menu);
+            this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Add);
+            this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Current);
+            this.Pnl_Feedback.Location = new System.Drawing.Point(147, 0);
+            this.Pnl_Feedback.Name = "Pnl_Feedback";
+            this.Pnl_Feedback.Size = new System.Drawing.Size(658, 444);
+            this.Pnl_Feedback.TabIndex = 7;
+            this.Pnl_Feedback.Visible = false;
             // 
             // Pnl_Feedback_Current
             // 
-            Pnl_Feedback_Current.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Feedback_Current.Controls.Add(Feedback_Lbl_Week);
-            Pnl_Feedback_Current.Controls.Add(Feedback_Combo_Week);
-            Pnl_Feedback_Current.Controls.Add(Lbl_Feedback_Goals);
-            Pnl_Feedback_Current.Controls.Add(Lbl_FeedBack_Requested);
-            Pnl_Feedback_Current.Controls.Add(checkedListBox1);
-            Pnl_Feedback_Current.Controls.Add(ListBoxFeedback);
-            Pnl_Feedback_Current.Location = new Point(3, 36);
-            Pnl_Feedback_Current.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
-            Pnl_Feedback_Current.Size = new Size(551, 292);
-            Pnl_Feedback_Current.TabIndex = 6;
+            this.Pnl_Feedback_Current.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Feedback_Current.Controls.Add(this.Feedback_Lbl_Week);
+            this.Pnl_Feedback_Current.Controls.Add(this.Feedback_Combo_Week);
+            this.Pnl_Feedback_Current.Controls.Add(this.Lbl_Feedback_Goals);
+            this.Pnl_Feedback_Current.Controls.Add(this.Lbl_FeedBack_Requested);
+            this.Pnl_Feedback_Current.Controls.Add(this.checkedListBox1);
+            this.Pnl_Feedback_Current.Controls.Add(this.ListBoxFeedback);
+            this.Pnl_Feedback_Current.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
+            this.Pnl_Feedback_Current.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Feedback_Current.TabIndex = 6;
             // 
             // Feedback_Lbl_Week
             // 
-            Feedback_Lbl_Week.AutoSize = true;
-            Feedback_Lbl_Week.Location = new Point(3, 4);
-            Feedback_Lbl_Week.Name = "Feedback_Lbl_Week";
-            Feedback_Lbl_Week.Size = new Size(39, 15);
-            Feedback_Lbl_Week.TabIndex = 10;
-            Feedback_Lbl_Week.Text = "Week:";
+            this.Feedback_Lbl_Week.AutoSize = true;
+            this.Feedback_Lbl_Week.Location = new System.Drawing.Point(3, 5);
+            this.Feedback_Lbl_Week.Name = "Feedback_Lbl_Week";
+            this.Feedback_Lbl_Week.Size = new System.Drawing.Size(48, 20);
+            this.Feedback_Lbl_Week.TabIndex = 10;
+            this.Feedback_Lbl_Week.Text = "Week:";
             // 
             // Feedback_Combo_Week
             // 
-            Feedback_Combo_Week.FormattingEnabled = true;
-            Feedback_Combo_Week.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            Feedback_Combo_Week.Location = new Point(46, 2);
-            Feedback_Combo_Week.Margin = new Padding(3, 2, 3, 2);
-            Feedback_Combo_Week.Name = "Feedback_Combo_Week";
-            Feedback_Combo_Week.Size = new Size(133, 23);
-            Feedback_Combo_Week.TabIndex = 9;
+            this.Feedback_Combo_Week.FormattingEnabled = true;
+            this.Feedback_Combo_Week.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.Feedback_Combo_Week.Location = new System.Drawing.Point(53, 3);
+            this.Feedback_Combo_Week.Name = "Feedback_Combo_Week";
+            this.Feedback_Combo_Week.Size = new System.Drawing.Size(151, 28);
+            this.Feedback_Combo_Week.TabIndex = 9;
             // 
             // Lbl_Feedback_Goals
             // 
-            Lbl_Feedback_Goals.AutoSize = true;
-            Lbl_Feedback_Goals.Location = new Point(279, 35);
-            Lbl_Feedback_Goals.Name = "Lbl_Feedback_Goals";
-            Lbl_Feedback_Goals.Size = new Size(97, 15);
-            Lbl_Feedback_Goals.TabIndex = 3;
-            Lbl_Feedback_Goals.Text = "Feedback Doelen";
+            this.Lbl_Feedback_Goals.AutoSize = true;
+            this.Lbl_Feedback_Goals.Location = new System.Drawing.Point(319, 47);
+            this.Lbl_Feedback_Goals.Name = "Lbl_Feedback_Goals";
+            this.Lbl_Feedback_Goals.Size = new System.Drawing.Size(124, 20);
+            this.Lbl_Feedback_Goals.TabIndex = 3;
+            this.Lbl_Feedback_Goals.Text = "Feedback Doelen";
             // 
             // Lbl_FeedBack_Requested
             // 
-            Lbl_FeedBack_Requested.AutoSize = true;
-            Lbl_FeedBack_Requested.Location = new Point(3, 35);
-            Lbl_FeedBack_Requested.Name = "Lbl_FeedBack_Requested";
-            Lbl_FeedBack_Requested.Size = new Size(116, 15);
-            Lbl_FeedBack_Requested.TabIndex = 2;
-            Lbl_FeedBack_Requested.Text = "Gevraagde Feedback";
+            this.Lbl_FeedBack_Requested.AutoSize = true;
+            this.Lbl_FeedBack_Requested.Location = new System.Drawing.Point(3, 47);
+            this.Lbl_FeedBack_Requested.Name = "Lbl_FeedBack_Requested";
+            this.Lbl_FeedBack_Requested.Size = new System.Drawing.Size(148, 20);
+            this.Lbl_FeedBack_Requested.TabIndex = 2;
+            this.Lbl_FeedBack_Requested.Text = "Gevraagde Feedback";
             // 
             // checkedListBox1
             // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Items.AddRange(new object[] { "a", "b", "c", "d", "e", "f", "g" });
-            checkedListBox1.Location = new Point(279, 54);
-            checkedListBox1.Margin = new Padding(3, 2, 3, 2);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(267, 220);
-            checkedListBox1.TabIndex = 1;
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"});
+            this.checkedListBox1.Location = new System.Drawing.Point(319, 72);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(305, 290);
+            this.checkedListBox1.TabIndex = 1;
             // 
             // ListBoxFeedback
             // 
-            ListBoxFeedback.FormattingEnabled = true;
-            ListBoxFeedback.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            ListBoxFeedback.Location = new Point(3, 54);
-            ListBoxFeedback.Margin = new Padding(3, 2, 3, 2);
-            ListBoxFeedback.Name = "ListBoxFeedback";
-            ListBoxFeedback.Size = new Size(267, 220);
-            ListBoxFeedback.TabIndex = 0;
+            this.ListBoxFeedback.FormattingEnabled = true;
+            this.ListBoxFeedback.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
+            this.ListBoxFeedback.Location = new System.Drawing.Point(3, 72);
+            this.ListBoxFeedback.Name = "ListBoxFeedback";
+            this.ListBoxFeedback.Size = new System.Drawing.Size(305, 290);
+            this.ListBoxFeedback.TabIndex = 0;
             // 
             // Pnl_Logbook
             // 
-            Pnl_Logbook.Controls.Add(Pnl_Logbook_Menu);
-            Pnl_Logbook.Controls.Add(Pnl_Logbook_Current);
-            Pnl_Logbook.Controls.Add(Pnl_Logbook_Add);
-            Pnl_Logbook.Location = new Point(129, 0);
-            Pnl_Logbook.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Logbook.Name = "Pnl_Logbook";
-            Pnl_Logbook.Size = new Size(576, 333);
-            Pnl_Logbook.TabIndex = 8;
+            this.Pnl_Logbook.Controls.Add(this.Pnl_Logbook_Menu);
+            this.Pnl_Logbook.Controls.Add(this.Pnl_Logbook_Current);
+            this.Pnl_Logbook.Controls.Add(this.Pnl_Logbook_Add);
+            this.Pnl_Logbook.Location = new System.Drawing.Point(147, 0);
+            this.Pnl_Logbook.Name = "Pnl_Logbook";
+            this.Pnl_Logbook.Size = new System.Drawing.Size(658, 444);
+            this.Pnl_Logbook.TabIndex = 8;
             // 
             // Pnl_Logbook_Menu
             // 
-            Pnl_Logbook_Menu.Controls.Add(Logbook_Menu_Btn_add);
-            Pnl_Logbook_Menu.Controls.Add(Logbook_Menu_Btn_Current);
-            Pnl_Logbook_Menu.Location = new Point(3, 2);
-            Pnl_Logbook_Menu.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Logbook_Menu.Name = "Pnl_Logbook_Menu";
-            Pnl_Logbook_Menu.Size = new Size(550, 32);
-            Pnl_Logbook_Menu.TabIndex = 6;
-            Pnl_Logbook_Menu.Visible = false;
+            this.Pnl_Logbook_Menu.Controls.Add(this.Logbook_Menu_Btn_add);
+            this.Pnl_Logbook_Menu.Controls.Add(this.Logbook_Menu_Btn_Current);
+            this.Pnl_Logbook_Menu.Location = new System.Drawing.Point(3, 3);
+            this.Pnl_Logbook_Menu.Name = "Pnl_Logbook_Menu";
+            this.Pnl_Logbook_Menu.Size = new System.Drawing.Size(629, 43);
+            this.Pnl_Logbook_Menu.TabIndex = 6;
+            this.Pnl_Logbook_Menu.Visible = false;
             // 
             // Logbook_Menu_Btn_add
             // 
-            Logbook_Menu_Btn_add.Location = new Point(129, 2);
-            Logbook_Menu_Btn_add.Margin = new Padding(3, 2, 3, 2);
-            Logbook_Menu_Btn_add.Name = "Logbook_Menu_Btn_add";
-            Logbook_Menu_Btn_add.Size = new Size(142, 26);
-            Logbook_Menu_Btn_add.TabIndex = 6;
-            Logbook_Menu_Btn_add.Text = "Log Toevoegen";
-            Logbook_Menu_Btn_add.UseVisualStyleBackColor = true;
-            Logbook_Menu_Btn_add.Click += Logbook_Menu_Btn_add_Click;
+            this.Logbook_Menu_Btn_add.Location = new System.Drawing.Point(147, 3);
+            this.Logbook_Menu_Btn_add.Name = "Logbook_Menu_Btn_add";
+            this.Logbook_Menu_Btn_add.Size = new System.Drawing.Size(162, 35);
+            this.Logbook_Menu_Btn_add.TabIndex = 6;
+            this.Logbook_Menu_Btn_add.Text = "Log Toevoegen";
+            this.Logbook_Menu_Btn_add.UseVisualStyleBackColor = true;
             // 
             // Logbook_Menu_Btn_Current
             // 
-            Logbook_Menu_Btn_Current.Location = new Point(4, 2);
-            Logbook_Menu_Btn_Current.Margin = new Padding(3, 2, 3, 2);
-            Logbook_Menu_Btn_Current.Name = "Logbook_Menu_Btn_Current";
-            Logbook_Menu_Btn_Current.Size = new Size(120, 26);
-            Logbook_Menu_Btn_Current.TabIndex = 5;
-            Logbook_Menu_Btn_Current.Text = "Logboek";
-            Logbook_Menu_Btn_Current.UseVisualStyleBackColor = true;
-            Logbook_Menu_Btn_Current.Click += Logbook_Menu_Btn_Current_Click;
+            this.Logbook_Menu_Btn_Current.Location = new System.Drawing.Point(5, 3);
+            this.Logbook_Menu_Btn_Current.Name = "Logbook_Menu_Btn_Current";
+            this.Logbook_Menu_Btn_Current.Size = new System.Drawing.Size(137, 35);
+            this.Logbook_Menu_Btn_Current.TabIndex = 5;
+            this.Logbook_Menu_Btn_Current.Text = "Logboek";
+            this.Logbook_Menu_Btn_Current.UseVisualStyleBackColor = true;
             // 
             // Pnl_Logbook_Current
             // 
-            Pnl_Logbook_Current.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Logbook_Current.Controls.Add(Logbook_Combo_Week);
-            Pnl_Logbook_Current.Controls.Add(label2);
-            Pnl_Logbook_Current.Location = new Point(3, 36);
-            Pnl_Logbook_Current.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Logbook_Current.Name = "Pnl_Logbook_Current";
-            Pnl_Logbook_Current.Size = new Size(551, 292);
-            Pnl_Logbook_Current.TabIndex = 7;
-            Pnl_Logbook_Current.Visible = false;
+            this.Pnl_Logbook_Current.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Logbook_Current.Controls.Add(this.Logbook_Combo_Week);
+            this.Pnl_Logbook_Current.Controls.Add(this.label2);
+            this.Pnl_Logbook_Current.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Logbook_Current.Name = "Pnl_Logbook_Current";
+            this.Pnl_Logbook_Current.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Logbook_Current.TabIndex = 7;
+            this.Pnl_Logbook_Current.Visible = false;
             // 
             // Logbook_Combo_Week
             // 
-            Logbook_Combo_Week.FormattingEnabled = true;
-            Logbook_Combo_Week.Location = new Point(46, 4);
-            Logbook_Combo_Week.Margin = new Padding(3, 2, 3, 2);
-            Logbook_Combo_Week.Name = "Logbook_Combo_Week";
-            Logbook_Combo_Week.Size = new Size(133, 23);
-            Logbook_Combo_Week.TabIndex = 12;
+            this.Logbook_Combo_Week.FormattingEnabled = true;
+            this.Logbook_Combo_Week.Location = new System.Drawing.Point(53, 5);
+            this.Logbook_Combo_Week.Name = "Logbook_Combo_Week";
+            this.Logbook_Combo_Week.Size = new System.Drawing.Size(151, 28);
+            this.Logbook_Combo_Week.TabIndex = 12;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(3, 4);
-            label2.Name = "label2";
-            label2.Size = new Size(36, 15);
-            label2.TabIndex = 11;
-            label2.Text = "Week";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 5);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(45, 20);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Week";
             // 
             // Pnl_Logbook_Add
             // 
-            Pnl_Logbook_Add.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Logbook_Add.Location = new Point(3, 36);
-            Pnl_Logbook_Add.Margin = new Padding(3, 2, 3, 2);
-            Pnl_Logbook_Add.Name = "Pnl_Logbook_Add";
-            Pnl_Logbook_Add.Size = new Size(551, 292);
-            Pnl_Logbook_Add.TabIndex = 8;
-            Pnl_Logbook_Add.Visible = false;
+            this.Pnl_Logbook_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Logbook_Add.Location = new System.Drawing.Point(3, 48);
+            this.Pnl_Logbook_Add.Name = "Pnl_Logbook_Add";
+            this.Pnl_Logbook_Add.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Logbook_Add.TabIndex = 8;
+            this.Pnl_Logbook_Add.Visible = false;
             // 
             // HomePage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(828, 392);
-            Controls.Add(Pnl_Menu);
-            Controls.Add(Pnl_Logbook);
-            Controls.Add(Pnl_Feedback);
-            Controls.Add(Pnl_Goals);
-            FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 2, 3, 2);
-            Name = "HomePage";
-            Text = "HomePage";
-            Load += HomePage_Load;
-            Pnl_Menu.ResumeLayout(false);
-            Pnl_Menu_Student.ResumeLayout(false);
-            Pnl_Menu_Student.PerformLayout();
-            Pnl_Menu_Userdetails.ResumeLayout(false);
-            Pnl_Menu_Userdetails.PerformLayout();
-            Pnl_Goals_Add.ResumeLayout(false);
-            Pnl_Goals_Add.PerformLayout();
-            Pnl_Goals_Menu.ResumeLayout(false);
-            Pnl_Feedback_Menu.ResumeLayout(false);
-            Pnl_Feedback_Add.ResumeLayout(false);
-            Pnl_Feedback_Add.PerformLayout();
-            Pnl_Goals.ResumeLayout(false);
-            Pnl_Goals_Current.ResumeLayout(false);
-            Pnl_Goals_Current.PerformLayout();
-            Pnl_Feedback.ResumeLayout(false);
-            Pnl_Feedback_Current.ResumeLayout(false);
-            Pnl_Feedback_Current.PerformLayout();
-            Pnl_Logbook.ResumeLayout(false);
-            Pnl_Logbook_Menu.ResumeLayout(false);
-            Pnl_Logbook_Current.ResumeLayout(false);
-            Pnl_Logbook_Current.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(946, 523);
+            this.Controls.Add(this.Pnl_Menu);
+            this.Controls.Add(this.Pnl_Logbook);
+            this.Controls.Add(this.Pnl_Feedback);
+            this.Controls.Add(this.Pnl_Goals);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "HomePage";
+            this.Text = "HomePage";
+            this.Pnl_Menu.ResumeLayout(false);
+            this.Pnl_Menu_Student.ResumeLayout(false);
+            this.Pnl_Menu_Student.PerformLayout();
+            this.Pnl_Menu_Userdetails.ResumeLayout(false);
+            this.Pnl_Menu_Userdetails.PerformLayout();
+            this.Pnl_Goals_Add.ResumeLayout(false);
+            this.Pnl_Goals_Add.PerformLayout();
+            this.Pnl_Goals_Menu.ResumeLayout(false);
+            this.Pnl_Feedback_Menu.ResumeLayout(false);
+            this.Pnl_Feedback_Add.ResumeLayout(false);
+            this.Pnl_Feedback_Add.PerformLayout();
+            this.Pnl_Goals.ResumeLayout(false);
+            this.Pnl_Goals_Current.ResumeLayout(false);
+            this.Pnl_Goals_Current.PerformLayout();
+            this.Pnl_Feedback.ResumeLayout(false);
+            this.Pnl_Feedback_Current.ResumeLayout(false);
+            this.Pnl_Feedback_Current.PerformLayout();
+            this.Pnl_Logbook.ResumeLayout(false);
+            this.Pnl_Logbook_Menu.ResumeLayout(false);
+            this.Pnl_Logbook_Current.ResumeLayout(false);
+            this.Pnl_Logbook_Current.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

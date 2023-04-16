@@ -159,5 +159,40 @@ namespace FeedBuff_Kerkrade
             panels.ToggleChildPanel(Pnl_Logbook, Pnl_Logbook_Add, ExcludedChildPanels);
         }
 
+        private void Btn_Menu_Click_1(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }
