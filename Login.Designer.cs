@@ -217,7 +217,7 @@
             AcceptButton = Login_btn;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(804, 452);
             Controls.Add(Close_btn);
             Controls.Add(Login_Pnl_Register);
             Controls.Add(Login_Pnl_Login);
