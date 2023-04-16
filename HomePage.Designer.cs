@@ -828,7 +828,6 @@
         private ComboBox Feedback_Combo_Subject;
         private Label Feedback_Lbl_Feedback;
         private TextBox Feedback_Text_Feedback;
-        private DateTimePicker Feedback_DateTime;
         private Label Feedback_Lbl_Teacher;
         private Panel Pnl_Feedback_Add;
         private Button Feedback_Btn_Add;

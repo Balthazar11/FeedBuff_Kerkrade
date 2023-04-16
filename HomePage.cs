@@ -67,6 +67,9 @@ namespace FeedBuff_Kerkrade
             dal.LoadWeekIntoComboBox(Goals_Combo_Week_add);
             dal.LoadTeachersIntoCombobox(Feedback_Combo_Teachers);
             dal.LoadWeekIntoComboBox(Logbook_Combo_Week);
+            Lbl_Menu_Username.Text = "Name: " + Program.CurrentUser;
+            Lbl_Menu_Userid.Text = "ID: " + Program.CurrentUser_ID.ToString();
+            Lbl_Menu_Userrole.Text = "Role: " + Program.CurrentUser_Role;
         }
 
         private void Btn_Menu_Goals_Click(object sender, EventArgs e)

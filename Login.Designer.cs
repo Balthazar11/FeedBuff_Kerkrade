@@ -42,11 +42,9 @@
             Register_Pass_Txt = new TextBox();
             Register_Lbl_Pass = new Label();
             Register_User_Txt = new TextBox();
-            Register_Mail_Txt = new TextBox();
             Register_Btn_Cancel = new Button();
             Register_Lbl_User = new Label();
             Register_Btn_Signup = new Button();
-            Register_Lbl_Mail = new Label();
             Login_Pnl_Login.SuspendLayout();
             Login_Pnl_Register.SuspendLayout();
             SuspendLayout();
@@ -144,11 +142,9 @@
             Login_Pnl_Register.Controls.Add(Register_Pass_Txt);
             Login_Pnl_Register.Controls.Add(Register_Lbl_Pass);
             Login_Pnl_Register.Controls.Add(Register_User_Txt);
-            Login_Pnl_Register.Controls.Add(Register_Mail_Txt);
             Login_Pnl_Register.Controls.Add(Register_Btn_Cancel);
             Login_Pnl_Register.Controls.Add(Register_Lbl_User);
             Login_Pnl_Register.Controls.Add(Register_Btn_Signup);
-            Login_Pnl_Register.Controls.Add(Register_Lbl_Mail);
             Login_Pnl_Register.Location = new Point(218, 60);
             Login_Pnl_Register.Name = "Login_Pnl_Register";
             Login_Pnl_Register.Size = new Size(353, 316);
@@ -182,17 +178,10 @@
             // 
             // Register_User_Txt
             // 
-            Register_User_Txt.Location = new Point(84, 45);
+            Register_User_Txt.Location = new Point(84, 93);
             Register_User_Txt.Name = "Register_User_Txt";
             Register_User_Txt.Size = new Size(185, 27);
             Register_User_Txt.TabIndex = 7;
-            // 
-            // Register_Mail_Txt
-            // 
-            Register_Mail_Txt.Location = new Point(84, 95);
-            Register_Mail_Txt.Name = "Register_Mail_Txt";
-            Register_Mail_Txt.Size = new Size(185, 27);
-            Register_Mail_Txt.TabIndex = 8;
             // 
             // Register_Btn_Cancel
             // 
@@ -207,7 +196,7 @@
             // Register_Lbl_User
             // 
             Register_Lbl_User.AutoSize = true;
-            Register_Lbl_User.Location = new Point(84, 23);
+            Register_Lbl_User.Location = new Point(84, 71);
             Register_Lbl_User.Name = "Register_Lbl_User";
             Register_Lbl_User.Size = new Size(75, 20);
             Register_Lbl_User.TabIndex = 9;
@@ -223,15 +212,6 @@
             Register_Btn_Signup.UseVisualStyleBackColor = true;
             Register_Btn_Signup.Click += Register_Btn_Signup_Click;
             // 
-            // Register_Lbl_Mail
-            // 
-            Register_Lbl_Mail.AutoSize = true;
-            Register_Lbl_Mail.Location = new Point(84, 74);
-            Register_Lbl_Mail.Name = "Register_Lbl_Mail";
-            Register_Lbl_Mail.Size = new Size(46, 20);
-            Register_Lbl_Mail.TabIndex = 10;
-            Register_Lbl_Mail.Text = "Email";
-            // 
             // Login
             // 
             AcceptButton = Login_btn;
@@ -239,12 +219,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(Close_btn);
-            Controls.Add(Login_Pnl_Login);
             Controls.Add(Login_Pnl_Register);
+            Controls.Add(Login_Pnl_Login);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
             Text = "Login";
-            Load += Login_Load;
             Login_Pnl_Login.ResumeLayout(false);
             Login_Pnl_Login.PerformLayout();
             Login_Pnl_Register.ResumeLayout(false);
@@ -267,11 +246,9 @@
         private TextBox Register_Pass_Txt;
         private Label Register_Lbl_Pass;
         private TextBox Register_User_Txt;
-        private TextBox Register_Mail_Txt;
         private Button Register_Btn_Cancel;
         private Label Register_Lbl_User;
         private Button Register_Btn_Signup;
-        private Label Register_Lbl_Mail;
         private Label Register_Lbl_Error;
     }
 }

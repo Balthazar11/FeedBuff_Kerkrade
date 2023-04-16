@@ -32,12 +32,17 @@ namespace FeedBuff_Kerkrade
         {
             string username = Login_User_Txt.Text;
             string password = Login_Pass_Txt.Text;
+            int userid = 0;
+            string userrole = "";
 
             User user = new User(username, password);
-            if (dal.User_Check_database(user))
+            if (dal.User_Check_database(user, out userid, out userrole)) // added out parameters for id and role
             {
-                // Login succes
-                Program.HomePage = new();
+                // Login success
+                Program.CurrentUser = username; // set the CurrentUser property to the logged-in user
+                Program.CurrentUser_ID = userid; // set the CurrentUser_ID property to the retrieved user ID
+                Program.CurrentUser_Role = userrole; // set the CurrentUser_Role property to the retrieved user role
+                Program.HomePage = new HomePage();
                 Program.HomePage.Show();
                 this.Hide();
 
@@ -59,6 +64,8 @@ namespace FeedBuff_Kerkrade
             Login_User_Txt.Text = "";
             Login_Pass_Txt.Text = "";
         }
+
+
 
         private void Close_btn_Click(object sender, EventArgs e)
         {

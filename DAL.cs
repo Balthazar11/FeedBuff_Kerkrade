@@ -97,12 +97,13 @@ namespace FeedBuff_Kerkrade
             {
                 using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
-                    string sql = "INSERT INTO [User] (Name, Password) VALUES (@Name, @Password)";
+                    string sql = "INSERT INTO [User] (Name, Password, Role_ID) VALUES (@Name, @Password, @Role_ID)";
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(sql, connection))
                     {
                         command.Parameters.AddWithValue("@Name", user.Name);
                         command.Parameters.AddWithValue("@Password", user.Password);
+                        command.Parameters.AddWithValue("@Role_ID", 3);
 
                         // Open de databaseverbinding en voer de SQL-query 
                         int result = command.ExecuteNonQuery();
@@ -123,52 +124,52 @@ namespace FeedBuff_Kerkrade
             {
                 MessageBox.Show("Error connecting to database: " + ex.Message);
             }
-
         }
-
-        public bool User_Check_database(User user)
+        public bool User_Check_database(User user, out int userID, out string userRole)
         {
             try
             {
-                // lijsten voor de naam en wachtwoord uit de database
-                List<string> usernames = new List<string>();
-                List<string> passwords = new List<string>();
+                // Initialize variables for the user ID and role
+                userID = 0;
+                userRole = "";
 
-                string query = "SELECT Name, Password FROM [User]";
+                string query = @"SELECT u.User_ID, r.Rol_Name
+                         FROM [User] u
+                         INNER JOIN [Role] r ON u.Role_ID = r.Role_ID
+                         WHERE u.Name = @name AND u.Password = @password";
 
                 using (SqlConnection connection = new SqlConnection(connectionstring))
                 {
                     connection.Open();
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
+                        command.Parameters.AddWithValue("@name", user.Name);
+                        command.Parameters.AddWithValue("@password", user.Password);
                         using (SqlDataReader reader = command.ExecuteReader())
                         {
-                            while (reader.Read())
+                            if (reader.Read())
                             {
-                                usernames.Add(reader.GetString(0));
-                                passwords.Add(reader.GetString(1));
+                                userID = reader.GetInt32(0);
+                                userRole = reader.GetString(1);
+                                return true;
                             }
                         }
                     }
                 }
 
-                // Checken of de name met het gebruikte password overeenkomt
-                for (int i = 0; i < usernames.Count; i++)
-                {
-                    if (user.Name == usernames[i] && user.Password == passwords[i])
-                    {
-                        return true;
-                    }
-                }
                 return false;
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error connecting to database: " + ex.Message);
+                userID = 0;
+                userRole = "";
                 return false;
             }
         }
+
+
+
 
     }
 }
