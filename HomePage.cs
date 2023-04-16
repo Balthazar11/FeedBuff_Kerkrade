@@ -193,36 +193,21 @@ namespace FeedBuff_Kerkrade
 
         private void Feedback_Btn_Add_Click(object sender, EventArgs e)
         {
+            //vak ophalen
+            //feedback zelf ophalen
+            //week nummer ophalen
+            //check validatie
+            //user id ophalen
+            Feedback feedback= new Feedback();
+            // dal functie toevoegen van feedback
 
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        private void Confirm_alter_btn_Click(object sender, EventArgs e)
+        {
+            //manier nodig om hiernaar toe te komen
+            string altered_feedback = Alter_feedback_lsbox.Text;
+            dal.Alter_feedback_database(altered_feedback);
         }
     }
 }

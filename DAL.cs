@@ -252,11 +252,11 @@ namespace FeedBuff_Kerkrade
                     command.ExecuteNonQuery();
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Error connecting to database: " + ex.Message);
             }
-            
 
+        }
     }
 }
