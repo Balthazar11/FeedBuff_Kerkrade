@@ -20,11 +20,6 @@ namespace FeedBuff_Kerkrade
         PanelControl panels = new();
         DAL dal = new();
 
-        // Example user data
-        private int userid = 12;
-        string username = "Harrie";
-        string userrole = "Student";
-
         public HomePage()
         {
             InitializeComponent();
@@ -49,11 +44,8 @@ namespace FeedBuff_Kerkrade
 
         private void Btn_Menu_Click(object sender, EventArgs e)
         {
-            // Disable all panels except for the menu and set userdata fields to example data
+            // Disable all panels except for the menu
             panels.TogglePanels(this, ExcludedPanels, Pnl_Menu);
-            Lbl_Menu_Userrole.Text = userrole.ToString();
-            Lbl_Menu_Userid.Text = userid.ToString();
-            Lbl_Menu_Username.Text = username.ToString();
         }
 
         private void HomePage_Load(object sender, EventArgs e)
