@@ -200,7 +200,6 @@ namespace FeedBuff_Kerkrade
 
             // Display a message indicating that the feedback was added
             MessageBox.Show("Feedback added successfully.");
-            dal.FillListBoxFeedback(ListBoxFeedback, weekNr);
 
         }
 
