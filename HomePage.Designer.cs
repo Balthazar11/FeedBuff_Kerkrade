@@ -79,7 +79,6 @@ namespace FeedBuff_Kerkrade
             ListBox_Goals = new CheckedListBox();
             Pnl_Feedback = new Panel();
             Pnl_Feedback_Current = new Panel();
-            Feedback_Btn_Delete = new Button();
             Feedback_Lbl_Week = new Label();
             Feedback_Combo_Week = new ComboBox();
             Lbl_FeedBack_Requested = new Label();
@@ -618,7 +617,6 @@ namespace FeedBuff_Kerkrade
             // Pnl_Feedback_Current
             // 
             Pnl_Feedback_Current.BorderStyle = BorderStyle.FixedSingle;
-            Pnl_Feedback_Current.Controls.Add(Feedback_Btn_Delete);
             Pnl_Feedback_Current.Controls.Add(Feedback_Lbl_Week);
             Pnl_Feedback_Current.Controls.Add(Feedback_Combo_Week);
             Pnl_Feedback_Current.Controls.Add(Lbl_FeedBack_Requested);
@@ -627,16 +625,6 @@ namespace FeedBuff_Kerkrade
             Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
             Pnl_Feedback_Current.Size = new Size(629, 389);
             Pnl_Feedback_Current.TabIndex = 6;
-            // 
-            // Feedback_Btn_Delete
-            // 
-            Feedback_Btn_Delete.Location = new Point(319, 333);
-            Feedback_Btn_Delete.Name = "Feedback_Btn_Delete";
-            Feedback_Btn_Delete.Size = new Size(94, 29);
-            Feedback_Btn_Delete.TabIndex = 11;
-            Feedback_Btn_Delete.Text = "Delete";
-            Feedback_Btn_Delete.UseVisualStyleBackColor = true;
-            Feedback_Btn_Delete.Click += Feedback_Btn_Delete_Click;
             // 
             // Feedback_Lbl_Week
             // 
@@ -853,7 +841,6 @@ namespace FeedBuff_Kerkrade
         private ComboBox Feedback_Combo_Teachers;
         private Label Feedback_Lbl_Week_add;
         private ComboBox Feedback_Combo_Week_add;
-        private Button Feedback_Btn_Delete;
         private Label label1;
         private CheckBox Feedback_Check_Validated;
     }

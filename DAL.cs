@@ -231,7 +231,9 @@ namespace FeedBuff_Kerkrade
         public List<string> FillListBoxFeedback(CheckedListBox checkedListBox, int weekNr)
         {
             List<string> selectedItems = new List<string>();
-            string query = "SELECT Feedback_ID, Feedback_Desc, Weeknr, Validated, User_ID FROM FeedBack WHERE Weeknr = @weekNr";
+            string query = "SELECT Feedback_ID, Feedback_Desc, Weeknr, Validated, [User].Name as UserName FROM Feedback " +
+                           "JOIN [User] ON Feedback.User_ID = [User].User_ID " +
+                           "WHERE Weeknr = @weekNr";
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -244,7 +246,7 @@ namespace FeedBuff_Kerkrade
                         checkedListBox.Items.Clear();
                         while (reader.Read())
                         {
-                            string text = $"{reader["Feedback_Desc"]}";
+                            string text = $"{reader["UserName"]} - {reader["Feedback_Desc"]}";
                             checkedListBox.Items.Add(text);
                         }
                     }
@@ -252,6 +254,7 @@ namespace FeedBuff_Kerkrade
             }
             return selectedItems;
         }
+
 
 
         public void Add_Feedback(string feedbackDesc, string weekString, bool validated, string userName)
