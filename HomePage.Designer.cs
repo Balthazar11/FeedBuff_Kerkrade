@@ -58,6 +58,7 @@ namespace FeedBuff_Kerkrade
             this.Goals_Menu_Btn_Add = new System.Windows.Forms.Button();
             this.Pnl_Feedback_Menu = new System.Windows.Forms.Panel();
             this.Feedback_Menu_Btn_add = new System.Windows.Forms.Button();
+            this.Feedback_Menu_Btn_Current = new System.Windows.Forms.Button();
             this.Pnl_Feedback_Current = new System.Windows.Forms.Panel();
             this.Feedback_Lbl_Week = new System.Windows.Forms.Label();
             this.Feedback_Combo_Week = new System.Windows.Forms.ComboBox();
@@ -65,7 +66,6 @@ namespace FeedBuff_Kerkrade
             this.Lbl_FeedBack_Requested = new System.Windows.Forms.Label();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.ListBoxFeedback = new System.Windows.Forms.CheckedListBox();
-            this.Feedback_Menu_Btn_Current = new System.Windows.Forms.Button();
             this.Feedback_Lbl_Subject = new System.Windows.Forms.Label();
             this.Feedback_Lbl_Feedback = new System.Windows.Forms.Label();
             this.Feedback_Text_Feedback = new System.Windows.Forms.TextBox();
@@ -143,6 +143,7 @@ namespace FeedBuff_Kerkrade
             this.Btn_Menu.TabIndex = 1;
             this.Btn_Menu.Text = "Menu";
             this.Btn_Menu.UseVisualStyleBackColor = true;
+            this.Btn_Menu.Click += new System.EventHandler(this.Btn_Menu_Click);
             // 
             // Pnl_Menu_Student
             // 
@@ -226,6 +227,7 @@ namespace FeedBuff_Kerkrade
             this.Btn_Menu_Feedback.TabIndex = 2;
             this.Btn_Menu_Feedback.Text = "Feedback";
             this.Btn_Menu_Feedback.UseVisualStyleBackColor = true;
+            this.Btn_Menu_Feedback.Click += new System.EventHandler(this.Btn_Menu_Feedback_Click);
             // 
             // Btn_Menu_Goals
             // 
@@ -235,6 +237,7 @@ namespace FeedBuff_Kerkrade
             this.Btn_Menu_Goals.TabIndex = 1;
             this.Btn_Menu_Goals.Text = "Doelen";
             this.Btn_Menu_Goals.UseVisualStyleBackColor = true;
+            this.Btn_Menu_Goals.Click += new System.EventHandler(this.Btn_Menu_Goals_Click);
             // 
             // Pnl_Goals_Add
             // 
@@ -422,6 +425,17 @@ namespace FeedBuff_Kerkrade
             this.Feedback_Menu_Btn_add.TabIndex = 6;
             this.Feedback_Menu_Btn_add.Text = "Feedback Toevoegen";
             this.Feedback_Menu_Btn_add.UseVisualStyleBackColor = true;
+            this.Feedback_Menu_Btn_add.Click += new System.EventHandler(this.Feedback_Menu_Btn_add_Click);
+            // 
+            // Feedback_Menu_Btn_Current
+            // 
+            this.Feedback_Menu_Btn_Current.Location = new System.Drawing.Point(5, 3);
+            this.Feedback_Menu_Btn_Current.Name = "Feedback_Menu_Btn_Current";
+            this.Feedback_Menu_Btn_Current.Size = new System.Drawing.Size(137, 35);
+            this.Feedback_Menu_Btn_Current.TabIndex = 5;
+            this.Feedback_Menu_Btn_Current.Text = "Feedback";
+            this.Feedback_Menu_Btn_Current.UseVisualStyleBackColor = true;
+            this.Feedback_Menu_Btn_Current.Click += new System.EventHandler(this.Feedback_Menu_Btn_Current_Click);
             // 
             // Pnl_Feedback_Current
             // 
@@ -432,7 +446,7 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Feedback_Current.Controls.Add(this.Lbl_FeedBack_Requested);
             this.Pnl_Feedback_Current.Controls.Add(this.checkedListBox1);
             this.Pnl_Feedback_Current.Controls.Add(this.ListBoxFeedback);
-            this.Pnl_Feedback_Current.Location = new System.Drawing.Point(2, 48);
+            this.Pnl_Feedback_Current.Location = new System.Drawing.Point(4, 49);
             this.Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
             this.Pnl_Feedback_Current.Size = new System.Drawing.Size(629, 389);
             this.Pnl_Feedback_Current.TabIndex = 6;
@@ -499,15 +513,6 @@ namespace FeedBuff_Kerkrade
             this.ListBoxFeedback.Name = "ListBoxFeedback";
             this.ListBoxFeedback.Size = new System.Drawing.Size(305, 290);
             this.ListBoxFeedback.TabIndex = 0;
-            // 
-            // Feedback_Menu_Btn_Current
-            // 
-            this.Feedback_Menu_Btn_Current.Location = new System.Drawing.Point(5, 3);
-            this.Feedback_Menu_Btn_Current.Name = "Feedback_Menu_Btn_Current";
-            this.Feedback_Menu_Btn_Current.Size = new System.Drawing.Size(137, 35);
-            this.Feedback_Menu_Btn_Current.TabIndex = 5;
-            this.Feedback_Menu_Btn_Current.Text = "Feedback";
-            this.Feedback_Menu_Btn_Current.UseVisualStyleBackColor = true;
             // 
             // Feedback_Lbl_Subject
             // 
@@ -624,6 +629,7 @@ namespace FeedBuff_Kerkrade
             this.Feedback_Btn_Add.TabIndex = 10;
             this.Feedback_Btn_Add.Text = "Add";
             this.Feedback_Btn_Add.UseVisualStyleBackColor = true;
+            this.Feedback_Btn_Add.Click += new System.EventHandler(this.Feedback_Btn_Add_Click);
             // 
             // Pnl_Goals
             // 
@@ -730,7 +736,7 @@ namespace FeedBuff_Kerkrade
             this.Feedback_alter_pnl.Controls.Add(this.Cancel_alter_btn);
             this.Feedback_alter_pnl.Controls.Add(this.Confirm_alter_btn);
             this.Feedback_alter_pnl.Controls.Add(this.Alter_feedback_lsbox);
-            this.Feedback_alter_pnl.Location = new System.Drawing.Point(3, 48);
+            this.Feedback_alter_pnl.Location = new System.Drawing.Point(7, 48);
             this.Feedback_alter_pnl.Name = "Feedback_alter_pnl";
             this.Feedback_alter_pnl.Size = new System.Drawing.Size(627, 389);
             this.Feedback_alter_pnl.TabIndex = 7;

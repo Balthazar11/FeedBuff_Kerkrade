@@ -199,8 +199,6 @@ namespace FeedBuff_Kerkrade
             int weeknrInt = int.Parse(weeknr);
             Subject Vak = new Subject(subject);
             dal.subject_insert_database(Vak);
-            //check validatie
-            //user id ophalen
             Feedback feedback = new Feedback(subject, New_feedback, weeknrInt, Validate_checkbox.Checked, Program.CurrentUser_ID);
             dal.Feedback_insert_database(feedback);
 
