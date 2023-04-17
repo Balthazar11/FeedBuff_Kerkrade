@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,11 +50,12 @@ namespace FeedBuff_Kerkrade
 
         private void HomePage_Load(object sender, EventArgs e)
         {
+            // Fill all comboboxes with designated data
+            dal.LoadSubjectsIntoComboBox(Goals_Combo_Subject);
             dal.LoadWeekIntoComboBox(Feedback_Combo_Week_add);
             dal.LoadWeekIntoComboBox(Feedback_Combo_Week);
             dal.LoadWeekIntoComboBox(Goals_Combo_Week);
             dal.LoadWeekIntoComboBox(Goals_Combo_Week_add);
-            dal.LoadTeachersIntoCombobox(Feedback_Combo_Teachers);
             dal.LoadWeekIntoComboBox(Logbook_Combo_Week);
             Lbl_Menu_Username.Text = "Name: " + Program.CurrentUser;
             Lbl_Menu_Userid.Text = "ID: " + Program.CurrentUser_ID.ToString();
@@ -200,7 +201,6 @@ namespace FeedBuff_Kerkrade
 
             // Display a message indicating that the feedback was added
             MessageBox.Show("Feedback added successfully.");
-            dal.FillListBoxFeedback(ListBoxFeedback, weekNr);
 
         }
 
@@ -227,6 +227,25 @@ namespace FeedBuff_Kerkrade
             {
                 dal.FillListBoxFeedback(ListBoxFeedback, weekNr);
             }
+            string docent_name = Docent_naam_box.Text;
+            string subject = Vak_naam_box.Text;
+            string weeknr = Feedback_Combo_Week_add.SelectedText;
+            // docent wordt niet gebruikt in database wel opvragen in ui?
+            string New_feedback = Feedback_Text_Feedback.Text;
+            int weeknrInt = int.Parse(weeknr);
+            Subject Vak = new Subject(subject);
+            dal.subject_insert_database(Vak);
+            Feedback feedback = new Feedback(subject, New_feedback, weeknrInt, Validate_checkbox.Checked, Program.CurrentUser_ID);
+            dal.Feedback_insert_database(feedback);
+
+        }
+
+        private void Confirm_alter_btn_Click(object sender, EventArgs e)
+        {
+            //manier nodig om hiernaar toe te komen
+            //kunnen kiezen welke je aanpast dus feedback id achterhalen
+            string altered_feedback = Alter_feedback_lsbox.Text;
+            dal.Alter_feedback_database(altered_feedback);
         }
     }
 }

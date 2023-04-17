@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace FeedBuff_Kerkrade
 {
-    internal class Feedback
+    public class Feedback
     {
         public int Feedback_ID { get; set; }
         public string Feedback_Desc { get; set; }
         public int Weeknr { get; set; }
         public bool Validated { get; set; }
+        public int User_ID { get; set; }
 
         public User user { get; set; }
 
@@ -23,5 +24,15 @@ namespace FeedBuff_Kerkrade
             this.user = user;
         }
 
+        public Feedback( string Vak, string Feedback, int Weeknr, bool Validated,int User_ID)
+        {
+            this.Feedback_ID = -1;
+            this.Vak = Vak;
+            this.feedback = Feedback;
+            this.Weeknr = Weeknr;
+            this.Validated = Validated;
+            this.User_ID = User_ID;
+
+        }
     }
 }
