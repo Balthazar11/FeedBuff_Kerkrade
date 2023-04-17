@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -61,7 +61,6 @@ namespace FeedBuff_Kerkrade
             Lbl_Menu_Userid.Text = "ID: " + Program.CurrentUser_ID.ToString();
             Lbl_Menu_Userrole.Text = "Role: " + Program.CurrentUser_Role;
             dal.FillListboxGoals(ListBox_Goals);
-            dal.FillListBoxFeedback(ListBoxFeedback);
         }
 
         private void Btn_Menu_Goals_Click(object sender, EventArgs e)
@@ -191,6 +190,43 @@ namespace FeedBuff_Kerkrade
 
         private void Feedback_Btn_Add_Click(object sender, EventArgs e)
         {
+            // Get the values from the UI controls
+            string feedbackDesc = Feedback_Text_Feedback.Text;
+            int weekNr = Convert.ToInt32(Feedback_Combo_Week_add.Text);
+            bool validated = Feedback_Check_Validated.Checked;
+            string userName = Feedback_Combo_Teachers.Text;
+
+            // Call the Add_Feedback method on the DAL instance
+            dal.Add_Feedback(feedbackDesc, weekNr.ToString(), validated, userName);
+
+            // Display a message indicating that the feedback was added
+            MessageBox.Show("Feedback added successfully.");
+
+        }
+
+        private void Feedback_Btn_Delete_Click(object sender, EventArgs e)
+        {
+            dal.Delete_feedback_database();
+        }
+
+        private void Pnl_Feedback_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Feedback_Check_Validated_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Feedback_Combo_Week_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedWeek = Feedback_Combo_Week.SelectedItem.ToString();
+            int weekNr;
+            if (Int32.TryParse(selectedWeek, out weekNr))
+            {
+                dal.FillListBoxFeedback(ListBoxFeedback, weekNr);
+            }
             string docent_name = Docent_naam_box.Text;
             string subject = Vak_naam_box.Text;
             string weeknr = Feedback_Combo_Week_add.SelectedText;
