@@ -29,5 +29,10 @@ namespace FeedBuff_Kerkrade
             this.Name = Name;
             this.Password = Password;
         }
+
+        public User(string Name)
+        {
+            this.Name = Name;
+        }
     }
 }

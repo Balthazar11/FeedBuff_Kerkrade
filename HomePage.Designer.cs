@@ -59,12 +59,12 @@ namespace FeedBuff_Kerkrade
             Pnl_Feedback_Menu = new Panel();
             Feedback_Menu_Btn_add = new Button();
             Feedback_Menu_Btn_Current = new Button();
-            Feedback_Lbl_Subject = new Label();
-            Feedback_Combo_Subject = new ComboBox();
             Feedback_Lbl_Feedback = new Label();
             Feedback_Text_Feedback = new TextBox();
             Feedback_Lbl_Teacher = new Label();
             Pnl_Feedback_Add = new Panel();
+            label1 = new Label();
+            Feedback_Check_Validated = new CheckBox();
             Feedback_Lbl_Week_add = new Label();
             Feedback_Combo_Week_add = new ComboBox();
             Feedback_Combo_Teachers = new ComboBox();
@@ -79,11 +79,10 @@ namespace FeedBuff_Kerkrade
             ListBox_Goals = new CheckedListBox();
             Pnl_Feedback = new Panel();
             Pnl_Feedback_Current = new Panel();
+            Feedback_Btn_Delete = new Button();
             Feedback_Lbl_Week = new Label();
             Feedback_Combo_Week = new ComboBox();
-            Lbl_Feedback_Goals = new Label();
             Lbl_FeedBack_Requested = new Label();
-            checkedListBox1 = new CheckedListBox();
             ListBoxFeedback = new CheckedListBox();
             Pnl_Logbook = new Panel();
             Pnl_Logbook_Menu = new Panel();
@@ -424,28 +423,10 @@ namespace FeedBuff_Kerkrade
             Feedback_Menu_Btn_Current.UseVisualStyleBackColor = true;
             Feedback_Menu_Btn_Current.Click += Feedback_Menu_Btn_Current_Click;
             // 
-            // Feedback_Lbl_Subject
-            // 
-            Feedback_Lbl_Subject.AutoSize = true;
-            Feedback_Lbl_Subject.Location = new Point(5, 5);
-            Feedback_Lbl_Subject.Name = "Feedback_Lbl_Subject";
-            Feedback_Lbl_Subject.Size = new Size(35, 20);
-            Feedback_Lbl_Subject.TabIndex = 4;
-            Feedback_Lbl_Subject.Text = "Vak:";
-            // 
-            // Feedback_Combo_Subject
-            // 
-            Feedback_Combo_Subject.DropDownStyle = ComboBoxStyle.DropDownList;
-            Feedback_Combo_Subject.FormattingEnabled = true;
-            Feedback_Combo_Subject.Location = new Point(95, 5);
-            Feedback_Combo_Subject.Name = "Feedback_Combo_Subject";
-            Feedback_Combo_Subject.Size = new Size(151, 28);
-            Feedback_Combo_Subject.TabIndex = 5;
-            // 
             // Feedback_Lbl_Feedback
             // 
             Feedback_Lbl_Feedback.AutoSize = true;
-            Feedback_Lbl_Feedback.Location = new Point(5, 89);
+            Feedback_Lbl_Feedback.Location = new Point(4, 43);
             Feedback_Lbl_Feedback.Name = "Feedback_Lbl_Feedback";
             Feedback_Lbl_Feedback.Size = new Size(75, 20);
             Feedback_Lbl_Feedback.TabIndex = 6;
@@ -453,16 +434,16 @@ namespace FeedBuff_Kerkrade
             // 
             // Feedback_Text_Feedback
             // 
-            Feedback_Text_Feedback.Location = new Point(95, 89);
+            Feedback_Text_Feedback.Location = new Point(94, 43);
             Feedback_Text_Feedback.Multiline = true;
             Feedback_Text_Feedback.Name = "Feedback_Text_Feedback";
-            Feedback_Text_Feedback.Size = new Size(151, 160);
+            Feedback_Text_Feedback.Size = new Size(151, 134);
             Feedback_Text_Feedback.TabIndex = 7;
             // 
             // Feedback_Lbl_Teacher
             // 
             Feedback_Lbl_Teacher.AutoSize = true;
-            Feedback_Lbl_Teacher.Location = new Point(5, 256);
+            Feedback_Lbl_Teacher.Location = new Point(4, 184);
             Feedback_Lbl_Teacher.Name = "Feedback_Lbl_Teacher";
             Feedback_Lbl_Teacher.Size = new Size(60, 20);
             Feedback_Lbl_Teacher.TabIndex = 9;
@@ -471,6 +452,8 @@ namespace FeedBuff_Kerkrade
             // Pnl_Feedback_Add
             // 
             Pnl_Feedback_Add.BorderStyle = BorderStyle.FixedSingle;
+            Pnl_Feedback_Add.Controls.Add(label1);
+            Pnl_Feedback_Add.Controls.Add(Feedback_Check_Validated);
             Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Week_add);
             Pnl_Feedback_Add.Controls.Add(Feedback_Combo_Week_add);
             Pnl_Feedback_Add.Controls.Add(Feedback_Combo_Teachers);
@@ -478,18 +461,35 @@ namespace FeedBuff_Kerkrade
             Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Teacher);
             Pnl_Feedback_Add.Controls.Add(Feedback_Text_Feedback);
             Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Feedback);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Combo_Subject);
-            Pnl_Feedback_Add.Controls.Add(Feedback_Lbl_Subject);
             Pnl_Feedback_Add.Location = new Point(3, 48);
             Pnl_Feedback_Add.Name = "Pnl_Feedback_Add";
             Pnl_Feedback_Add.Size = new Size(629, 389);
             Pnl_Feedback_Add.TabIndex = 4;
             Pnl_Feedback_Add.Visible = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(5, 219);
+            label1.Name = "label1";
+            label1.Size = new Size(75, 20);
+            label1.TabIndex = 15;
+            label1.Text = "Validated:";
+            // 
+            // Feedback_Check_Validated
+            // 
+            Feedback_Check_Validated.AutoSize = true;
+            Feedback_Check_Validated.Location = new Point(95, 222);
+            Feedback_Check_Validated.Name = "Feedback_Check_Validated";
+            Feedback_Check_Validated.Size = new Size(18, 17);
+            Feedback_Check_Validated.TabIndex = 14;
+            Feedback_Check_Validated.UseVisualStyleBackColor = true;
+            Feedback_Check_Validated.CheckedChanged += Feedback_Check_Validated_CheckedChanged;
+            // 
             // Feedback_Lbl_Week_add
             // 
             Feedback_Lbl_Week_add.AutoSize = true;
-            Feedback_Lbl_Week_add.Location = new Point(5, 41);
+            Feedback_Lbl_Week_add.Location = new Point(5, 6);
             Feedback_Lbl_Week_add.Name = "Feedback_Lbl_Week_add";
             Feedback_Lbl_Week_add.Size = new Size(48, 20);
             Feedback_Lbl_Week_add.TabIndex = 13;
@@ -500,7 +500,7 @@ namespace FeedBuff_Kerkrade
             Feedback_Combo_Week_add.DropDownStyle = ComboBoxStyle.DropDownList;
             Feedback_Combo_Week_add.FormattingEnabled = true;
             Feedback_Combo_Week_add.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
-            Feedback_Combo_Week_add.Location = new Point(95, 41);
+            Feedback_Combo_Week_add.Location = new Point(95, 6);
             Feedback_Combo_Week_add.Name = "Feedback_Combo_Week_add";
             Feedback_Combo_Week_add.Size = new Size(151, 28);
             Feedback_Combo_Week_add.TabIndex = 12;
@@ -509,7 +509,7 @@ namespace FeedBuff_Kerkrade
             // 
             Feedback_Combo_Teachers.DropDownStyle = ComboBoxStyle.DropDownList;
             Feedback_Combo_Teachers.FormattingEnabled = true;
-            Feedback_Combo_Teachers.Location = new Point(95, 256);
+            Feedback_Combo_Teachers.Location = new Point(94, 184);
             Feedback_Combo_Teachers.Margin = new Padding(3, 4, 3, 4);
             Feedback_Combo_Teachers.Name = "Feedback_Combo_Teachers";
             Feedback_Combo_Teachers.Size = new Size(151, 28);
@@ -517,7 +517,7 @@ namespace FeedBuff_Kerkrade
             // 
             // Feedback_Btn_Add
             // 
-            Feedback_Btn_Add.Location = new Point(95, 293);
+            Feedback_Btn_Add.Location = new Point(93, 250);
             Feedback_Btn_Add.Name = "Feedback_Btn_Add";
             Feedback_Btn_Add.Size = new Size(153, 29);
             Feedback_Btn_Add.TabIndex = 10;
@@ -613,20 +613,30 @@ namespace FeedBuff_Kerkrade
             Pnl_Feedback.Size = new Size(658, 444);
             Pnl_Feedback.TabIndex = 7;
             Pnl_Feedback.Visible = false;
+            Pnl_Feedback.Paint += Pnl_Feedback_Paint;
             // 
             // Pnl_Feedback_Current
             // 
             Pnl_Feedback_Current.BorderStyle = BorderStyle.FixedSingle;
+            Pnl_Feedback_Current.Controls.Add(Feedback_Btn_Delete);
             Pnl_Feedback_Current.Controls.Add(Feedback_Lbl_Week);
             Pnl_Feedback_Current.Controls.Add(Feedback_Combo_Week);
-            Pnl_Feedback_Current.Controls.Add(Lbl_Feedback_Goals);
             Pnl_Feedback_Current.Controls.Add(Lbl_FeedBack_Requested);
-            Pnl_Feedback_Current.Controls.Add(checkedListBox1);
             Pnl_Feedback_Current.Controls.Add(ListBoxFeedback);
             Pnl_Feedback_Current.Location = new Point(3, 48);
             Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
             Pnl_Feedback_Current.Size = new Size(629, 389);
             Pnl_Feedback_Current.TabIndex = 6;
+            // 
+            // Feedback_Btn_Delete
+            // 
+            Feedback_Btn_Delete.Location = new Point(319, 333);
+            Feedback_Btn_Delete.Name = "Feedback_Btn_Delete";
+            Feedback_Btn_Delete.Size = new Size(94, 29);
+            Feedback_Btn_Delete.TabIndex = 11;
+            Feedback_Btn_Delete.Text = "Delete";
+            Feedback_Btn_Delete.UseVisualStyleBackColor = true;
+            Feedback_Btn_Delete.Click += Feedback_Btn_Delete_Click;
             // 
             // Feedback_Lbl_Week
             // 
@@ -646,32 +656,16 @@ namespace FeedBuff_Kerkrade
             Feedback_Combo_Week.Name = "Feedback_Combo_Week";
             Feedback_Combo_Week.Size = new Size(151, 28);
             Feedback_Combo_Week.TabIndex = 9;
-            // 
-            // Lbl_Feedback_Goals
-            // 
-            Lbl_Feedback_Goals.AutoSize = true;
-            Lbl_Feedback_Goals.Location = new Point(319, 47);
-            Lbl_Feedback_Goals.Name = "Lbl_Feedback_Goals";
-            Lbl_Feedback_Goals.Size = new Size(124, 20);
-            Lbl_Feedback_Goals.TabIndex = 3;
-            Lbl_Feedback_Goals.Text = "Feedback Doelen";
+            Feedback_Combo_Week.SelectedIndexChanged += Feedback_Combo_Week_SelectedIndexChanged;
             // 
             // Lbl_FeedBack_Requested
             // 
             Lbl_FeedBack_Requested.AutoSize = true;
             Lbl_FeedBack_Requested.Location = new Point(3, 47);
             Lbl_FeedBack_Requested.Name = "Lbl_FeedBack_Requested";
-            Lbl_FeedBack_Requested.Size = new Size(148, 20);
+            Lbl_FeedBack_Requested.Size = new Size(72, 20);
             Lbl_FeedBack_Requested.TabIndex = 2;
-            Lbl_FeedBack_Requested.Text = "Gevraagde Feedback";
-            // 
-            // checkedListBox1
-            // 
-            checkedListBox1.FormattingEnabled = true;
-            checkedListBox1.Location = new Point(319, 72);
-            checkedListBox1.Name = "checkedListBox1";
-            checkedListBox1.Size = new Size(305, 290);
-            checkedListBox1.TabIndex = 1;
+            Lbl_FeedBack_Requested.Text = "Feedback";
             // 
             // ListBoxFeedback
             // 
@@ -821,8 +815,6 @@ namespace FeedBuff_Kerkrade
         private Panel Pnl_Feedback_Menu;
         private Button Feedback_Menu_Btn_add;
         private Button Feedback_Menu_Btn_Current;
-        private Label Feedback_Lbl_Subject;
-        private ComboBox Feedback_Combo_Subject;
         private Label Feedback_Lbl_Feedback;
         private TextBox Feedback_Text_Feedback;
         private Label Feedback_Lbl_Teacher;
@@ -835,9 +827,7 @@ namespace FeedBuff_Kerkrade
         private Panel Pnl_Feedback_Current;
         private Panel Pnl_Goals_Current;
         private CheckedListBox ListBoxFeedback;
-        private Label Lbl_Feedback_Goals;
         private Label Lbl_FeedBack_Requested;
-        private CheckedListBox checkedListBox1;
         private Label Lbl_Goals_Finished;
         private CheckedListBox ListBox_Goals_Done;
         private Label Lbl_Goals_Set;
@@ -863,5 +853,8 @@ namespace FeedBuff_Kerkrade
         private ComboBox Feedback_Combo_Teachers;
         private Label Feedback_Lbl_Week_add;
         private ComboBox Feedback_Combo_Week_add;
+        private Button Feedback_Btn_Delete;
+        private Label label1;
+        private CheckBox Feedback_Check_Validated;
     }
 }
