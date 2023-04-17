@@ -4,8 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace FeedBuff_Kerkrade
 {
@@ -324,7 +326,77 @@ namespace FeedBuff_Kerkrade
             {
                 MessageBox.Show("Error connecting to database: " + ex.Message);
             }
+    
+        }
 
+        public void subject_insert_database(Subject subject)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    string sql = "INSERT INTO Subject (Subject_name) VALUES (@Subject_name)";
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@Subject_name", subject.Subject_Name);
+
+                        // Open de databaseverbinding en voer de SQL-query 
+                        int result = command.ExecuteNonQuery();
+
+                        // Controleer het resultaat
+                        if (result > 0)
+                        {
+                            MessageBox.Show("Record inserted successfully");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Record not inserted");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error connecting to database: " + ex.Message);
+            }
+
+        }
+
+        public void Feedback_insert_database(Feedback feedback)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionstring))
+                {
+                    string sql = "INSERT INTO Feedback (Feedback_desc,Weeknr,Validated,User_ID) VALUES (@Feedback_desc, @Weeknr, @Validated, @User_ID)";
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(sql, connection))
+                    {
+                        command.Parameters.AddWithValue("@Feedback_desc", feedback.feedback);
+                        command.Parameters.AddWithValue("@Weeknr",feedback.Weeknr );
+                        command.Parameters.AddWithValue("@Validated",feedback.Validated );
+                        command.Parameters.AddWithValue("@User_ID",feedback.User_ID);
+
+                        // Open de databaseverbinding en voer de SQL-query 
+                        int result = command.ExecuteNonQuery();
+
+                        // Controleer het resultaat
+                        if (result > 0)
+                        {
+                            MessageBox.Show("Record inserted successfully");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Record not inserted");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error connecting to database: " + ex.Message);
+            }
 
         }
     }
