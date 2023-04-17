@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace FeedBuff_Kerkrade
 {
+
     internal class DAL
     {
         private static string connectionString = "Data Source=.;Initial Catalog=Feedbuf;Integrated Security=True";
