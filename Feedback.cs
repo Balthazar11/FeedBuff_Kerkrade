@@ -13,14 +13,16 @@ namespace FeedBuff_Kerkrade
         public string feedback { get; set; }
         public int Weeknr { get; set; }
         public bool Validated { get; set; }
+        public int User_ID { get; set; }
 
-        public Feedback(int Feedback_id, string Vak, string Feedback, int Weeknr, bool Validated)
+        public Feedback( string Vak, string Feedback, int Weeknr, bool Validated,int User_ID)
         {
-            this.Feedback_ID = Feedback_id;
+            this.Feedback_ID = -1;
             this.Vak = Vak;
             this.feedback = Feedback;
             this.Weeknr = Weeknr;
             this.Validated = Validated;
+            this.User_ID = User_ID;
 
         }
     }

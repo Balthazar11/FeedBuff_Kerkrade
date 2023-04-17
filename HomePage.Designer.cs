@@ -58,16 +58,24 @@ namespace FeedBuff_Kerkrade
             this.Goals_Menu_Btn_Add = new System.Windows.Forms.Button();
             this.Pnl_Feedback_Menu = new System.Windows.Forms.Panel();
             this.Feedback_Menu_Btn_add = new System.Windows.Forms.Button();
+            this.Pnl_Feedback_Current = new System.Windows.Forms.Panel();
+            this.Feedback_Lbl_Week = new System.Windows.Forms.Label();
+            this.Feedback_Combo_Week = new System.Windows.Forms.ComboBox();
+            this.Lbl_Feedback_Goals = new System.Windows.Forms.Label();
+            this.Lbl_FeedBack_Requested = new System.Windows.Forms.Label();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.ListBoxFeedback = new System.Windows.Forms.CheckedListBox();
             this.Feedback_Menu_Btn_Current = new System.Windows.Forms.Button();
             this.Feedback_Lbl_Subject = new System.Windows.Forms.Label();
-            this.Feedback_Combo_Subject = new System.Windows.Forms.ComboBox();
             this.Feedback_Lbl_Feedback = new System.Windows.Forms.Label();
             this.Feedback_Text_Feedback = new System.Windows.Forms.TextBox();
             this.Feedback_Lbl_Teacher = new System.Windows.Forms.Label();
             this.Pnl_Feedback_Add = new System.Windows.Forms.Panel();
+            this.Validate_checkbox = new System.Windows.Forms.CheckBox();
+            this.Docent_naam_box = new System.Windows.Forms.TextBox();
+            this.Vak_naam_box = new System.Windows.Forms.TextBox();
             this.Feedback_Lbl_Week_add = new System.Windows.Forms.Label();
             this.Feedback_Combo_Week_add = new System.Windows.Forms.ComboBox();
-            this.Feedback_Combo_Teachers = new System.Windows.Forms.ComboBox();
             this.Feedback_Btn_Add = new System.Windows.Forms.Button();
             this.Pnl_Goals = new System.Windows.Forms.Panel();
             this.Pnl_Goals_Current = new System.Windows.Forms.Panel();
@@ -82,13 +90,6 @@ namespace FeedBuff_Kerkrade
             this.Cancel_alter_btn = new System.Windows.Forms.Button();
             this.Confirm_alter_btn = new System.Windows.Forms.Button();
             this.Alter_feedback_lsbox = new System.Windows.Forms.ListBox();
-            this.Pnl_Feedback_Current = new System.Windows.Forms.Panel();
-            this.Feedback_Lbl_Week = new System.Windows.Forms.Label();
-            this.Feedback_Combo_Week = new System.Windows.Forms.ComboBox();
-            this.Lbl_Feedback_Goals = new System.Windows.Forms.Label();
-            this.Lbl_FeedBack_Requested = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.ListBoxFeedback = new System.Windows.Forms.CheckedListBox();
             this.Pnl_Logbook = new System.Windows.Forms.Panel();
             this.Pnl_Logbook_Menu = new System.Windows.Forms.Panel();
             this.Logbook_Menu_Btn_add = new System.Windows.Forms.Button();
@@ -103,12 +104,12 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Goals_Add.SuspendLayout();
             this.Pnl_Goals_Menu.SuspendLayout();
             this.Pnl_Feedback_Menu.SuspendLayout();
+            this.Pnl_Feedback_Current.SuspendLayout();
             this.Pnl_Feedback_Add.SuspendLayout();
             this.Pnl_Goals.SuspendLayout();
             this.Pnl_Goals_Current.SuspendLayout();
             this.Pnl_Feedback.SuspendLayout();
             this.Feedback_alter_pnl.SuspendLayout();
-            this.Pnl_Feedback_Current.SuspendLayout();
             this.Pnl_Logbook.SuspendLayout();
             this.Pnl_Logbook_Menu.SuspendLayout();
             this.Pnl_Logbook_Current.SuspendLayout();
@@ -422,6 +423,83 @@ namespace FeedBuff_Kerkrade
             this.Feedback_Menu_Btn_add.Text = "Feedback Toevoegen";
             this.Feedback_Menu_Btn_add.UseVisualStyleBackColor = true;
             // 
+            // Pnl_Feedback_Current
+            // 
+            this.Pnl_Feedback_Current.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Feedback_Current.Controls.Add(this.Feedback_Lbl_Week);
+            this.Pnl_Feedback_Current.Controls.Add(this.Feedback_Combo_Week);
+            this.Pnl_Feedback_Current.Controls.Add(this.Lbl_Feedback_Goals);
+            this.Pnl_Feedback_Current.Controls.Add(this.Lbl_FeedBack_Requested);
+            this.Pnl_Feedback_Current.Controls.Add(this.checkedListBox1);
+            this.Pnl_Feedback_Current.Controls.Add(this.ListBoxFeedback);
+            this.Pnl_Feedback_Current.Location = new System.Drawing.Point(2, 48);
+            this.Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
+            this.Pnl_Feedback_Current.Size = new System.Drawing.Size(629, 389);
+            this.Pnl_Feedback_Current.TabIndex = 6;
+            // 
+            // Feedback_Lbl_Week
+            // 
+            this.Feedback_Lbl_Week.AutoSize = true;
+            this.Feedback_Lbl_Week.Location = new System.Drawing.Point(3, 5);
+            this.Feedback_Lbl_Week.Name = "Feedback_Lbl_Week";
+            this.Feedback_Lbl_Week.Size = new System.Drawing.Size(48, 20);
+            this.Feedback_Lbl_Week.TabIndex = 10;
+            this.Feedback_Lbl_Week.Text = "Week:";
+            // 
+            // Feedback_Combo_Week
+            // 
+            this.Feedback_Combo_Week.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Feedback_Combo_Week.FormattingEnabled = true;
+            this.Feedback_Combo_Week.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.Feedback_Combo_Week.Location = new System.Drawing.Point(53, 3);
+            this.Feedback_Combo_Week.Name = "Feedback_Combo_Week";
+            this.Feedback_Combo_Week.Size = new System.Drawing.Size(151, 28);
+            this.Feedback_Combo_Week.TabIndex = 9;
+            // 
+            // Lbl_Feedback_Goals
+            // 
+            this.Lbl_Feedback_Goals.AutoSize = true;
+            this.Lbl_Feedback_Goals.Location = new System.Drawing.Point(319, 47);
+            this.Lbl_Feedback_Goals.Name = "Lbl_Feedback_Goals";
+            this.Lbl_Feedback_Goals.Size = new System.Drawing.Size(124, 20);
+            this.Lbl_Feedback_Goals.TabIndex = 3;
+            this.Lbl_Feedback_Goals.Text = "Feedback Doelen";
+            // 
+            // Lbl_FeedBack_Requested
+            // 
+            this.Lbl_FeedBack_Requested.AutoSize = true;
+            this.Lbl_FeedBack_Requested.Location = new System.Drawing.Point(3, 47);
+            this.Lbl_FeedBack_Requested.Name = "Lbl_FeedBack_Requested";
+            this.Lbl_FeedBack_Requested.Size = new System.Drawing.Size(148, 20);
+            this.Lbl_FeedBack_Requested.TabIndex = 2;
+            this.Lbl_FeedBack_Requested.Text = "Gevraagde Feedback";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(319, 72);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(305, 290);
+            this.checkedListBox1.TabIndex = 1;
+            // 
+            // ListBoxFeedback
+            // 
+            this.ListBoxFeedback.FormattingEnabled = true;
+            this.ListBoxFeedback.Location = new System.Drawing.Point(3, 72);
+            this.ListBoxFeedback.Name = "ListBoxFeedback";
+            this.ListBoxFeedback.Size = new System.Drawing.Size(305, 290);
+            this.ListBoxFeedback.TabIndex = 0;
+            // 
             // Feedback_Menu_Btn_Current
             // 
             this.Feedback_Menu_Btn_Current.Location = new System.Drawing.Point(5, 3);
@@ -439,15 +517,6 @@ namespace FeedBuff_Kerkrade
             this.Feedback_Lbl_Subject.Size = new System.Drawing.Size(35, 20);
             this.Feedback_Lbl_Subject.TabIndex = 4;
             this.Feedback_Lbl_Subject.Text = "Vak:";
-            // 
-            // Feedback_Combo_Subject
-            // 
-            this.Feedback_Combo_Subject.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Feedback_Combo_Subject.FormattingEnabled = true;
-            this.Feedback_Combo_Subject.Location = new System.Drawing.Point(95, 5);
-            this.Feedback_Combo_Subject.Name = "Feedback_Combo_Subject";
-            this.Feedback_Combo_Subject.Size = new System.Drawing.Size(151, 28);
-            this.Feedback_Combo_Subject.TabIndex = 5;
             // 
             // Feedback_Lbl_Feedback
             // 
@@ -478,20 +547,45 @@ namespace FeedBuff_Kerkrade
             // Pnl_Feedback_Add
             // 
             this.Pnl_Feedback_Add.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Pnl_Feedback_Add.Controls.Add(this.Validate_checkbox);
+            this.Pnl_Feedback_Add.Controls.Add(this.Docent_naam_box);
+            this.Pnl_Feedback_Add.Controls.Add(this.Vak_naam_box);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Week_add);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Combo_Week_add);
-            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Combo_Teachers);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Btn_Add);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Teacher);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Text_Feedback);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Feedback);
-            this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Combo_Subject);
             this.Pnl_Feedback_Add.Controls.Add(this.Feedback_Lbl_Subject);
             this.Pnl_Feedback_Add.Location = new System.Drawing.Point(3, 48);
             this.Pnl_Feedback_Add.Name = "Pnl_Feedback_Add";
             this.Pnl_Feedback_Add.Size = new System.Drawing.Size(629, 389);
             this.Pnl_Feedback_Add.TabIndex = 4;
             this.Pnl_Feedback_Add.Visible = false;
+            // 
+            // Validate_checkbox
+            // 
+            this.Validate_checkbox.AutoSize = true;
+            this.Validate_checkbox.Location = new System.Drawing.Point(263, 293);
+            this.Validate_checkbox.Name = "Validate_checkbox";
+            this.Validate_checkbox.Size = new System.Drawing.Size(85, 24);
+            this.Validate_checkbox.TabIndex = 16;
+            this.Validate_checkbox.Text = "Validate";
+            this.Validate_checkbox.UseVisualStyleBackColor = true;
+            // 
+            // Docent_naam_box
+            // 
+            this.Docent_naam_box.Location = new System.Drawing.Point(97, 259);
+            this.Docent_naam_box.Name = "Docent_naam_box";
+            this.Docent_naam_box.Size = new System.Drawing.Size(148, 27);
+            this.Docent_naam_box.TabIndex = 15;
+            // 
+            // Vak_naam_box
+            // 
+            this.Vak_naam_box.Location = new System.Drawing.Point(95, 2);
+            this.Vak_naam_box.Name = "Vak_naam_box";
+            this.Vak_naam_box.Size = new System.Drawing.Size(151, 27);
+            this.Vak_naam_box.TabIndex = 14;
             // 
             // Feedback_Lbl_Week_add
             // 
@@ -521,16 +615,6 @@ namespace FeedBuff_Kerkrade
             this.Feedback_Combo_Week_add.Name = "Feedback_Combo_Week_add";
             this.Feedback_Combo_Week_add.Size = new System.Drawing.Size(151, 28);
             this.Feedback_Combo_Week_add.TabIndex = 12;
-            // 
-            // Feedback_Combo_Teachers
-            // 
-            this.Feedback_Combo_Teachers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Feedback_Combo_Teachers.FormattingEnabled = true;
-            this.Feedback_Combo_Teachers.Location = new System.Drawing.Point(95, 256);
-            this.Feedback_Combo_Teachers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Feedback_Combo_Teachers.Name = "Feedback_Combo_Teachers";
-            this.Feedback_Combo_Teachers.Size = new System.Drawing.Size(151, 28);
-            this.Feedback_Combo_Teachers.TabIndex = 11;
             // 
             // Feedback_Btn_Add
             // 
@@ -632,8 +716,8 @@ namespace FeedBuff_Kerkrade
             // Pnl_Feedback
             // 
             this.Pnl_Feedback.Controls.Add(this.Feedback_alter_pnl);
-            this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Menu);
             this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Current);
+            this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Menu);
             this.Pnl_Feedback.Controls.Add(this.Pnl_Feedback_Add);
             this.Pnl_Feedback.Location = new System.Drawing.Point(147, 0);
             this.Pnl_Feedback.Name = "Pnl_Feedback";
@@ -646,7 +730,7 @@ namespace FeedBuff_Kerkrade
             this.Feedback_alter_pnl.Controls.Add(this.Cancel_alter_btn);
             this.Feedback_alter_pnl.Controls.Add(this.Confirm_alter_btn);
             this.Feedback_alter_pnl.Controls.Add(this.Alter_feedback_lsbox);
-            this.Feedback_alter_pnl.Location = new System.Drawing.Point(5, 48);
+            this.Feedback_alter_pnl.Location = new System.Drawing.Point(3, 48);
             this.Feedback_alter_pnl.Name = "Feedback_alter_pnl";
             this.Feedback_alter_pnl.Size = new System.Drawing.Size(627, 389);
             this.Feedback_alter_pnl.TabIndex = 7;
@@ -678,83 +762,6 @@ namespace FeedBuff_Kerkrade
             this.Alter_feedback_lsbox.Name = "Alter_feedback_lsbox";
             this.Alter_feedback_lsbox.Size = new System.Drawing.Size(388, 224);
             this.Alter_feedback_lsbox.TabIndex = 0;
-            // 
-            // Pnl_Feedback_Current
-            // 
-            this.Pnl_Feedback_Current.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Pnl_Feedback_Current.Controls.Add(this.Feedback_Lbl_Week);
-            this.Pnl_Feedback_Current.Controls.Add(this.Feedback_Combo_Week);
-            this.Pnl_Feedback_Current.Controls.Add(this.Lbl_Feedback_Goals);
-            this.Pnl_Feedback_Current.Controls.Add(this.Lbl_FeedBack_Requested);
-            this.Pnl_Feedback_Current.Controls.Add(this.checkedListBox1);
-            this.Pnl_Feedback_Current.Controls.Add(this.ListBoxFeedback);
-            this.Pnl_Feedback_Current.Location = new System.Drawing.Point(3, 48);
-            this.Pnl_Feedback_Current.Name = "Pnl_Feedback_Current";
-            this.Pnl_Feedback_Current.Size = new System.Drawing.Size(629, 389);
-            this.Pnl_Feedback_Current.TabIndex = 6;
-            // 
-            // Feedback_Lbl_Week
-            // 
-            this.Feedback_Lbl_Week.AutoSize = true;
-            this.Feedback_Lbl_Week.Location = new System.Drawing.Point(3, 5);
-            this.Feedback_Lbl_Week.Name = "Feedback_Lbl_Week";
-            this.Feedback_Lbl_Week.Size = new System.Drawing.Size(48, 20);
-            this.Feedback_Lbl_Week.TabIndex = 10;
-            this.Feedback_Lbl_Week.Text = "Week:";
-            // 
-            // Feedback_Combo_Week
-            // 
-            this.Feedback_Combo_Week.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Feedback_Combo_Week.FormattingEnabled = true;
-            this.Feedback_Combo_Week.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.Feedback_Combo_Week.Location = new System.Drawing.Point(53, 3);
-            this.Feedback_Combo_Week.Name = "Feedback_Combo_Week";
-            this.Feedback_Combo_Week.Size = new System.Drawing.Size(151, 28);
-            this.Feedback_Combo_Week.TabIndex = 9;
-            // 
-            // Lbl_Feedback_Goals
-            // 
-            this.Lbl_Feedback_Goals.AutoSize = true;
-            this.Lbl_Feedback_Goals.Location = new System.Drawing.Point(319, 47);
-            this.Lbl_Feedback_Goals.Name = "Lbl_Feedback_Goals";
-            this.Lbl_Feedback_Goals.Size = new System.Drawing.Size(124, 20);
-            this.Lbl_Feedback_Goals.TabIndex = 3;
-            this.Lbl_Feedback_Goals.Text = "Feedback Doelen";
-            // 
-            // Lbl_FeedBack_Requested
-            // 
-            this.Lbl_FeedBack_Requested.AutoSize = true;
-            this.Lbl_FeedBack_Requested.Location = new System.Drawing.Point(3, 47);
-            this.Lbl_FeedBack_Requested.Name = "Lbl_FeedBack_Requested";
-            this.Lbl_FeedBack_Requested.Size = new System.Drawing.Size(148, 20);
-            this.Lbl_FeedBack_Requested.TabIndex = 2;
-            this.Lbl_FeedBack_Requested.Text = "Gevraagde Feedback";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(319, 72);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(305, 290);
-            this.checkedListBox1.TabIndex = 1;
-            // 
-            // ListBoxFeedback
-            // 
-            this.ListBoxFeedback.FormattingEnabled = true;
-            this.ListBoxFeedback.Location = new System.Drawing.Point(3, 72);
-            this.ListBoxFeedback.Name = "ListBoxFeedback";
-            this.ListBoxFeedback.Size = new System.Drawing.Size(305, 290);
-            this.ListBoxFeedback.TabIndex = 0;
             // 
             // Pnl_Logbook
             // 
@@ -853,6 +860,8 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Goals_Add.PerformLayout();
             this.Pnl_Goals_Menu.ResumeLayout(false);
             this.Pnl_Feedback_Menu.ResumeLayout(false);
+            this.Pnl_Feedback_Current.ResumeLayout(false);
+            this.Pnl_Feedback_Current.PerformLayout();
             this.Pnl_Feedback_Add.ResumeLayout(false);
             this.Pnl_Feedback_Add.PerformLayout();
             this.Pnl_Goals.ResumeLayout(false);
@@ -860,8 +869,6 @@ namespace FeedBuff_Kerkrade
             this.Pnl_Goals_Current.PerformLayout();
             this.Pnl_Feedback.ResumeLayout(false);
             this.Feedback_alter_pnl.ResumeLayout(false);
-            this.Pnl_Feedback_Current.ResumeLayout(false);
-            this.Pnl_Feedback_Current.PerformLayout();
             this.Pnl_Logbook.ResumeLayout(false);
             this.Pnl_Logbook_Menu.ResumeLayout(false);
             this.Pnl_Logbook_Current.ResumeLayout(false);
@@ -896,7 +903,6 @@ namespace FeedBuff_Kerkrade
         private Button Feedback_Menu_Btn_add;
         private Button Feedback_Menu_Btn_Current;
         private Label Feedback_Lbl_Subject;
-        private ComboBox Feedback_Combo_Subject;
         private Label Feedback_Lbl_Feedback;
         private TextBox Feedback_Text_Feedback;
         private Label Feedback_Lbl_Teacher;
@@ -934,12 +940,14 @@ namespace FeedBuff_Kerkrade
         private Panel Pnl_Menu_Userdetails;
         private Label Goals_Lbl_week_add;
         private ComboBox Goals_Combo_Week_add;
-        private ComboBox Feedback_Combo_Teachers;
         private Label Feedback_Lbl_Week_add;
         private ComboBox Feedback_Combo_Week_add;
         private Panel Feedback_alter_pnl;
         private Button Cancel_alter_btn;
         private Button Confirm_alter_btn;
         private ListBox Alter_feedback_lsbox;
+        private TextBox Docent_naam_box;
+        private TextBox Vak_naam_box;
+        private CheckBox Validate_checkbox;
     }
 }
